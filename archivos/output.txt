@@ -1,0 +1,9 @@
+9 Every class has the out method that can be
+9 used to get a text version of the object.
+5 For a lot of classes,
+6 this method returns internal information 
+9 that is not really useful for the end user.
+5 But for every NUMERIC class,
+8 the out method returns a text representation 
+7 of the number that the NUMERIC object
+3  represents. 

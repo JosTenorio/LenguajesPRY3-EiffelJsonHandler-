@@ -1,0 +1,9 @@
+Every class has the out method that can be
+used to get a text version of the object.
+For a lot of classes,
+this method returns internal information 
+that is not really useful for the end user.
+But for every NUMERIC class,
+the out method returns a text representation 
+of the number that the NUMERIC object
+ represents. 
