@@ -1,0 +1,138 @@
+/*
+ * Code for class CODE_PAGE_CONSTANTS
+ */
+
+#include "eif_eiffel.h"
+#include "../E1/estructure.h"
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+extern EIF_TYPED_VALUE F5_60(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F5_61(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F5_62(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F5_63(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F5_64(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F5_65(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F5_66(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F5_67(EIF_REFERENCE);
+extern void EIF_Minit5(void);
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+
+#ifdef __cplusplus
+}
+#endif
+
+
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+/* {CODE_PAGE_CONSTANTS}.utf7 */
+RTOID (F5_60)
+
+
+EIF_TYPED_VALUE F5_60 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_60,65,RTMS_EX_H("UTF-7",5,1414538039));
+}
+
+/* {CODE_PAGE_CONSTANTS}.utf8 */
+RTOID (F5_61)
+
+
+EIF_TYPED_VALUE F5_61 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_61,66,RTMS_EX_H("UTF-8",5,1414538040));
+}
+
+/* {CODE_PAGE_CONSTANTS}.utf16 */
+RTOID (F5_62)
+
+
+EIF_TYPED_VALUE F5_62 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_62,59,RTMS_EX_H("UTF-16",6,1345128758));
+}
+
+/* {CODE_PAGE_CONSTANTS}.utf32 */
+RTOID (F5_63)
+
+
+EIF_TYPED_VALUE F5_63 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_63,60,RTMS_EX_H("UTF-32",6,1345129266));
+}
+
+/* {CODE_PAGE_CONSTANTS}.utf16_le */
+RTOID (F5_64)
+
+
+EIF_TYPED_VALUE F5_64 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_64,61,RTMS_EX_H("UTF-16LE",8,312185413));
+}
+
+/* {CODE_PAGE_CONSTANTS}.utf32_le */
+RTOID (F5_65)
+
+
+EIF_TYPED_VALUE F5_65 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_65,62,RTMS_EX_H("UTF-32LE",8,345477701));
+}
+
+/* {CODE_PAGE_CONSTANTS}.utf16_be */
+RTOID (F5_66)
+
+
+EIF_TYPED_VALUE F5_66 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_66,63,RTMS_EX_H("UTF-16BE",8,312182853));
+}
+
+/* {CODE_PAGE_CONSTANTS}.utf32_be */
+RTOID (F5_67)
+
+
+EIF_TYPED_VALUE F5_67 (EIF_REFERENCE Current)
+{
+	GTCX
+	RTOTC (F5_67,64,RTMS_EX_H("UTF-32BE",8,345475141));
+}
+
+void EIF_Minit5 (void)
+{
+	GTCX
+	RTOTS (60,F5_60)
+	RTOTS (61,F5_61)
+	RTOTS (62,F5_62)
+	RTOTS (63,F5_63)
+	RTOTS (64,F5_64)
+	RTOTS (65,F5_65)
+	RTOTS (66,F5_66)
+	RTOTS (67,F5_67)
+}
+
+
+#ifdef __cplusplus
+}
+#endif

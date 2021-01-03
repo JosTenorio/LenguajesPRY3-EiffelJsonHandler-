@@ -18,7 +18,11 @@ feature {NONE} -- Initialization
 			-- Run application.
 		do
 			--| Add your code here
-			print ("Hello Eiffel World!%N")
+			create handler
+			print (handler.get_path)
 		end
+
+feature
+	handler: CSVHANDLER
 
 end

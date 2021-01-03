@@ -10,13 +10,10 @@ class
 create
 	make
 
-feature {NONE} -- Initialization
-
+feature
 	make
-			-- Initialization for `Current'.
 		do
-			set_path("Hola")
-
+			path:=""
 		end
 
 feature
@@ -27,11 +24,8 @@ feature
             path := new_path
         end
 
-
-
-
-
-invariant
-	invariant_clause: True -- Your invariant here
-
+    get_path ( new_path: STRING )
+        do
+            Result := path
+        end
 end
