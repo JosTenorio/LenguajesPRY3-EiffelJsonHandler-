@@ -17,9 +17,9 @@ feature {NONE} -- Initialization
 	make
 			-- Run application.
 		do
-			--| Add your code here
-			create handler
-			print (handler.get_path)
+			create handler.make
+			handler.set_path ("C:\Users\Personal\Desktop\LenguajesPRY3-EiffelJsonHandler-\JSONHandler\Equipos.csv")
+			Io.put_string (handler.is_path_readablecsv.out)
 		end
 
 feature
