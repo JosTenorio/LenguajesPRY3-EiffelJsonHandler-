@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C9_c.obj 
 
-OLDOBJECTS =  sp278.obj sp278d.obj ar288.obj ar288d.obj sp285.obj sp285d.obj na287.obj na287d.obj \
-	re279.obj re279d.obj it284.obj it284d.obj li290.obj li290d.obj ar265.obj ar265d.obj \
-	ar289.obj ar289d.obj it283.obj it283d.obj in271.obj in271d.obj to277.obj to277d.obj \
-	dy275.obj dy275d.obj ge286.obj ge286d.obj in282.obj in282d.obj re280.obj re280d.obj \
-	cu291.obj cu291d.obj ar276.obj ar276d.obj se269.obj se269d.obj dy266.obj dy266d.obj \
-	bo264.obj bo264d.obj ta272.obj ta272d.obj li267.obj li267d.obj un274.obj un274d.obj \
-	ty281.obj ty281d.obj ac295.obj ac295d.obj co292.obj co292d.obj bi270.obj bi270d.obj \
-	fi293.obj fi293d.obj dy273.obj dy273d.obj ba296.obj ba296d.obj ch268.obj ch268d.obj \
-	bo294.obj bo294d.obj 
+OLDOBJECTS =  sp295.obj sp295d.obj ty291.obj ty291d.obj sp296.obj sp296d.obj re280.obj re280d.obj \
+	it278.obj it278d.obj it277.obj it277d.obj li275.obj li275d.obj ar292.obj ar292d.obj \
+	in274.obj in274d.obj ge294.obj ge294d.obj in264.obj in264d.obj in281.obj in281d.obj \
+	re265.obj re265d.obj re282.obj re282d.obj cu269.obj cu269d.obj cu286.obj cu286d.obj \
+	tr276.obj tr276d.obj ar293.obj ar293d.obj ta273.obj ta273d.obj ta290.obj ta290d.obj \
+	ty266.obj ty266d.obj ty283.obj ty283d.obj ac270.obj ac270d.obj ac287.obj ac287d.obj \
+	co279.obj co279d.obj fi267.obj fi267d.obj fi284.obj fi284d.obj ba271.obj ba271d.obj \
+	ba288.obj ba288d.obj co272.obj co272d.obj co289.obj co289d.obj bo268.obj bo268d.obj \
+	bo285.obj bo285d.obj 
 
 all::  Cobj9.lib
 

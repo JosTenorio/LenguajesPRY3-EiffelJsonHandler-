@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C19_c.obj 
 
-OLDOBJECTS =  ty617.o ty617d.o ty618.o ty618d.o ty621.o ty621d.o ty622.o ty622d.o \
-	ty625.o ty625d.o ty626.o ty626d.o ty619.o ty619d.o ty623.o ty623d.o \
-	ar603.o ar603d.o re601.o re601d.o in609.o in609d.o to614.o to614d.o \
-	dy613.o dy613d.o tr600.o tr600d.o ar615.o ar615d.o se607.o se607d.o \
-	dy604.o dy604d.o bo602.o bo602d.o ta610.o ta610d.o li605.o li605d.o \
-	un612.o un612d.o ac597.o ac597d.o co594.o co594d.o bi608.o bi608d.o \
-	fi595.o fi595d.o dy611.o dy611d.o ba598.o ba598d.o ch606.o ch606d.o \
-	rt616.o rt616d.o rt620.o rt620d.o rt624.o rt624d.o co599.o co599d.o \
-	bo596.o bo596d.o 
+OLDOBJECTS =  sp611.o sp611d.o ar602.o ar602d.o ty595.o ty595d.o ty596.o ty596d.o \
+	ty599.o ty599d.o ty600.o ty600d.o ty597.o ty597d.o ty601.o ty601d.o \
+	sp612.o sp612d.o na613.o na613d.o re605.o re605d.o it608.o it608d.o \
+	it607.o it607d.o li617.o li617d.o ar614.o ar614d.o ar603.o ar603d.o \
+	ge604.o ge604d.o in606.o in606d.o re609.o re609d.o cu620.o cu620d.o \
+	tr618.o tr618d.o se615.o se615d.o ar626.o ar626d.o ty610.o ty610d.o \
+	ac621.o ac621d.o co619.o co619d.o bi625.o bi625d.o fi616.o fi616d.o \
+	ba622.o ba622d.o rt594.o rt594d.o rt598.o rt598d.o co623.o co623d.o \
+	bo624.o bo624d.o 
 
 all: Cobj19.o
 

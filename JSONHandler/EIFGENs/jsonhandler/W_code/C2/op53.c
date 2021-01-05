@@ -1,5 +1,5 @@
 /*
- * Code for class OPERATING_SYSTEM_SIGNAL_FAILURE
+ * Code for class OPERATING_SYSTEM_FAILURE
  */
 
 #include "eif_eiffel.h"
@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F53_990(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F53_991(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F53_992(EIF_REFERENCE);
-extern void F53_993(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F53_993(EIF_REFERENCE);
+extern void F53_994(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit53(void);
 
 #ifdef __cplusplus
@@ -35,8 +35,8 @@ extern "C" {
 extern "C" {
 #endif
 
-/* {OPERATING_SYSTEM_SIGNAL_FAILURE}.code */
-EIF_TYPED_VALUE F53_990 (EIF_REFERENCE Current)
+/* {OPERATING_SYSTEM_FAILURE}.code */
+EIF_TYPED_VALUE F53_991 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -55,16 +55,16 @@ EIF_TYPED_VALUE F53_990 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 52, Current, 0, 0, 1074);
+	RTEAA(l_feature_name, 52, Current, 0, 0, 1076);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(52, Current, 1074);
+	RTDBGEAA(52, Current, 1076);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(633, 27))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(648, 28))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -77,19 +77,19 @@ EIF_TYPED_VALUE F53_990 (EIF_REFERENCE Current)
 	{ EIF_TYPED_VALUE r; r.type = SK_INT32; r.it_i4 = Result; return r; }
 }
 
-/* {OPERATING_SYSTEM_SIGNAL_FAILURE}.signal_code */
-EIF_TYPED_VALUE F53_991 (EIF_REFERENCE Current)
+/* {OPERATING_SYSTEM_FAILURE}.error_code */
+EIF_TYPED_VALUE F53_992 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(939,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(942,Dtype(Current)));
 	return r;
 }
 
 
-/* {OPERATING_SYSTEM_SIGNAL_FAILURE}.tag */
-RTOID (F53_992)
-EIF_TYPED_VALUE F53_992 (EIF_REFERENCE Current)
+/* {OPERATING_SYSTEM_FAILURE}.tag */
+RTOID (F53_993)
+EIF_TYPED_VALUE F53_993 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -104,7 +104,7 @@ EIF_TYPED_VALUE F53_992 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F53_992);
+	RTOTDR(F53_993);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -116,20 +116,20 @@ EIF_TYPED_VALUE F53_992 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 52, Current, 0, 0, 1072);
+	RTEAA(l_feature_name, 52, Current, 0, 0, 1074);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(52, Current, 1072);
+	RTDBGEAA(52, Current, 1074);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(0, 0xF80000B1, 0,0); /* Result */
-	tr1 = RTLN(eif_new_type(177, 0x01).id);
-	tr2 = RTMS_EX_H("Operating system signal.",24,1715740462);
+	RTDBGAL(0, 0xF80000AF, 0,0); /* Result */
+	tr1 = RTLN(eif_new_type(175, 0x01).id);
+	tr2 = RTMS_EX_H("Operating system error.",23,407134510);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3440, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3367, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -146,11 +146,11 @@ EIF_TYPED_VALUE F53_992 (EIF_REFERENCE Current)
 #undef Result
 }
 
-/* {OPERATING_SYSTEM_SIGNAL_FAILURE}.set_signal_code */
-void F53_993 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+/* {OPERATING_SYSTEM_FAILURE}.set_error_code */
+void F53_994 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
-	char *l_feature_name = "set_signal_code";
+	char *l_feature_name = "set_error_code";
 	RTEX;
 #define arg1 arg1x.it_i4
 	RTCDT;
@@ -167,16 +167,16 @@ void F53_993 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 52, Current, 0, 1, 1073);
+	RTEAA(l_feature_name, 52, Current, 0, 1, 1075);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(52, Current, 1073);
+	RTDBGEAA(52, Current, 1075);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 939, 0x10000000, 1); /* signal_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(939, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 942, 0x10000000, 1); /* error_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(942, dtype)) = (EIF_INTEGER_32) arg1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -191,7 +191,7 @@ void F53_993 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 void EIF_Minit53 (void)
 {
 	GTCX
-	RTOTS (992,F53_992)
+	RTOTS (993,F53_993)
 }
 
 

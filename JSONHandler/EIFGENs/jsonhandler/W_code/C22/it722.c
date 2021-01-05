@@ -1,5 +1,5 @@
 /*
- * Code for class ITERATION_CURSOR [NATURAL_32]
+ * Code for class ITERABLE [NATURAL_32]
  */
 
 #include "eif_eiffel.h"

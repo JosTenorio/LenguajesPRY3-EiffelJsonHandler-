@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C21_c.obj 
 
-OLDOBJECTS =  sp682.obj sp682d.obj ar673.obj ar673d.obj fu668.obj fu668d.obj sp683.obj sp683d.obj \
-	na684.obj na684d.obj re677.obj re677d.obj it681.obj it681d.obj li685.obj li685d.obj \
-	ar674.obj ar674d.obj it680.obj it680d.obj ge675.obj ge675d.obj in679.obj in679d.obj \
-	re678.obj re678d.obj cu686.obj cu686d.obj co670.obj co670d.obj ty676.obj ty676d.obj \
-	ac690.obj ac690d.obj co687.obj co687d.obj fi688.obj fi688d.obj ba691.obj ba691d.obj \
-	co671.obj co671d.obj rt660.obj rt660d.obj rt666.obj rt666d.obj rt661.obj rt661d.obj \
-	rt662.obj rt662d.obj rt663.obj rt663d.obj rt664.obj rt664d.obj rt665.obj rt665d.obj \
-	rt667.obj rt667d.obj rt669.obj rt669d.obj co692.obj co692d.obj bo689.obj bo689d.obj \
-	in672.obj in672d.obj 
+OLDOBJECTS =  sp683.obj sp683d.obj ar686.obj ar686d.obj ty675.obj ty675d.obj ty676.obj ty676d.obj \
+	ty677.obj ty677d.obj sp684.obj sp684d.obj na685.obj na685d.obj ar678.obj ar678d.obj \
+	ar687.obj ar687d.obj re663.obj re663d.obj re688.obj re688d.obj in669.obj in669d.obj \
+	to673.obj to673d.obj to690.obj to690d.obj dy671.obj dy671d.obj ge682.obj ge682d.obj \
+	se679.obj se679d.obj ar662.obj ar662d.obj ar681.obj ar681d.obj dy665.obj dy665d.obj \
+	dy691.obj dy691d.obj bo664.obj bo664d.obj bo689.obj bo689d.obj ta670.obj ta670d.obj \
+	li672.obj li672d.obj un667.obj un667d.obj bi661.obj bi661d.obj bi680.obj bi680d.obj \
+	dy666.obj dy666d.obj dy692.obj dy692d.obj ch668.obj ch668d.obj rt674.obj rt674d.obj \
+	bo660.obj bo660d.obj 
 
 all::  Cobj21.lib
 

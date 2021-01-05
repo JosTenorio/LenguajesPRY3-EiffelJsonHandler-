@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C4_c.obj 
 
-OLDOBJECTS =  ap118.obj ap118d.obj tu128.obj tu128d.obj in130.obj in130d.obj in131.obj in131d.obj \
-	ar117.obj ar117d.obj mi124.obj mi124d.obj ab109.obj ab109d.obj ha126.obj ha126d.obj \
-	re99.obj re99d.obj in129.obj in129d.obj pr119.obj pr119d.obj de107.obj de107d.obj \
-	rt102.obj rt102d.obj re104.obj re104d.obj pl122.obj pl122d.obj st116.obj st116d.obj \
-	mi125.obj mi125d.obj st115.obj st115d.obj in123.obj in123d.obj nu111.obj nu111d.obj \
-	st114.obj st114d.obj rt110.obj rt110d.obj rt108.obj rt108d.obj rt101.obj rt101d.obj \
-	re103.obj re103d.obj in100.obj in100d.obj ra121.obj ra121d.obj pa127.obj pa127d.obj \
-	fi120.obj fi120d.obj fi112.obj fi112d.obj fi105.obj fi105d.obj ar113.obj ar113d.obj \
-	un106.obj un106d.obj 
+OLDOBJECTS =  ap119.obj ap119d.obj tu129.obj tu129d.obj in131.obj in131d.obj ar118.obj ar118d.obj \
+	mi125.obj mi125d.obj ab110.obj ab110d.obj pr120.obj pr120d.obj ha127.obj ha127d.obj \
+	re100.obj re100d.obj in130.obj in130d.obj de108.obj de108d.obj re105.obj re105d.obj \
+	rt103.obj rt103d.obj pa128.obj pa128d.obj pl123.obj pl123d.obj mi126.obj mi126d.obj \
+	st117.obj st117d.obj st116.obj st116d.obj in124.obj in124d.obj nu112.obj nu112d.obj \
+	st115.obj st115d.obj re104.obj re104d.obj re99.obj re99d.obj rt109.obj rt109d.obj \
+	rt111.obj rt111d.obj rt102.obj rt102d.obj ra122.obj ra122d.obj in101.obj in101d.obj \
+	fi121.obj fi121d.obj fi113.obj fi113d.obj ar114.obj ar114d.obj fi106.obj fi106d.obj \
+	un107.obj un107d.obj 
 
 all::  Cobj4.lib
 

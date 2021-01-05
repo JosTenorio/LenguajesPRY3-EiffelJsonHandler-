@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C15_c.obj 
 
-OLDOBJECTS =  sp474.obj sp474d.obj ar465.obj ar465d.obj sp475.obj sp475d.obj na476.obj na476d.obj \
-	re469.obj re469d.obj it473.obj it473d.obj li477.obj li477d.obj ar488.obj ar488d.obj \
-	ar466.obj ar466d.obj it472.obj it472d.obj re486.obj re486d.obj in494.obj in494d.obj \
-	to463.obj to463d.obj dy462.obj dy462d.obj ge467.obj ge467d.obj in471.obj in471d.obj \
-	re470.obj re470d.obj cu478.obj cu478d.obj tr485.obj tr485d.obj ar464.obj ar464d.obj \
-	se492.obj se492d.obj dy489.obj dy489d.obj bo487.obj bo487d.obj li490.obj li490d.obj \
-	ty468.obj ty468d.obj ac482.obj ac482d.obj co479.obj co479d.obj bi493.obj bi493d.obj \
-	fi480.obj fi480d.obj ba483.obj ba483d.obj ch491.obj ch491d.obj co484.obj co484d.obj \
-	bo481.obj bo481d.obj 
+OLDOBJECTS =  sp467.obj sp467d.obj sp480.obj sp480d.obj ar464.obj ar464d.obj ar483.obj ar483d.obj \
+	sp468.obj sp468d.obj sp481.obj sp481d.obj na469.obj na469d.obj na482.obj na482d.obj \
+	ar470.obj ar470d.obj ar475.obj ar475d.obj ar465.obj ar465d.obj ar484.obj ar484d.obj \
+	re472.obj re472d.obj re485.obj re485d.obj to463.obj to463d.obj to474.obj to474d.obj \
+	to487.obj to487d.obj dy492.obj dy492d.obj ge466.obj ge466d.obj ge479.obj ge479d.obj \
+	se476.obj se476d.obj ar471.obj ar471d.obj ar478.obj ar478d.obj dy488.obj dy488d.obj \
+	bo473.obj bo473d.obj bo486.obj bo486d.obj li462.obj li462d.obj li493.obj li493d.obj \
+	un490.obj un490d.obj un494.obj un494d.obj bi477.obj bi477d.obj dy489.obj dy489d.obj \
+	ch491.obj ch491d.obj 
 
 all::  Cobj15.lib
 

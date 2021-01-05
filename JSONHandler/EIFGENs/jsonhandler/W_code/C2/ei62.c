@@ -1,5 +1,5 @@
 /*
- * Code for class EIFFEL_RUNTIME_EXCEPTION
+ * Code for class EIF_EXCEPTION
  */
 
 #include "eif_eiffel.h"

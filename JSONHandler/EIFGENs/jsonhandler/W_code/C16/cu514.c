@@ -1,5 +1,5 @@
 /*
- * Code for class CURSOR_STRUCTURE [BOOLEAN]
+ * Code for class CURSOR_STRUCTURE [NATURAL_64]
  */
 
 #include "eif_eiffel.h"

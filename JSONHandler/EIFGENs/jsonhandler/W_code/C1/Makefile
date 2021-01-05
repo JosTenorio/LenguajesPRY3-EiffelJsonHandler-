@@ -41,13 +41,13 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C1_c.obj 
 
-OLDOBJECTS =  an1.obj an1d.obj rt32.obj rt32d.obj is27.obj is27d.obj st14.obj st14d.obj op13.obj \
-	op13d.obj pl29.obj pl29d.obj is12.obj is12d.obj ut10.obj ut10d.obj ut11.obj ut11d.obj \
-	rt9.obj rt9d.obj rt31.obj rt31d.obj sy8.obj sy8d.obj ex28.obj ex28d.obj ex26.obj \
-	ex26d.obj re25.obj re25d.obj re24.obj re24d.obj ch7.obj ch7d.obj do23.obj do23d.obj \
-	sy6.obj sy6d.obj rt30.obj rt30d.obj co5.obj co5d.obj en4.obj en4d.obj sy3.obj sy3d.obj \
-	ve2.obj ve2d.obj ma22.obj ma22d.obj ob18.obj ob18d.obj ob21.obj ob21d.obj sy19.obj \
-	sy19d.obj sy20.obj sy20d.obj ob17.obj ob17d.obj co16.obj co16d.obj en15.obj en15d.obj 
+OLDOBJECTS =  an1.obj an1d.obj is28.obj is28d.obj cs2.obj cs2d.obj op15.obj op15d.obj st14.obj \
+	st14d.obj pl30.obj pl30d.obj is13.obj is13d.obj ut11.obj ut11d.obj ut12.obj ut12d.obj \
+	rt10.obj rt10d.obj rt32.obj rt32d.obj sy9.obj sy9d.obj ex29.obj ex29d.obj ex27.obj \
+	ex27d.obj re26.obj re26d.obj do24.obj do24d.obj re25.obj re25d.obj ch8.obj ch8d.obj \
+	sy7.obj sy7d.obj rt31.obj rt31d.obj en6.obj en6d.obj sy5.obj sy5d.obj co4.obj co4d.obj \
+	ve3.obj ve3d.obj ma23.obj ma23d.obj ob19.obj ob19d.obj ob22.obj ob22d.obj sy21.obj \
+	sy21d.obj sy20.obj sy20d.obj ob18.obj ob18d.obj en17.obj en17d.obj co16.obj co16d.obj 
 
 all::  Cobj1.lib
 

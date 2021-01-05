@@ -1,5 +1,5 @@
 /*
- * Code for class DYNAMIC_TABLE [BOOLEAN, INTEGER_32]
+ * Code for class DYNAMIC_TABLE [INTEGER_32, G#2]
  */
 
 #include "eif_eiffel.h"
@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F534_2110(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F534_2116(EIF_REFERENCE);
 extern void EIF_Minit534(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {DYNAMIC_TABLE}.prunable */
-EIF_TYPED_VALUE F534_2110 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F534_2116 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "prunable";
@@ -51,12 +51,12 @@ EIF_TYPED_VALUE F534_2110 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 533, Current, 0, 0, 3965);
+	RTEAA(l_feature_name, 533, Current, 0, 0, 3971);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(533, Current, 3965);
+	RTDBGEAA(533, Current, 3971);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */

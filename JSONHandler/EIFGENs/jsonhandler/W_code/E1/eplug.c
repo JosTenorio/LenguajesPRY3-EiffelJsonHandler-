@@ -11,23 +11,23 @@ extern "C" {
 #endif
 extern void F1_23();
 extern EIF_REFERENCE F1_14();
-extern void F174_4424();
-extern void F176_4586();
-extern void F174_4428();
-extern void F177_4590();
-extern void F179_4754();
-extern void F177_4595();
-extern void F223_2606();
-extern void F192_4270();
-extern void F27_619();
-extern EIF_REFERENCE F27_606();
-extern EIF_BOOLEAN F27_618();
-extern EIF_BOOLEAN F27_626();
-extern void F27_628();
-extern void F27_629();
-extern void F27_630();
-extern void F32_738();
-extern EIF_TYPED_VALUE F32_739();
+extern void F178_4597();
+extern void F180_4759();
+extern void F178_4601();
+extern void F175_4430();
+extern void F177_4594();
+extern void F175_4435();
+extern void F298_2612();
+extern void F207_4276();
+extern void F28_624();
+extern EIF_REFERENCE F28_611();
+extern EIF_BOOLEAN F28_623();
+extern EIF_BOOLEAN F28_631();
+extern void F28_633();
+extern void F28_634();
+extern void F28_635();
+extern void F33_743();
+extern EIF_TYPED_VALUE F33_744();
 
 long *eif_area_table = (long *)0;
 long *eif_lower_table = (long *)0;
@@ -39,69 +39,69 @@ void egc_init_plug (void)
 	egc_prof_enabled = (EIF_INTEGER) 0;
 	egc_correct_mismatch = (void (*)(EIF_REFERENCE)) F1_23;
 	egc_twin = (EIF_TYPED_VALUE (*)(EIF_REFERENCE)) F1_14;
-	egc_strmake = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F174_4424;
-	egc_immstr8make_from_c_byte_array = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F174_4428;
-	egc_str32make = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F177_4590;
-	egc_immstr32make_from_c_byte_array = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F177_4595;
-	egc_arrmake = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F223_2606;
-	egc_strset = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F176_4586;
-	egc_str32set = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F179_4754;
-	egc_routdisp_wb = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F192_4270;
+	egc_strmake = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F178_4597;
+	egc_immstr8make_from_c_byte_array = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F178_4601;
+	egc_str32make = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F175_4430;
+	egc_immstr32make_from_c_byte_array = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F175_4435;
+	egc_arrmake = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F298_2612;
+	egc_strset = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F180_4759;
+	egc_str32set = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F177_4594;
+	egc_routdisp_wb = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F207_4276;
 	egc_is_scoop_capable = 1;
-	egc_set_exception_data = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F27_619;
-	egc_set_last_exception = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F27_618;
-	egc_last_exception = (EIF_TYPED_VALUE (*)(EIF_REFERENCE)) F27_606;
-	egc_is_code_ignored = (EIF_TYPED_VALUE (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F27_626;
-	egc_once_raise = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F27_628;
-	egc_init_exception_manager = (void (*)(EIF_REFERENCE)) F27_629;
-	egc_free_preallocated_trace = (void (*)(EIF_REFERENCE)) F27_630;
+	egc_set_exception_data = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F28_624;
+	egc_set_last_exception = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F28_623;
+	egc_last_exception = (EIF_TYPED_VALUE (*)(EIF_REFERENCE)) F28_611;
+	egc_is_code_ignored = (EIF_TYPED_VALUE (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F28_631;
+	egc_once_raise = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F28_633;
+	egc_init_exception_manager = (void (*)(EIF_REFERENCE)) F28_634;
+	egc_free_preallocated_trace = (void (*)(EIF_REFERENCE)) F28_635;
 
-	egc_str_dtype = 175;
+	egc_str_dtype = 179;
 
-	egc_immstr8_dtype = 174;
+	egc_immstr8_dtype = 178;
 
-	egc_str32_dtype = 178;
+	egc_str32_dtype = 176;
 
-	egc_immstr32_dtype = 177;
-	egc_arr_dtype = 222;
-	egc_tup_dtype = 127;
-	egc_disp_rout_id = 962;
+	egc_immstr32_dtype = 175;
+	egc_arr_dtype = 297;
+	egc_tup_dtype = 128;
+	egc_disp_rout_id = 967;
 	egc_copy_rout_id = 18;
 	egc_is_equal_rout_id = 11;
 
-	egc_sp_char = 0x0115;
-	egc_sp_wchar = 0xF1;
-	egc_sp_bool = 0x01FD;
-	egc_sp_uint8 = 0x01B5;
-	egc_sp_uint16 = 0x0191;
-	egc_sp_uint32 = 0x02D2;
-	egc_sp_uint64 = 0x0243;
+	egc_sp_char = 0x02AA;
+	egc_sp_wchar = 0x01DF;
+	egc_sp_bool = 0x027D;
+	egc_sp_uint8 = 0x01B4;
+	egc_sp_uint16 = 0x0262;
+	egc_sp_uint32 = 0x02D5;
+	egc_sp_uint64 = 0x01EF;
 	egc_sp_int8 = 0xFFFF;
 	egc_sp_int16 = 0xFFFF;
-	egc_sp_int32 = 0x01D9;
+	egc_sp_int32 = 0x01D2;
 	egc_sp_int64 = 0xFFFF;
-	egc_sp_real32 = 0x02A9;
-	egc_sp_real64 = 0x016D;
-	egc_sp_pointer = 0x0148;
-	egc_sp_ref = 0xDA;
+	egc_sp_real32 = 0x016C;
+	egc_sp_real64 = 0x0190;
+	egc_sp_pointer = 0x0141;
+	egc_sp_ref = 0x0126;
 
-	egc_uint8_dtype = 150;
-	egc_uint16_dtype = 147;
-	egc_uint32_dtype = 144;
-	egc_uint64_dtype = 141;
-	egc_int8_dtype = 138;
-	egc_int16_dtype = 135;
-	egc_int32_dtype = 132;
-	egc_int64_dtype = 129;
-	egc_bool_dtype = 165;
-	egc_real32_dtype = 153;
-	egc_char_dtype = 162;
-	egc_wchar_dtype = 159;
-	egc_real64_dtype = 156;
-	egc_point_dtype = 168;
+	egc_uint8_dtype = 151;
+	egc_uint16_dtype = 148;
+	egc_uint32_dtype = 145;
+	egc_uint64_dtype = 142;
+	egc_int8_dtype = 139;
+	egc_int16_dtype = 136;
+	egc_int32_dtype = 133;
+	egc_int64_dtype = 130;
+	egc_bool_dtype = 166;
+	egc_real32_dtype = 154;
+	egc_char_dtype = 163;
+	egc_wchar_dtype = 160;
+	egc_real64_dtype = 157;
+	egc_point_dtype = 169;
 
-	egc_exception_dtype = 44;
-	egc_except_emnger_dtype = 26;
+	egc_exception_dtype = 45;
+	egc_except_emnger_dtype = 27;
 
 	egc_ce_type = egc_ce_type_init;
 
@@ -121,12 +121,12 @@ void egc_init_plug (void)
 	egc_forg_table = egc_forg_table_init;
 
 	egc_system_name = "jsonhandler";
-	egc_system_location = "C:\\Users\\Personal\\Desktop\\LenguajesPRY3-EiffelJsonHandler-\\JSONHandler\\EIFGENs\\jsonhandler\\W_code";
+	egc_system_location = "C:\\Users\\JOS\\Desktop\\LenguajesPRY3-EiffelJsonHandler-\\JSONHandler\\EIFGENs\\jsonhandler\\W_code";
 	egc_compiler_tag = 39;
-	egc_project_version = 1609511448;
+	egc_project_version = 1609775368;
 	egc_has_old_special_semantic = 0;
 	egc_has_ieee_semantic = 1;
-	scount = 768;
+	scount = 769;
 
 	egc_rcount = 1;
 	egc_ridx = 0;
@@ -136,20 +136,20 @@ void egc_init_plug (void)
 	egc_rcarg = (int32 *) eif_malloc (sizeof(int32)*egc_rcount);
 	egc_rlist[0] = "APPLICATION.make";
 	egc_rcdt[0] = 0;
-	egc_rcrid[0] = 1823;
+	egc_rcrid[0] = 3550;
 	egc_rcarg[0] = 0;
 	
 	
 	egc_platform_level = 0x00000D00;
-	egc_rt_extension_dt = 31;
-	egc_rt_extension_notify = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F32_738;
-	egc_rt_extension_notify_argument = (EIF_TYPED_VALUE (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F32_739;
+	egc_rt_extension_dt = 32;
+	egc_rt_extension_notify = (void (*)(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE)) F33_743;
+	egc_rt_extension_notify_argument = (EIF_TYPED_VALUE (*)(EIF_REFERENCE, EIF_TYPED_VALUE)) F33_744;
 }
 
 void egc_rcdt_init (void)
 {
 	if (egc_rcdt[0] == 0) {
-		egc_rcdt[0] = 117; /* APPLICATION */
+		egc_rcdt[0] = 118; /* APPLICATION */
 	}
 }
 
