@@ -17,12 +17,12 @@ feature {NONE} -- Initialization
 	make
 			-- Run application.
 		do
-			create handler.make
-			handler.set_path ("Equipos.csv")
-			handler.print_csv
+			create main.make
+			main.run
 		end
 
 feature
-	handler: CSVHANDLER
+	main: JSONHANDLER
+
 
 end

@@ -13,44 +13,29 @@ create
 feature {NONE} -- Initialization
 
 	make
-			-- Initialization for `Current'.
+
 		do
-			
+			create data.make (10)
+			create error_message.make_empty
 		end
 
-feature -- Access
+feature {NONE} -- Attributes
+	data: HASH_TABLE[JSON_OBJECT, STRING]
 
-feature -- Measurement
+	error: BOOLEAN
 
-feature -- Status report
+	error_message: STRING
 
-feature -- Status setting
+feature -- routines
 
-feature -- Cursor movement
-
-feature -- Element change
-
-feature -- Removal
-
-feature -- Resizing
-
-feature -- Transformation
-
-feature -- Conversion
-
-feature -- Duplication
-
-feature -- Miscellaneous
-
-feature -- Basic operations
-
-feature -- Obsolete
-
-feature -- Inapplicable
-
-feature {NONE} -- Implementation
-
-invariant
-	invariant_clause: True -- Your invariant here
+	insert (key: STRING; value: JSON_OBJECT)
+	do
+		if data.has_key (key) then
+			error := true
+			error_message:= "Ya existe un documento JSON con el identificador: " + key
+		else
+			data.put (value,key)
+		end
+	end
 
 end
