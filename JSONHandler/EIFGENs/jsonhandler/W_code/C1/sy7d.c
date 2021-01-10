@@ -9,20 +9,20 @@
 extern "C" {
 #endif
 
-static const EIF_TYPE_INDEX egt_0_7 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_7 [] = {0xFF01,184,6,0xFFFF};
+static const EIF_TYPE_INDEX egt_0_7 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_7 [] = {0xFF01,194,6,0xFFFF};
 static const EIF_TYPE_INDEX egt_2_7 [] = {0xFF01,6,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_7 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_7 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_5_7 [] = {0xFF01,6,0xFFFF};
 static const EIF_TYPE_INDEX egt_6_7 [] = {0xFF01,6,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_7 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_7 [] = {0xFF01,13,0xFFFF};
-static const EIF_TYPE_INDEX egt_9_7 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_10_7 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_7 [] = {0xFF01,14,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_7 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_9_7 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_10_7 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_7 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_7 [] = {0xFF01,6,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_7 [] = {0xFF01,8,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_7 [] = {0xFF01,10,0xFFFF};
 
 
 static const struct desc_info desc_7[] = {
@@ -56,19 +56,19 @@ static const struct desc_info desc_7[] = {
 	{EIF_GENERIC(NULL), 26, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 27, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x0D /*6*/), 28, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0153 /*169*/), 29, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0159 /*172*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_7), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_7), 71, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 72, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 73, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 74, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x010B /*133*/), 75, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_13_7), 66, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 67, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 68, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 69, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0111 /*136*/), 70, 0xFFFFFFFF},
 };
 void Init7(void)
 {
 	IDSC(desc_7, 0, 6);
 	IDSC(desc_7 + 1, 2, 6);
-	IDSC(desc_7 + 32, 155, 6);
+	IDSC(desc_7 + 32, 157, 6);
 }
 
 

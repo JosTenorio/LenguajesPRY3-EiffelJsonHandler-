@@ -41,14 +41,14 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C3_c.obj 
 
-OLDOBJECTS =  pa85.obj pa85d.obj in84.obj in84d.obj ch83.obj ch83d.obj ro74.obj ro74d.obj ba73.obj \
-	ba73d.obj va82.obj va82d.obj lo81.obj lo81d.obj cr77.obj cr77d.obj vo72.obj vo72d.obj \
-	io69.obj io69d.obj mi68.obj mi68d.obj ad76.obj ad76d.obj c_90.obj c_90d.obj se67.obj \
-	se67d.obj vo71.obj vo71d.obj pr80.obj pr80d.obj po79.obj po79d.obj na97.obj na97d.obj \
-	as78.obj as78d.obj cu92.obj cu92d.obj ar94.obj ar94d.obj re98.obj re98d.obj co86.obj \
-	co86d.obj ma88.obj ma88d.obj st89.obj st89d.obj la70.obj la70d.obj ei75.obj ei75d.obj \
-	ha93.obj ha93d.obj da66.obj da66d.obj ex96.obj ex96d.obj na95.obj na95d.obj di87.obj \
-	di87d.obj io91.obj io91d.obj 
+OLDOBJECTS =  pa88.obj pa88d.obj in87.obj in87d.obj ch86.obj ch86d.obj ro77.obj ro77d.obj ba76.obj \
+	ba76d.obj va85.obj va85d.obj lo84.obj lo84d.obj cr80.obj cr80d.obj ex68.obj ex68d.obj \
+	vo75.obj vo75d.obj io72.obj io72d.obj mi71.obj mi71d.obj ad79.obj ad79d.obj c_93.obj \
+	c_93d.obj se70.obj se70d.obj vo74.obj vo74d.obj no67.obj no67d.obj pr83.obj pr83d.obj \
+	po82.obj po82d.obj as81.obj as81d.obj cu95.obj cu95d.obj ar97.obj ar97d.obj co89.obj \
+	co89d.obj ma91.obj ma91d.obj st92.obj st92d.obj la73.obj la73d.obj ha96.obj ha96d.obj \
+	ei78.obj ei78d.obj ei66.obj ei66d.obj da69.obj da69d.obj na98.obj na98d.obj di90.obj \
+	di90d.obj io94.obj io94d.obj 
 
 all::  Cobj3.lib
 

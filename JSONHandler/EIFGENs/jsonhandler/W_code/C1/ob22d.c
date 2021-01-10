@@ -1,5 +1,5 @@
 /*
- * Class OBJECT_GRAPH_MARKER
+ * Class OBJECT_GRAPH_BREADTH_FIRST_TRAVERSABLE
  */
 
 #include "eif_macros.h"
@@ -9,19 +9,25 @@
 extern "C" {
 #endif
 
-static const EIF_TYPE_INDEX egt_0_22 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_22 [] = {0xFF01,184,21,0xFFFF};
+static const EIF_TYPE_INDEX egt_0_22 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_22 [] = {0xFF01,194,21,0xFFFF};
 static const EIF_TYPE_INDEX egt_2_22 [] = {0xFF01,21,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_22 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_22 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_5_22 [] = {0xFF01,21,0xFFFF};
 static const EIF_TYPE_INDEX egt_6_22 [] = {0xFF01,21,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_22 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_22 [] = {0xFF01,13,0xFFFF};
-static const EIF_TYPE_INDEX egt_9_22 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_10_22 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_22 [] = {0xFF01,14,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_22 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_9_22 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_10_22 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_22 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_22 [] = {0xFF01,21,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_22 [] = {211,0xFF01,0xFFF9,1,131,0xFF01,101,0xFFFF};
+static const EIF_TYPE_INDEX egt_14_22 [] = {211,0xFF01,0xFFF9,2,131,0xFF01,101,0xFF01,101,0xFFFF};
+static const EIF_TYPE_INDEX egt_15_22 [] = {211,0xFF01,0xFFF9,1,131,0xFF05,0,0xFFFF};
+static const EIF_TYPE_INDEX egt_16_22 [] = {274,0xFF05,0,0xFFFF};
+static const EIF_TYPE_INDEX egt_17_22 [] = {723,136,136,0xFFFF};
+static const EIF_TYPE_INDEX egt_18_22 [] = {0xFF01,771,0xFF05,0,0xFFFF};
 
 
 static const struct desc_info desc_22[] = {
@@ -55,19 +61,42 @@ static const struct desc_info desc_22[] = {
 	{EIF_GENERIC(NULL), 26, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 27, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x2B /*21*/), 28, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0153 /*169*/), 29, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0159 /*172*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_22), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x014D /*166*/), 639, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 640, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 641, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 642, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 643, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x01 /*0*/), 609, 0},
+	{EIF_GENERIC(egt_13_22), 610, 8},
+	{EIF_GENERIC(egt_14_22), 611, 16},
+	{EIF_GENERIC(egt_15_22), 612, 24},
+	{EIF_GENERIC(egt_16_22), 613, 32},
+	{EIF_GENERIC(egt_17_22), 614, 40},
+	{EIF_NON_GENERIC(0x014D /*166*/), 615, 48},
+	{EIF_NON_GENERIC(0x014D /*166*/), 616, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x014D /*166*/), 617, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x014D /*166*/), 618, 49},
+	{EIF_NON_GENERIC(0x014D /*166*/), 619, 50},
+	{EIF_NON_GENERIC(0x014D /*166*/), 620, 51},
+	{EIF_NON_GENERIC(0x014D /*166*/), 621, 52},
+	{EIF_NON_GENERIC(0x014D /*166*/), 622, 53},
+	{EIF_GENERIC(NULL), 623, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 624, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 625, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 626, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 627, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 628, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 629, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 630, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 631, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 632, 0xFFFFFFFF},
+	{EIF_GENERIC(egt_18_22), 636, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0111 /*136*/), 633, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 634, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 635, 0xFFFFFFFF},
 };
 void Init22(void)
 {
 	IDSC(desc_22, 0, 21);
 	IDSC(desc_22 + 1, 2, 21);
-	IDSC(desc_22 + 32, 210, 21);
+	IDSC(desc_22 + 32, 235, 21);
 }
 
 

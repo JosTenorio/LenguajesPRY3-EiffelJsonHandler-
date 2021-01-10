@@ -1,5 +1,5 @@
 /*
- * Code for class BOX [INTEGER_32]
+ * Code for class BOX [G#1]
  */
 
 #include "eif_eiffel.h"

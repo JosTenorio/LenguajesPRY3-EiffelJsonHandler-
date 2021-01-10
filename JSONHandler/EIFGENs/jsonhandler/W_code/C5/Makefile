@@ -41,14 +41,14 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C5_c.obj 
 
-OLDOBJECTS =  re158.obj re158d.obj re159.obj re159d.obj re155.obj re155d.obj re156.obj re156d.obj \
-	na152.obj na152d.obj na153.obj na153d.obj na149.obj na149d.obj na150.obj na150d.obj \
-	na146.obj na146d.obj na147.obj na147d.obj na143.obj na143d.obj na144.obj na144d.obj \
-	in140.obj in140d.obj in141.obj in141d.obj in137.obj in137d.obj in138.obj in138d.obj \
-	in134.obj in134d.obj in135.obj in135d.obj in132.obj in132d.obj ch164.obj ch164d.obj \
+OLDOBJECTS =  tu132.obj tu132d.obj re158.obj re158d.obj re159.obj re159d.obj re155.obj re155d.obj \
+	re156.obj re156d.obj na152.obj na152d.obj na153.obj na153d.obj na149.obj na149d.obj \
+	na150.obj na150d.obj na146.obj na146d.obj na147.obj na147d.obj in143.obj in143d.obj \
+	in144.obj in144d.obj in140.obj in140d.obj in141.obj in141d.obj in137.obj in137d.obj \
+	in138.obj in138d.obj in134.obj in134d.obj in135.obj in135d.obj ch164.obj ch164d.obj \
 	ch161.obj ch161d.obj ch162.obj ch162d.obj ch163.obj ch163d.obj ch160.obj ch160d.obj \
 	re157.obj re157d.obj re154.obj re154d.obj na151.obj na151d.obj na148.obj na148d.obj \
-	na145.obj na145d.obj na142.obj na142d.obj in139.obj in139d.obj in136.obj in136d.obj \
+	na145.obj na145d.obj in142.obj in142d.obj in139.obj in139d.obj in136.obj in136d.obj \
 	in133.obj in133d.obj 
 
 all::  Cobj5.lib

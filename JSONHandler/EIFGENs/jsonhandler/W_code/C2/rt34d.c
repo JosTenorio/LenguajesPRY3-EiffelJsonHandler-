@@ -1,5 +1,5 @@
 /*
- * Class RT_DBG_COMMON
+ * Class RT_EXTENSION_COMMON
  */
 
 #include "eif_macros.h"
@@ -9,20 +9,19 @@
 extern "C" {
 #endif
 
-static const EIF_TYPE_INDEX egt_0_34 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_34 [] = {0xFF01,184,33,0xFFFF};
+static const EIF_TYPE_INDEX egt_0_34 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_34 [] = {0xFF01,194,33,0xFFFF};
 static const EIF_TYPE_INDEX egt_2_34 [] = {0xFF01,33,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_34 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_34 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_5_34 [] = {0xFF01,33,0xFFFF};
 static const EIF_TYPE_INDEX egt_6_34 [] = {0xFF01,33,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_34 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_34 [] = {0xFF01,13,0xFFFF};
-static const EIF_TYPE_INDEX egt_9_34 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_10_34 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_34 [] = {0xFF01,14,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_34 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_9_34 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_10_34 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_34 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_34 [] = {0xFF01,33,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_34 [] = {0xFF01,291,0xFF01,110,0xFFFF};
 
 
 static const struct desc_info desc_34[] = {
@@ -56,18 +55,16 @@ static const struct desc_info desc_34[] = {
 	{EIF_GENERIC(NULL), 26, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 27, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x43 /*33*/), 28, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0153 /*169*/), 29, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0159 /*172*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_34), 30, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 819, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 820, 0xFFFFFFFF},
-	{EIF_GENERIC(egt_13_34), 859, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 838, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 839, 0xFFFFFFFF},
 };
 void Init34(void)
 {
 	IDSC(desc_34, 0, 33);
 	IDSC(desc_34 + 1, 2, 33);
-	IDSC(desc_34 + 32, 168, 33);
-	IDSC(desc_34 + 34, 164, 33);
+	IDSC(desc_34 + 32, 170, 33);
 }
 
 

@@ -23,7 +23,7 @@ feature {NONE} -- Attributes
 
 	error_message: STRING
 
-feature {NONE} -- Interal routines
+feature {NONE} -- Internal routines
 	is_path_readable_csv: BOOLEAN
 		local
 			l_file: PLAIN_TEXT_FILE
@@ -52,7 +52,6 @@ feature {NONE} -- Interal routines
 			l_field_values: LIST [STRING]
 			l_key_temp: JSON_STRING
 			l_JSON_NULL_temp: JSON_NULL
-			l_JSON_NUMBER_temp: JSON_NUMBER
 			i: INTEGER
 		do
 

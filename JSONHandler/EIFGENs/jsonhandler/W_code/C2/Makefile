@@ -41,14 +41,14 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C2_c.obj 
 
-OLDOBJECTS =  rt33.obj rt33d.obj ex46.obj ex46d.obj ex45.obj ex45d.obj fl50.obj fl50d.obj op54.obj \
-	op54d.obj ei61.obj ei61d.obj re58.obj re58d.obj re57.obj re57d.obj ex65.obj ex65d.obj \
-	ex56.obj ex56d.obj op53.obj op53d.obj de47.obj de47d.obj co52.obj co52d.obj ol60.obj \
-	ol60d.obj no64.obj no64d.obj ex44.obj ex44d.obj st37.obj st37d.obj st36.obj st36d.obj \
-	nu38.obj nu38d.obj he43.obj he43d.obj st35.obj st35d.obj st42.obj st42d.obj st41.obj \
-	st41d.obj rt34.obj rt34d.obj ha49.obj ha49d.obj op51.obj op51d.obj sy59.obj sy59d.obj \
-	ob55.obj ob55d.obj ei63.obj ei63d.obj st40.obj st40d.obj in39.obj in39d.obj ma48.obj \
-	ma48d.obj ei62.obj ei62d.obj 
+OLDOBJECTS =  rt36.obj rt36d.obj ex49.obj ex49d.obj ex48.obj ex48d.obj pl33.obj pl33d.obj rt35.obj \
+	rt35d.obj fl53.obj fl53d.obj op57.obj op57d.obj ei64.obj ei64d.obj re61.obj re61d.obj \
+	re60.obj re60d.obj ex59.obj ex59d.obj op56.obj op56d.obj de50.obj de50d.obj co55.obj \
+	co55d.obj ol63.obj ol63d.obj ex47.obj ex47d.obj st40.obj st40d.obj st39.obj st39d.obj \
+	he46.obj he46d.obj nu41.obj nu41d.obj st45.obj st45d.obj st44.obj st44d.obj st38.obj \
+	st38d.obj rt37.obj rt37d.obj rt34.obj rt34d.obj ha52.obj ha52d.obj op54.obj op54d.obj \
+	sy62.obj sy62d.obj ob58.obj ob58d.obj st43.obj st43d.obj in42.obj in42d.obj ma51.obj \
+	ma51d.obj ei65.obj ei65d.obj 
 
 all::  Cobj2.lib
 

@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C11_c.obj 
 
-OLDOBJECTS =  ar356.obj ar356d.obj re359.obj re359d.obj it362.obj it362d.obj it361.obj it361d.obj \
-	ar357.obj ar357d.obj re338.obj re338d.obj in344.obj in344d.obj to348.obj to348d.obj \
-	dy346.obj dy346d.obj dy351.obj dy351d.obj ha350.obj ha350d.obj ge358.obj ge358d.obj \
-	in360.obj in360d.obj cu331.obj cu331d.obj ar337.obj ar337d.obj dy340.obj dy340d.obj \
-	bo339.obj bo339d.obj ta345.obj ta345d.obj ta352.obj ta352d.obj st349.obj st349d.obj \
-	li347.obj li347d.obj ha353.obj ha353d.obj un342.obj un342d.obj ta355.obj ta355d.obj \
-	ac332.obj ac332d.obj co330.obj co330d.obj bi336.obj bi336d.obj dy341.obj dy341d.obj \
-	ba333.obj ba333d.obj ch343.obj ch343d.obj ta354.obj ta354d.obj co334.obj co334d.obj \
-	bo335.obj bo335d.obj 
+OLDOBJECTS =  sp335.obj sp335d.obj ar362.obj ar362d.obj sp336.obj sp336d.obj na337.obj na337d.obj \
+	re331.obj re331d.obj li343.obj li343d.obj ar351.obj ar351d.obj re338.obj re338d.obj \
+	in349.obj in349d.obj to354.obj to354d.obj dy359.obj dy359d.obj ge330.obj ge330d.obj \
+	in332.obj in332d.obj re333.obj re333d.obj cu345.obj cu345d.obj tr344.obj tr344d.obj \
+	se352.obj se352d.obj ar361.obj ar361d.obj dy355.obj dy355d.obj bo339.obj bo339d.obj \
+	ta350.obj ta350d.obj li360.obj li360d.obj un357.obj un357d.obj ty334.obj ty334d.obj \
+	ac346.obj ac346d.obj co342.obj co342d.obj bi353.obj bi353d.obj fi340.obj fi340d.obj \
+	dy356.obj dy356d.obj ba347.obj ba347d.obj ch358.obj ch358d.obj co348.obj co348d.obj \
+	bo341.obj bo341d.obj 
 
 all::  Cobj11.lib
 

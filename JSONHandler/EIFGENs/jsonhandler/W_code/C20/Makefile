@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C20_c.obj 
 
-OLDOBJECTS =  sp638.obj sp638d.obj ar648.obj ar648d.obj sp639.obj sp639d.obj na647.obj na647d.obj \
-	re641.obj re641d.obj it644.obj it644d.obj it643.obj it643d.obj li653.obj li653d.obj \
-	ar650.obj ar650d.obj ar649.obj ar649d.obj re627.obj re627d.obj in633.obj in633d.obj \
-	to637.obj to637d.obj dy635.obj dy635d.obj ge640.obj ge640d.obj in642.obj in642d.obj \
-	re645.obj re645d.obj cu656.obj cu656d.obj tr654.obj tr654d.obj se651.obj se651d.obj \
-	dy629.obj dy629d.obj bo628.obj bo628d.obj ta634.obj ta634d.obj li636.obj li636d.obj \
-	un631.obj un631d.obj ty646.obj ty646d.obj ac657.obj ac657d.obj co655.obj co655d.obj \
-	fi652.obj fi652d.obj dy630.obj dy630d.obj ba658.obj ba658d.obj ch632.obj ch632d.obj \
-	co659.obj co659d.obj 
+OLDOBJECTS =  sp630.obj sp630d.obj ar633.obj ar633d.obj ar658.obj ar658d.obj sp631.obj sp631d.obj \
+	na632.obj na632d.obj it659.obj it659d.obj ar634.obj ar634d.obj ar637.obj ar637d.obj \
+	re635.obj re635d.obj to640.obj to640d.obj dy645.obj dy645d.obj ge629.obj ge629d.obj \
+	se638.obj se638d.obj ar647.obj ar647d.obj dy641.obj dy641d.obj bo636.obj bo636d.obj \
+	li646.obj li646d.obj ha628.obj ha628d.obj un643.obj un643d.obj ta627.obj ta627d.obj \
+	bi639.obj bi639d.obj dy642.obj dy642d.obj ch644.obj ch644d.obj rt648.obj rt648d.obj \
+	rt649.obj rt649d.obj rt650.obj rt650d.obj rt651.obj rt651d.obj rt652.obj rt652d.obj \
+	rt653.obj rt653d.obj rt654.obj rt654d.obj rt655.obj rt655d.obj rt657.obj rt657d.obj \
+	di656.obj di656d.obj 
 
 all::  Cobj20.lib
 

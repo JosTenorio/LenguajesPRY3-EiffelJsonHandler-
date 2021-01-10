@@ -10,12 +10,12 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F338_2087(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F338_2088(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F338_2089(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F338_2090(EIF_REFERENCE);
-extern void F338_2091(EIF_REFERENCE);
-extern void F338_4892(EIF_REFERENCE, int);
+extern EIF_TYPED_VALUE F338_1980(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F338_1981(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F338_1982(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F338_1983(EIF_REFERENCE);
+extern void F338_1984(EIF_REFERENCE);
+extern void F338_5053(EIF_REFERENCE, int);
 extern void EIF_Minit338(void);
 
 #ifdef __cplusplus
@@ -39,7 +39,7 @@ extern "C" {
 #endif
 
 /* {RESIZABLE}.growth_percentage */
-EIF_TYPED_VALUE F338_2087 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F338_1980 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
@@ -48,7 +48,7 @@ EIF_TYPED_VALUE F338_2087 (EIF_REFERENCE Current)
 }
 
 /* {RESIZABLE}.minimal_increase */
-EIF_TYPED_VALUE F338_2088 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F338_1981 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
@@ -57,7 +57,7 @@ EIF_TYPED_VALUE F338_2088 (EIF_REFERENCE Current)
 }
 
 /* {RESIZABLE}.additional_space */
-EIF_TYPED_VALUE F338_2089 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F338_1982 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "additional_space";
@@ -80,17 +80,17 @@ EIF_TYPED_VALUE F338_2089 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 337, Current, 0, 0, 3847);
+	RTEAA(l_feature_name, 337, Current, 0, 0, 3074);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(337, Current, 3847);
+	RTDBGEAA(337, Current, 3074);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1860, dtype))(Current)).it_i4);
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1863, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1779, dtype))(Current)).it_i4);
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1782, dtype))(Current)).it_i4);
 	ui4_1 = ti4_2;
 	ti4_3 = eif_max_int32 ((EIF_INTEGER_32) (ti4_1 / ((EIF_INTEGER_32) 2L)),ui4_1);
 	Result = (EIF_INTEGER_32) ti4_3;
@@ -116,7 +116,7 @@ EIF_TYPED_VALUE F338_2089 (EIF_REFERENCE Current)
 }
 
 /* {RESIZABLE}.resizable */
-EIF_TYPED_VALUE F338_2090 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F338_1983 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "resizable";
@@ -134,12 +134,12 @@ EIF_TYPED_VALUE F338_2090 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 337, Current, 0, 0, 3848);
+	RTEAA(l_feature_name, 337, Current, 0, 0, 3075);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(337, Current, 3848);
+	RTDBGEAA(337, Current, 3075);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
@@ -156,7 +156,7 @@ EIF_TYPED_VALUE F338_2090 (EIF_REFERENCE Current)
 }
 
 /* {RESIZABLE}.automatic_grow */
-void F338_2091 (EIF_REFERENCE Current)
+void F338_1984 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "automatic_grow";
@@ -183,17 +183,17 @@ void F338_2091 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 337, Current, 0, 0, 3849);
+	RTEAA(l_feature_name, 337, Current, 0, 0, 3070);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(337, Current, 3849);
+	RTDBGEAA(337, Current, 3070);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("resizable", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1861, dtype))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1780, dtype))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;
@@ -204,14 +204,14 @@ body:;
 	if (RTAL & CK_ENSURE) {
 		in_assertion = ~0;
 		RTE_OT
-		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1860, dtype))(Current)).it_i4);
+		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1779, dtype))(Current)).it_i4);
 		ti4_1 = ti4_2;
 		tr1 = NULL;
 		RTE_O
 		tr1 = RTLA;
 		RTE_OE
 		RTE_OT
-		ti4_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1864, dtype))(Current)).it_i4);
+		ti4_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1783, dtype))(Current)).it_i4);
 		ti4_2 = ti4_3;
 		tr2 = NULL;
 		RTE_O
@@ -220,14 +220,14 @@ body:;
 		in_assertion = 0;
 	}
 	RTHOOK(2);
-	ti4_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1860, dtype))(Current)).it_i4);
-	ti4_4 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1864, dtype))(Current)).it_i4);
+	ti4_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1779, dtype))(Current)).it_i4);
+	ti4_4 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1783, dtype))(Current)).it_i4);
 	ui4_1 = (EIF_INTEGER_32) (ti4_3 + ti4_4);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(1866, dtype))(Current, ui4_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(1785, dtype))(Current, ui4_1x);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("increased_capacity", EX_POST);
-		ti4_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1860, dtype))(Current)).it_i4);
+		ti4_3 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1779, dtype))(Current)).it_i4);
 		RTCO(tr1);
 		RTCO(tr2);
 		if ((EIF_BOOLEAN) (ti4_3 >= (EIF_INTEGER_32) (ti4_1 + ti4_2))) {
@@ -248,7 +248,7 @@ body:;
 }
 
 /* {RESIZABLE}._invariant */
-void F338_4892 (EIF_REFERENCE Current, int where)
+void F338_5053 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -263,11 +263,11 @@ void F338_4892 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 337, Current, 0, 4891);
+	RTEAINV(l_feature_name, 337, Current, 0, 5052);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("increase_by_at_least_one", Current);
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1863, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1782, dtype))(Current)).it_i4);
 	if ((EIF_BOOLEAN) (ti4_1 >= ((EIF_INTEGER_32) 1L))) {
 		RTCK;
 	} else {

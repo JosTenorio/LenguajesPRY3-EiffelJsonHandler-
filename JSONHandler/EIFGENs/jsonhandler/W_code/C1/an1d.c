@@ -9,18 +9,18 @@
 extern "C" {
 #endif
 
-static const EIF_TYPE_INDEX egt_0_1 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_1 [] = {0xFF01,184,0,0xFFFF};
+static const EIF_TYPE_INDEX egt_0_1 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_1 [] = {0xFF01,194,0,0xFFFF};
 static const EIF_TYPE_INDEX egt_2_1 [] = {0xFF01,0,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_1 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_1 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_5_1 [] = {0xFF01,0,0xFFFF};
 static const EIF_TYPE_INDEX egt_6_1 [] = {0xFF01,0,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_1 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_1 [] = {0xFF01,13,0xFFFF};
-static const EIF_TYPE_INDEX egt_9_1 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_10_1 [] = {0xFF01,179,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_1 [] = {0xFF01,14,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_1 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_9_1 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_10_1 [] = {0xFF01,182,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_1 [] = {0xFF01,15,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_1 [] = {0xFF01,0,0xFFFF};
 
 
@@ -55,7 +55,7 @@ static const struct desc_info desc_1[] = {
 	{EIF_GENERIC(NULL), 26, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 27, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x01 /*0*/), 28, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0153 /*169*/), 29, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0159 /*172*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_1), 30, 0xFFFFFFFF},
 };
 void Init1(void)

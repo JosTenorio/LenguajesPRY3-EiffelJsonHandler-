@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C6_c.obj 
 
-OLDOBJECTS =  po170.obj po170d.obj po171.obj po171d.obj ty185.obj ty185d.obj ty189.obj ty189d.obj \
-	st180.obj st180d.obj st177.obj st177d.obj im179.obj im179d.obj im176.obj im176d.obj \
-	ch165.obj ch165d.obj bo167.obj bo167d.obj bo168.obj bo168d.obj re178.obj re178d.obj \
-	re175.obj re175d.obj po169.obj po169d.obj it188.obj it188d.obj it187.obj it187d.obj \
-	it197.obj it197d.obj bo166.obj bo166d.obj st174.obj st174d.obj re172.obj re172d.obj \
-	ce193.obj ce193d.obj im173.obj im173d.obj co181.obj co181d.obj in186.obj in186d.obj \
-	in196.obj in196d.obj re194.obj re194d.obj li190.obj li190d.obj ty195.obj ty195d.obj \
-	li191.obj li191d.obj li192.obj li192d.obj en182.obj en182d.obj un184.obj un184d.obj \
-	en183.obj en183d.obj 
+OLDOBJECTS =  po173.obj po173d.obj po174.obj po174d.obj ty195.obj ty195d.obj ty196.obj ty196d.obj \
+	st183.obj st183d.obj st180.obj st180d.obj im182.obj im182d.obj im179.obj im179d.obj \
+	na170.obj na170d.obj na171.obj na171d.obj ch165.obj ch165d.obj bo167.obj bo167d.obj \
+	bo168.obj bo168d.obj re181.obj re181d.obj re178.obj re178d.obj po172.obj po172d.obj \
+	na169.obj na169d.obj bo166.obj bo166d.obj st177.obj st177d.obj re175.obj re175d.obj \
+	im176.obj im176d.obj js190.obj js190d.obj co191.obj co191d.obj js189.obj js189d.obj \
+	js188.obj js188d.obj js187.obj js187d.obj js186.obj js186d.obj js184.obj js184d.obj \
+	js185.obj js185d.obj ta197.obj ta197d.obj un194.obj un194d.obj en193.obj en193d.obj \
+	en192.obj en192d.obj 
 
 all::  Cobj6.lib
 

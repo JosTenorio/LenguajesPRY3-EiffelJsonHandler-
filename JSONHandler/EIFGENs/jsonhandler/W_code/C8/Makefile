@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C8_c.obj 
 
-OLDOBJECTS =  ty244.obj ty244d.obj ty245.obj ty245d.obj ty246.obj ty246d.obj ty247.obj ty247d.obj \
-	ty248.obj ty248d.obj ty249.obj ty249d.obj ty250.obj ty250d.obj ty251.obj ty251d.obj \
-	ty252.obj ty252d.obj ty253.obj ty253d.obj ty254.obj ty254d.obj ty255.obj ty255d.obj \
-	ty256.obj ty256d.obj re263.obj re263d.obj it261.obj it261d.obj it260.obj it260d.obj \
-	li232.obj li232d.obj li258.obj li258d.obj in242.obj in242d.obj in257.obj in257d.obj \
-	cu235.obj cu235d.obj tr233.obj tr233d.obj tr259.obj tr259d.obj ta243.obj ta243d.obj \
-	ac236.obj ac236d.obj co234.obj co234d.obj co262.obj co262d.obj bi240.obj bi240d.obj \
-	fi231.obj fi231d.obj ba237.obj ba237d.obj ch241.obj ch241d.obj co238.obj co238d.obj \
-	bo239.obj bo239d.obj 
+OLDOBJECTS =  sp246.obj sp246d.obj ar249.obj ar249d.obj ty231.obj ty231d.obj ty232.obj ty232d.obj \
+	ty233.obj ty233d.obj ty234.obj ty234d.obj ty235.obj ty235d.obj ty236.obj ty236d.obj \
+	ty237.obj ty237d.obj ty238.obj ty238d.obj sp247.obj sp247d.obj na248.obj na248d.obj \
+	re240.obj re240d.obj it243.obj it243d.obj it242.obj it242d.obj li256.obj li256d.obj \
+	ar250.obj ar250d.obj re251.obj re251d.obj in262.obj in262d.obj ge239.obj ge239d.obj \
+	in241.obj in241d.obj re244.obj re244d.obj cu258.obj cu258d.obj tr257.obj tr257d.obj \
+	bo252.obj bo252d.obj ta263.obj ta263d.obj ty245.obj ty245d.obj ac259.obj ac259d.obj \
+	co255.obj co255d.obj fi253.obj fi253d.obj ba260.obj ba260d.obj co261.obj co261d.obj \
+	bo254.obj bo254d.obj 
 
 all::  Cobj8.lib
 

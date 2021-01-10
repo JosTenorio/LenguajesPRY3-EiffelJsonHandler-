@@ -41,9 +41,12 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C24_c.obj 
 
-OLDOBJECTS =  rt764.obj rt764d.obj rt765.obj rt765d.obj rt766.obj rt766d.obj rt767.obj rt767d.obj \
-	rt768.obj rt768d.obj rt769.obj rt769d.obj rt759.obj rt759d.obj rt760.obj rt760d.obj \
-	rt761.obj rt761d.obj rt762.obj rt762d.obj rt763.obj rt763d.obj 
+OLDOBJECTS =  ar761.obj ar761d.obj in759.obj in759d.obj to764.obj to764d.obj dy769.obj dy769d.obj \
+	se762.obj se762d.obj ar771.obj ar771d.obj dy765.obj dy765d.obj ta760.obj ta760d.obj \
+	li770.obj li770d.obj li776.obj li776d.obj un767.obj un767d.obj bi763.obj bi763d.obj \
+	dy766.obj dy766d.obj ch768.obj ch768d.obj li779.obj li779d.obj li778.obj li778d.obj \
+	li777.obj li777d.obj rt775.obj rt775d.obj ar772.obj ar772d.obj ar773.obj ar773d.obj \
+	qu774.obj qu774d.obj 
 
 all::  Cobj24.lib
 

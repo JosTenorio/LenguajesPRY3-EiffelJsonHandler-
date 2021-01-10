@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C17_c.obj 
 
-OLDOBJECTS =  fu544.obj fu544d.obj ty546.obj ty546d.obj ty547.obj ty547d.obj ty550.obj ty550d.obj \
-	ty551.obj ty551d.obj ty554.obj ty554d.obj ty555.obj ty555d.obj ty558.obj ty558d.obj \
-	ty559.obj ty559d.obj ty548.obj ty548d.obj ty552.obj ty552d.obj ty556.obj ty556d.obj \
-	ty560.obj ty560d.obj to531.obj to531d.obj ce539.obj ce539d.obj dy529.obj dy529d.obj \
-	dy534.obj dy534d.obj ha533.obj ha533d.obj ta528.obj ta528d.obj ta535.obj ta535d.obj \
-	st532.obj st532d.obj li530.obj li530d.obj ha536.obj ha536d.obj ta538.obj ta538d.obj \
-	rt545.obj rt545d.obj rt549.obj rt549d.obj rt553.obj rt553d.obj rt557.obj rt557d.obj \
-	ta537.obj ta537d.obj ar540.obj ar540d.obj ar543.obj ar543d.obj qu541.obj qu541d.obj \
-	di542.obj di542d.obj 
+OLDOBJECTS =  sp529.obj sp529d.obj ar539.obj ar539d.obj ty528.obj ty528d.obj sp530.obj sp530d.obj \
+	na538.obj na538d.obj re532.obj re532d.obj it535.obj it535d.obj it534.obj it534d.obj \
+	li546.obj li546d.obj ar540.obj ar540d.obj ar554.obj ar554d.obj re541.obj re541d.obj \
+	in552.obj in552d.obj to557.obj to557d.obj ge531.obj ge531d.obj in533.obj in533d.obj \
+	re536.obj re536d.obj cu548.obj cu548d.obj tr547.obj tr547d.obj se555.obj se555d.obj \
+	dy558.obj dy558d.obj bo542.obj bo542d.obj ta553.obj ta553d.obj un560.obj un560d.obj \
+	ty537.obj ty537d.obj ac549.obj ac549d.obj co545.obj co545d.obj bi556.obj bi556d.obj \
+	fi543.obj fi543d.obj dy559.obj dy559d.obj ba550.obj ba550d.obj co551.obj co551d.obj \
+	bo544.obj bo544d.obj 
 
 all::  Cobj17.lib
 

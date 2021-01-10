@@ -55,13 +55,13 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C1_c.obj 
 
-OLDOBJECTS =  an1.o an1d.o is28.o is28d.o cs2.o cs2d.o op15.o op15d.o st14.o \
-	st14d.o pl30.o pl30d.o is13.o is13d.o ut11.o ut11d.o ut12.o ut12d.o \
-	rt10.o rt10d.o rt32.o rt32d.o sy9.o sy9d.o ex29.o ex29d.o ex27.o \
-	ex27d.o re26.o re26d.o do24.o do24d.o re25.o re25d.o ch8.o ch8d.o \
-	sy7.o sy7d.o rt31.o rt31d.o en6.o en6d.o sy5.o sy5d.o co4.o co4d.o \
-	ve3.o ve3d.o ma23.o ma23d.o ob19.o ob19d.o ob22.o ob22d.o sy21.o \
-	sy21d.o sy20.o sy20d.o ob18.o ob18d.o en17.o en17d.o co16.o co16d.o 
+OLDOBJECTS =  an1.o an1d.o is31.o is31d.o js18.o js18d.o st17.o st17d.o op16.o \
+	op16d.o is15.o is15d.o ut13.o ut13d.o ut14.o ut14d.o rt12.o rt12d.o \
+	sy11.o sy11d.o ex32.o ex32d.o ex30.o ex30d.o cs10.o cs10d.o da9.o \
+	da9d.o re29.o re29d.o do27.o do27d.o re28.o re28d.o ch8.o ch8d.o \
+	sy7.o sy7d.o js6.o js6d.o en5.o en5d.o co4.o co4d.o sy3.o sy3d.o \
+	ve2.o ve2d.o ma26.o ma26d.o ob22.o ob22d.o ob25.o ob25d.o sy23.o \
+	sy23d.o sy24.o sy24d.o ob21.o ob21d.o co20.o co20d.o en19.o en19d.o 
 
 all: Cobj1.o
 
