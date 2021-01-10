@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F68_1040(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F68_1041(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F68_1047(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F68_1048(EIF_REFERENCE);
 extern void EIF_Minit68(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {EXTERNAL_FAILURE}.code */
-EIF_TYPED_VALUE F68_1040 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F68_1047 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -53,16 +53,16 @@ EIF_TYPED_VALUE F68_1040 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 67, Current, 0, 0, 1116);
+	RTEAA(l_feature_name, 67, Current, 0, 0, 1122);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(67, Current, 1116);
+	RTDBGEAA(67, Current, 1122);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(669, 31))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(676, 31))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -76,8 +76,8 @@ EIF_TYPED_VALUE F68_1040 (EIF_REFERENCE Current)
 }
 
 /* {EXTERNAL_FAILURE}.tag */
-RTOID (F68_1041)
-EIF_TYPED_VALUE F68_1041 (EIF_REFERENCE Current)
+RTOID (F68_1048)
+EIF_TYPED_VALUE F68_1048 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -92,7 +92,7 @@ EIF_TYPED_VALUE F68_1041 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F68_1041);
+	RTOTDR(F68_1048);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -104,12 +104,12 @@ EIF_TYPED_VALUE F68_1041 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 67, Current, 0, 0, 1117);
+	RTEAA(l_feature_name, 67, Current, 0, 0, 1123);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(67, Current, 1117);
+	RTDBGEAA(67, Current, 1123);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -117,7 +117,7 @@ EIF_TYPED_VALUE F68_1041 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(178, 0x01).id);
 	tr2 = RTMS_EX_H("External event.",15,214571566);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3392, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3397, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -137,7 +137,7 @@ EIF_TYPED_VALUE F68_1041 (EIF_REFERENCE Current)
 void EIF_Minit68 (void)
 {
 	GTCX
-	RTOTS (1041,F68_1041)
+	RTOTS (1048,F68_1048)
 }
 
 

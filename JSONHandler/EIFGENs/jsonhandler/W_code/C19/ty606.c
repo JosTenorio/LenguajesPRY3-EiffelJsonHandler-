@@ -1,5 +1,5 @@
 /*
- * Code for class reference TYPED_POINTER [REAL_64]
+ * Code for class reference TYPED_POINTER [NATURAL_8]
  */
 
 #include "eif_eiffel.h"

@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F84_1072(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F84_1073(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F84_1079(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F84_1080(EIF_REFERENCE);
 extern void EIF_Minit84(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {LOOP_INVARIANT_VIOLATION}.code */
-EIF_TYPED_VALUE F84_1072 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F84_1079 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -53,16 +53,16 @@ EIF_TYPED_VALUE F84_1072 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 83, Current, 0, 0, 1148);
+	RTEAA(l_feature_name, 83, Current, 0, 0, 1154);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(83, Current, 1148);
+	RTDBGEAA(83, Current, 1154);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(662, 31))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(669, 31))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -76,8 +76,8 @@ EIF_TYPED_VALUE F84_1072 (EIF_REFERENCE Current)
 }
 
 /* {LOOP_INVARIANT_VIOLATION}.tag */
-RTOID (F84_1073)
-EIF_TYPED_VALUE F84_1073 (EIF_REFERENCE Current)
+RTOID (F84_1080)
+EIF_TYPED_VALUE F84_1080 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -92,7 +92,7 @@ EIF_TYPED_VALUE F84_1073 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F84_1073);
+	RTOTDR(F84_1080);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -104,12 +104,12 @@ EIF_TYPED_VALUE F84_1073 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 83, Current, 0, 0, 1149);
+	RTEAA(l_feature_name, 83, Current, 0, 0, 1155);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(83, Current, 1149);
+	RTDBGEAA(83, Current, 1155);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -117,7 +117,7 @@ EIF_TYPED_VALUE F84_1073 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(178, 0x01).id);
 	tr2 = RTMS_EX_H("Loop invariant violated.",24,122405166);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3392, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3397, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -137,7 +137,7 @@ EIF_TYPED_VALUE F84_1073 (EIF_REFERENCE Current)
 void EIF_Minit84 (void)
 {
 	GTCX
-	RTOTS (1073,F84_1073)
+	RTOTS (1080,F84_1080)
 }
 
 

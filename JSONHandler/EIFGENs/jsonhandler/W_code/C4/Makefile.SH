@@ -57,11 +57,11 @@ OBJECTS = big_file_C4_c.obj
 
 OLDOBJECTS =  ap117.o ap117d.o ar116.o ar116d.o mi123.o mi123d.o ab127.o ab127d.o \
 	pr118.o pr118d.o ha130.o ha130d.o re103.o re103d.o de125.o de125d.o \
-	re108.o re108d.o rt106.o rt106d.o na100.o na100d.o mi124.o mi124d.o \
-	st115.o st115d.o pl121.o pl121d.o st114.o st114d.o in122.o in122d.o \
-	nu129.o nu129d.o re101.o re101d.o st113.o st113d.o re107.o re107d.o \
-	re102.o re102d.o rt128.o rt128d.o rt126.o rt126d.o rt105.o rt105d.o \
-	ra120.o ra120d.o in104.o in104d.o pa131.o pa131d.o fi119.o fi119d.o \
+	rt106.o rt106d.o re108.o re108d.o na100.o na100d.o st115.o st115d.o \
+	pl121.o pl121d.o st114.o st114d.o mi124.o mi124d.o in122.o in122d.o \
+	re101.o re101d.o nu129.o nu129d.o st113.o st113d.o rt126.o rt126d.o \
+	rt128.o rt128d.o rt105.o rt105d.o re107.o re107d.o re102.o re102d.o \
+	in104.o in104d.o ra120.o ra120d.o pa131.o pa131d.o fi119.o fi119d.o \
 	fi111.o fi111d.o ex99.o ex99d.o fi109.o fi109d.o ar112.o ar112d.o \
 	un110.o un110d.o 
 

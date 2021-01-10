@@ -1,7 +1,5 @@
 note
 	description: "JSONHandler application root class"
-	date: "$Date$"
-	revision: "$Revision$"
 
 class
 	APPLICATION
@@ -22,7 +20,7 @@ feature {NONE} -- Initialization
 		end
 
 feature
-	main: JSONHANDLER
+	main: MAIN
 
 
 end

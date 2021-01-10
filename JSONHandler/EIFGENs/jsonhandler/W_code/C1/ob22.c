@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F22_561(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F22_569(EIF_REFERENCE);
 extern void EIF_Minit22(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {OBJECT_GRAPH_BREADTH_FIRST_TRAVERSABLE}.new_dispenser */
-EIF_TYPED_VALUE F22_561 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F22_569 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "new_dispenser";
@@ -57,26 +57,26 @@ EIF_TYPED_VALUE F22_561 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 21, Current, 0, 0, 636);
+	RTEAA(l_feature_name, 21, Current, 0, 0, 643);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(21, Current, 636);
+	RTDBGEAA(21, Current, 643);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(0, 0xF8000303, 0,0); /* Result */
+	RTDBGAL(0, 0xF8000308, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,771,0xFF05,0,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,776,0xFF05,0,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
 		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
 		tr1 = RTLN(typres0.id);
 	}
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(562, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(570, dtype))(Current)).it_i4);
 	ui4_1 = ti4_1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(2124, Dtype(tr1)))(tr1, ui4_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(2131, Dtype(tr1)))(tr1, ui4_1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	if (RTAL & CK_ENSURE) {

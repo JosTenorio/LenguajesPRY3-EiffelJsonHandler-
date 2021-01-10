@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern void F123_2619(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F123_2620(EIF_REFERENCE);
+extern void F123_2626(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F123_2627(EIF_REFERENCE);
 extern void EIF_Minit123(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {MISMATCH_CORRECTOR}.correct_mismatch */
-void F123_2619 (EIF_REFERENCE Current)
+void F123_2626 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "correct_mismatch";
@@ -67,19 +67,19 @@ void F123_2619 (EIF_REFERENCE Current)
 	RTLU(SK_REF, &loc1);
 	RTLU(SK_REF, &loc2);
 	
-	RTEAA(l_feature_name, 122, Current, 2, 0, 5012);
+	RTEAA(l_feature_name, 122, Current, 2, 0, 5018);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(122, Current, 5012);
+	RTDBGEAA(122, Current, 5018);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(1, 0xF80000B3, 0, 0); /* loc1 */
 	tr1 = RTLN(eif_new_type(179, 0x01).id);
 	tr2 = RTMS_EX_H("Mismatch: ",10,1538098208);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3364, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3369, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	loc1 = (EIF_REFERENCE) RTCCL(tr1);
 	RTHOOK(2);
@@ -91,12 +91,12 @@ void F123_2619 (EIF_REFERENCE Current)
 	RTHOOK(3);
 	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(8, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	RTNHOOK(3,1);
-	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(2457, "name_32", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
+	tr2 = ((up2x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(2464, "name_32", tr1))(tr1)), (((up2x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up2x.it_r = RTBU(up2x))), (up2x.type = SK_POINTER), up2x.it_r);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(3417, "append", loc1))(loc1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(3422, "append", loc1))(loc1, ur1x);
 	RTHOOK(4);
 	ur1 = RTCCL(loc1);
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(913, "raise_retrieval_exception", loc2))(loc2, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(920, "raise_retrieval_exception", loc2))(loc2, ur1x);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(5);
@@ -111,8 +111,8 @@ void F123_2619 (EIF_REFERENCE Current)
 }
 
 /* {MISMATCH_CORRECTOR}.mismatch_information */
-RTOID (F123_2620)
-EIF_TYPED_VALUE F123_2620 (EIF_REFERENCE Current)
+RTOID (F123_2627)
+EIF_TYPED_VALUE F123_2627 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "mismatch_information";
@@ -124,7 +124,7 @@ EIF_TYPED_VALUE F123_2620 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F123_2620);
+	RTOTDR(F123_2627);
 	dtype = Dtype(Current);
 
 	RTLI(2);
@@ -134,12 +134,12 @@ EIF_TYPED_VALUE F123_2620 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 122, Current, 0, 0, 5013);
+	RTEAA(l_feature_name, 122, Current, 0, 0, 5019);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(122, Current, 5013);
+	RTDBGEAA(122, Current, 5019);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -164,7 +164,7 @@ EIF_TYPED_VALUE F123_2620 (EIF_REFERENCE Current)
 void EIF_Minit123 (void)
 {
 	GTCX
-	RTOTS (2620,F123_2620)
+	RTOTS (2627,F123_2627)
 }
 
 

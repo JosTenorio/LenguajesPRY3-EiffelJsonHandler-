@@ -1,11 +1,8 @@
 note
-	description: "Summary description for {JSONHANDLER}."
-	author: ""
-	date: "$Date$"
-	revision: "$Revision$"
+	description: "Class in charge of handling the iterative cycle of command inputs. It is also the client of other classes"
 
 class
-	JSONHANDLER
+	MAIN
 
 create
 	make
@@ -36,14 +33,14 @@ feature {NONE} -- Internal routines (command options)
 
 	load (command_list: LIST[STRING])
 		local
-			temp:JSON_OBJECT
+			temp: JSON_OBJECT
 		do
 			handler.set_path (command_list.i_th (3))
-			temp := handler.create_json_from_csv (command_list.i_th (2))
+			temp := handler.create_json_from_csv ()
 			if handler.has_error then
 				handler.handle_error
 			else
-				database.insert (command_list.i_th (2), temp)
+				database.insert_document (command_list.i_th (2), temp)
 				if database.has_error then
 					database.handle_error
 				else
@@ -54,29 +51,21 @@ feature {NONE} -- Internal routines (command options)
 
 
 	save (command_list: LIST[STRING])
---	local
---		temp := JSON_OBJECT
 		do
 			print ("Document identified by '" + command_list.i_th (2) + "' saved at " + command_list.i_th (2) + " %N")
 		end
 
 	savecsv (command_list: LIST[STRING])
---	local
---		temp := JSON_OBJECT
 		do
 			print ("Document identified by '" + command_list.i_th (2) + "' saved as a csv file at " + command_list.i_th (2) + " %N")
 		end
 
 	select_command (command_list: LIST[STRING])
---	local
---		temp := JSON_OBJECT
 		do
 			print ("Select result saved in document identified by '" + command_list.i_th (3) + "'%N")
 		end
 
 	project (command_list: LIST[STRING])
---	local
---		temp := JSON_OBJECT
 		do
 			print ("Projection result saved in document identified by '" + command_list.i_th (3) + "'%N")
 		end
@@ -117,4 +106,4 @@ feature -- Iterative execution cycle
 	            end
 			end
 		end
-end
+end -- Class MAIN

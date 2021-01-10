@@ -10,11 +10,11 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F25_585(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F25_586(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F25_587(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F25_588(EIF_REFERENCE);
-extern void F25_589(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F25_593(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F25_594(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F25_595(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F25_596(EIF_REFERENCE);
+extern void F25_597(EIF_REFERENCE);
 extern void EIF_Minit25(void);
 
 #ifdef __cplusplus
@@ -37,7 +37,7 @@ extern "C" {
 #endif
 
 /* {OBJECT_GRAPH_MARKER}.is_marked */
-EIF_TYPED_VALUE F25_585 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F25_593 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "is_marked";
@@ -65,12 +65,12 @@ EIF_TYPED_VALUE F25_585 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 24, Current, 0, 1, 659);
+	RTEAA(l_feature_name, 24, Current, 0, 1, 665);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(24, Current, 659);
+	RTDBGEAA(24, Current, 665);
 	uarg1 = (EIF_BOOLEAN) RTS_OU (arg1);
 	uarg = uarg1;
 	if (uarg) {
@@ -92,7 +92,7 @@ body:;
 	RTHOOK(2);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
 	up1 = arg1;
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(423, 14))(Current, up1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(426, 14))(Current, up1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -111,7 +111,7 @@ body:;
 }
 
 /* {OBJECT_GRAPH_MARKER}.mark */
-void F25_586 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F25_594 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "mark";
@@ -140,12 +140,12 @@ void F25_586 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 24, Current, 0, 1, 660);
+	RTEAA(l_feature_name, 24, Current, 0, 1, 666);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(24, Current, 660);
+	RTDBGEAA(24, Current, 666);
 	uarg1 = (EIF_BOOLEAN) RTS_OU (arg1);
 	uarg = uarg1;
 	if (uarg) {
@@ -166,12 +166,12 @@ label_1:
 body:;
 	RTHOOK(2);
 	up1 = arg1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(425, 14))(Current, up1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(428, 14))(Current, up1x);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("is_marked", EX_POST);
 		ur1 = RTCCL(arg1);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(585, dtype))(Current, ur1x)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(593, dtype))(Current, ur1x)).it_b);
 		if (tb1) {
 			RTCK;
 		} else {
@@ -195,7 +195,7 @@ body:;
 }
 
 /* {OBJECT_GRAPH_MARKER}.unmark */
-void F25_587 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F25_595 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "unmark";
@@ -224,12 +224,12 @@ void F25_587 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 24, Current, 0, 1, 661);
+	RTEAA(l_feature_name, 24, Current, 0, 1, 667);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(24, Current, 661);
+	RTDBGEAA(24, Current, 667);
 	uarg1 = (EIF_BOOLEAN) RTS_OU (arg1);
 	uarg = uarg1;
 	if (uarg) {
@@ -250,12 +250,12 @@ label_1:
 body:;
 	RTHOOK(2);
 	up1 = arg1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(424, 14))(Current, up1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(427, 14))(Current, up1x);
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(3);
 		RTCT("is_not_marked", EX_POST);
 		ur1 = RTCCL(arg1);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(585, dtype))(Current, ur1x)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(593, dtype))(Current, ur1x)).it_b);
 		if ((EIF_BOOLEAN) !tb1) {
 			RTCK;
 		} else {
@@ -279,7 +279,7 @@ body:;
 }
 
 /* {OBJECT_GRAPH_MARKER}.lock_marking */
-void F25_588 (EIF_REFERENCE Current)
+void F25_596 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "lock_marking";
@@ -295,15 +295,15 @@ void F25_588 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 24, Current, 0, 0, 662);
+	RTEAA(l_feature_name, 24, Current, 0, 0, 668);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(24, Current, 662);
+	RTDBGEAA(24, Current, 668);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(421, 14))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(424, 14))(Current);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -315,7 +315,7 @@ void F25_588 (EIF_REFERENCE Current)
 }
 
 /* {OBJECT_GRAPH_MARKER}.unlock_marking */
-void F25_589 (EIF_REFERENCE Current)
+void F25_597 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "unlock_marking";
@@ -331,15 +331,15 @@ void F25_589 (EIF_REFERENCE Current)
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 24, Current, 0, 0, 658);
+	RTEAA(l_feature_name, 24, Current, 0, 0, 669);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(24, Current, 658);
+	RTDBGEAA(24, Current, 669);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(422, 14))(Current);
+	(FUNCTION_CAST(void, (EIF_REFERENCE)) RTWF(425, 14))(Current);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);

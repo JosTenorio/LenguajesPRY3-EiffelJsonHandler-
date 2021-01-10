@@ -1,5 +1,5 @@
 note
-	description: "Class designed to handle the CSV files"
+	description: "Class in charge of managing CSV files, and their conversion to the JSON format and viceversa"
 
 class
 	CSVHANDLER
@@ -54,7 +54,6 @@ feature {NONE} -- Internal routines
 			l_JSON_NULL_temp: JSON_NULL
 			i: INTEGER
 		do
-
 			create l_result.make_empty
 			i := 1
 			l_field_values := line.split (';')
@@ -103,7 +102,7 @@ feature -- Routines
 			Result := error
 		end
 
-	create_JSON_from_csv (identifier: STRING): JSON_OBJECT
+	create_JSON_from_csv: JSON_OBJECT
 		local
 			l_file: PLAIN_TEXT_FILE
 			l_path: PATH
@@ -135,7 +134,7 @@ feature -- Routines
 					l_file.read_line
 				end
 				l_file.close
-				create l_JSON_STRING_temp.make_from_string (identifier)
+				create l_JSON_STRING_temp.make_from_string ("Data")
 				l_result.put (l_JSON_ARRAY_temp, l_JSON_STRING_temp)
 			end
 			Result := l_result

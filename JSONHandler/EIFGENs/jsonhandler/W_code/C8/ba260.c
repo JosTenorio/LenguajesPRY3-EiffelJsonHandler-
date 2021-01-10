@@ -1,5 +1,5 @@
 /*
- * Code for class BAG [CHARACTER_8]
+ * Code for class BAG [INTEGER_32]
  */
 
 #include "eif_eiffel.h"

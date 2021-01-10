@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F56_1016(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F56_1017(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F56_1018(EIF_REFERENCE);
-extern void F56_1019(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F56_1023(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F56_1024(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F56_1025(EIF_REFERENCE);
+extern void F56_1026(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit56(void);
 
 #ifdef __cplusplus
@@ -36,7 +36,7 @@ extern "C" {
 #endif
 
 /* {OPERATING_SYSTEM_FAILURE}.code */
-EIF_TYPED_VALUE F56_1016 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F56_1023 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -55,16 +55,16 @@ EIF_TYPED_VALUE F56_1016 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 55, Current, 0, 0, 1092);
+	RTEAA(l_feature_name, 55, Current, 0, 0, 1098);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(55, Current, 1092);
+	RTDBGEAA(55, Current, 1098);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(673, 31))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(680, 31))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -78,18 +78,18 @@ EIF_TYPED_VALUE F56_1016 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_SYSTEM_FAILURE}.error_code */
-EIF_TYPED_VALUE F56_1017 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F56_1024 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(967,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(974,Dtype(Current)));
 	return r;
 }
 
 
 /* {OPERATING_SYSTEM_FAILURE}.tag */
-RTOID (F56_1018)
-EIF_TYPED_VALUE F56_1018 (EIF_REFERENCE Current)
+RTOID (F56_1025)
+EIF_TYPED_VALUE F56_1025 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -104,7 +104,7 @@ EIF_TYPED_VALUE F56_1018 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F56_1018);
+	RTOTDR(F56_1025);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -116,12 +116,12 @@ EIF_TYPED_VALUE F56_1018 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 55, Current, 0, 0, 1094);
+	RTEAA(l_feature_name, 55, Current, 0, 0, 1100);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(55, Current, 1094);
+	RTDBGEAA(55, Current, 1100);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -129,7 +129,7 @@ EIF_TYPED_VALUE F56_1018 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(178, 0x01).id);
 	tr2 = RTMS_EX_H("Operating system error.",23,407134510);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3392, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3397, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -147,7 +147,7 @@ EIF_TYPED_VALUE F56_1018 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_SYSTEM_FAILURE}.set_error_code */
-void F56_1019 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F56_1026 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "set_error_code";
@@ -167,16 +167,16 @@ void F56_1019 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 55, Current, 0, 1, 1095);
+	RTEAA(l_feature_name, 55, Current, 0, 1, 1101);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(55, Current, 1095);
+	RTDBGEAA(55, Current, 1101);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 967, 0x10000000, 1); /* error_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(967, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 974, 0x10000000, 1); /* error_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(974, dtype)) = (EIF_INTEGER_32) arg1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -191,7 +191,7 @@ void F56_1019 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 void EIF_Minit56 (void)
 {
 	GTCX
-	RTOTS (1018,F56_1018)
+	RTOTS (1025,F56_1025)
 }
 
 

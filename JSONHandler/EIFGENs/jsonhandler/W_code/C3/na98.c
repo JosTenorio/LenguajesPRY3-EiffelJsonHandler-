@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F98_1327(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F98_1328(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F98_1334(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F98_1335(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit98(void);
 
 #ifdef __cplusplus
@@ -24,8 +24,8 @@ extern void EIF_Minit98(void);
 extern "C" {
 #endif
 
-#ifndef INLINE_F98_1328
-static EIF_NATURAL_64 inline_F98_1328 (EIF_POINTER arg1)
+#ifndef INLINE_F98_1335
+static EIF_NATURAL_64 inline_F98_1335 (EIF_POINTER arg1)
 {
 	#ifdef EIF_WINDOWS
 				return (EIF_NATURAL_64) wcslen(arg1) * sizeof(wchar_t);
@@ -34,7 +34,7 @@ static EIF_NATURAL_64 inline_F98_1328 (EIF_POINTER arg1)
 			#endif
 	;
 }
-#define INLINE_F98_1328
+#define INLINE_F98_1335
 #endif
 
 #ifdef __cplusplus
@@ -47,7 +47,7 @@ extern "C" {
 #endif
 
 /* {NATIVE_STRING_HANDLER}.pointer_length_in_bytes */
-EIF_TYPED_VALUE F98_1327 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F98_1334 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "pointer_length_in_bytes";
@@ -78,12 +78,12 @@ EIF_TYPED_VALUE F98_1327 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU (SK_REF, &Current);
 	RTLU(SK_UINT64, &loc1);
 	
-	RTEAA(l_feature_name, 97, Current, 1, 1, 1341);
+	RTEAA(l_feature_name, 97, Current, 1, 1, 1347);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(97, Current, 1341);
+	RTDBGEAA(97, Current, 1347);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -99,10 +99,10 @@ body:;
 	RTHOOK(2);
 	RTDBGAL(1, 0x3C000000, 1, 0); /* loc1 */
 	up1 = arg1;
-	tu8_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(1223, dtype))(Current, up1x)).it_n8);
+	tu8_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(1230, dtype))(Current, up1x)).it_n8);
 	loc1 = (EIF_NATURAL_64) tu8_1;
 	RTHOOK(3);
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2662, 136))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2669, 136))(Current)).it_i4);
 	tu8_1 = (EIF_NATURAL_64) ti4_1;
 	if ((EIF_BOOLEAN) (loc1 <= tu8_1)) {
 		RTHOOK(4);
@@ -112,7 +112,7 @@ body:;
 	} else {
 		RTHOOK(5);
 		RTDBGAL(0, 0x10000000, 1,0); /* Result */
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2662, 136))(Current)).it_i4);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2669, 136))(Current)).it_i4);
 		Result = (EIF_INTEGER_32) ti4_1;
 	}
 	RTVI(Current, RTAL);
@@ -129,7 +129,7 @@ body:;
 }
 
 /* {NATIVE_STRING_HANDLER}.c_pointer_length_in_bytes */
-EIF_TYPED_VALUE F98_1328 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F98_1335 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "c_pointer_length_in_bytes";
@@ -152,11 +152,11 @@ EIF_TYPED_VALUE F98_1328 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_POINTER,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 97, Current, 0, 1, 1342);
+	RTEAA(l_feature_name, 97, Current, 0, 1, 1348);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 1);
-	RTDBGEAA(97, Current, 1342);
+	RTDBGEAA(97, Current, 1348);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
@@ -169,7 +169,7 @@ label_1:
 		RTCF;
 	}
 body:;
-	Result = inline_F98_1328 ((EIF_POINTER) arg1);
+	Result = inline_F98_1335 ((EIF_POINTER) arg1);
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);

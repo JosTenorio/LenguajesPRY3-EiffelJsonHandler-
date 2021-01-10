@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern void F96_1323(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F96_1324(EIF_REFERENCE);
+extern void F96_1330(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F96_1331(EIF_REFERENCE);
 extern void EIF_Minit96(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {HASH_TABLE_CURSOR}.make */
-void F96_1323 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F96_1330 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "make";
@@ -55,20 +55,20 @@ void F96_1323 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 95, Current, 0, 1, 1337);
+	RTEAA(l_feature_name, 95, Current, 0, 1, 1343);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(95, Current, 1337);
+	RTDBGEAA(95, Current, 1343);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 1219, 0x10000000, 1); /* position */
-	*(EIF_INTEGER_32 *)(Current + RTWA(1219, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 1226, 0x10000000, 1); /* position */
+	*(EIF_INTEGER_32 *)(Current + RTWA(1226, dtype)) = (EIF_INTEGER_32) arg1;
 	if (RTAL & CK_ENSURE) {
 		RTHOOK(2);
 		RTCT("position_set", EX_POST);
-		ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(1219, dtype));
+		ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(1226, dtype));
 		if ((EIF_BOOLEAN)(ti4_1 == arg1)) {
 			RTCK;
 		} else {
@@ -87,11 +87,11 @@ void F96_1323 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {HASH_TABLE_CURSOR}.position */
-EIF_TYPED_VALUE F96_1324 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F96_1331 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1219,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1226,Dtype(Current)));
 	return r;
 }
 

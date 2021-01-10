@@ -10,9 +10,9 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F88_1083(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F88_1084(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F88_1085(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F88_1090(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F88_1091(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F88_1092(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit88(void);
 
 #ifdef __cplusplus
@@ -35,7 +35,7 @@ extern "C" {
 #endif
 
 /* {PART_COMPARABLE}.is_less_equal */
-EIF_TYPED_VALUE F88_1083 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F88_1090 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "is_less_equal";
@@ -62,12 +62,12 @@ EIF_TYPED_VALUE F88_1083 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 87, Current, 0, 1, 1159);
+	RTEAA(l_feature_name, 87, Current, 0, 1, 1164);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(87, Current, 1159);
+	RTDBGEAA(87, Current, 1164);
 	RTCC(arg1, 87, l_feature_name, 1, eif_new_type(87, 0x01),0);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -84,7 +84,7 @@ body:;
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
 	tb1 = '\01';
 	ur1 = RTCCL(arg1);
-	tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(985, "is_less", Current))(Current, ur1x)).it_b);
+	tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(992, "is_less", Current))(Current, ur1x)).it_b);
 	if (!tb2) {
 		tb1 = RTEQ(Current, arg1);
 	}
@@ -103,7 +103,7 @@ body:;
 }
 
 /* {PART_COMPARABLE}.is_greater */
-EIF_TYPED_VALUE F88_1084 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F88_1091 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "is_greater";
@@ -129,12 +129,12 @@ EIF_TYPED_VALUE F88_1084 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 87, Current, 0, 1, 1160);
+	RTEAA(l_feature_name, 87, Current, 0, 1, 1165);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(87, Current, 1160);
+	RTDBGEAA(87, Current, 1165);
 	RTCC(arg1, 87, l_feature_name, 1, eif_new_type(87, 0x01),0);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -150,7 +150,7 @@ body:;
 	RTHOOK(2);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
 	ur1 = RTCCL(Current);
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(985, "is_less", arg1))(arg1, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(992, "is_less", arg1))(arg1, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -166,7 +166,7 @@ body:;
 }
 
 /* {PART_COMPARABLE}.is_greater_equal */
-EIF_TYPED_VALUE F88_1085 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F88_1092 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "is_greater_equal";
@@ -193,12 +193,12 @@ EIF_TYPED_VALUE F88_1085 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 87, Current, 0, 1, 1158);
+	RTEAA(l_feature_name, 87, Current, 0, 1, 1166);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(87, Current, 1158);
+	RTDBGEAA(87, Current, 1166);
 	RTCC(arg1, 87, l_feature_name, 1, eif_new_type(87, 0x01),0);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
@@ -215,7 +215,7 @@ body:;
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
 	tb1 = '\01';
 	ur1 = RTCCL(Current);
-	tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(985, "is_less", arg1))(arg1, ur1x)).it_b);
+	tb2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTVF(992, "is_less", arg1))(arg1, ur1x)).it_b);
 	if (!tb2) {
 		tb1 = RTEQ(Current, arg1);
 	}
