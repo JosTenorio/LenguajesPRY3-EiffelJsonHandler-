@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C12_c.obj 
 
-OLDOBJECTS =  sp379.o sp379d.o ar388.o ar388d.o sp380.o sp380d.o na382.o na382d.o \
-	re390.o re390d.o it393.o it393d.o it392.o it392d.o ar370.o ar370d.o \
-	ar387.o ar387d.o re383.o re383d.o in389.o in389d.o to385.o to385d.o \
-	dy377.o dy377d.o li372.o li372d.o ge381.o ge381d.o in391.o in391d.o \
-	re394.o re394d.o tr369.o tr369d.o ar386.o ar386d.o se373.o se373d.o \
-	dy371.o dy371d.o bo384.o bo384d.o un378.o un378d.o ch375.o ch375d.o \
-	ty395.o ty395d.o ac363.o ac363d.o co366.o co366d.o bi374.o bi374d.o \
-	fi367.o fi367d.o dy376.o dy376d.o ba364.o ba364d.o co365.o co365d.o \
-	bo368.o bo368d.o 
+OLDOBJECTS =  sp392.o sp392d.o ar364.o ar364d.o sp393.o sp393d.o na365.o na365d.o \
+	re369.o re369d.o it371.o it371d.o it372.o it372d.o li380.o li380d.o \
+	ar366.o ar366d.o re395.o re395d.o in376.o in376d.o dy391.o dy391d.o \
+	ge394.o ge394d.o re368.o re368d.o in370.o in370d.o cu382.o cu382d.o \
+	tr381.o tr381d.o se387.o se387d.o dy367.o dy367d.o ta386.o ta386d.o \
+	li374.o li374d.o un390.o un390d.o ty373.o ty373d.o ac383.o ac383d.o \
+	co377.o co377d.o bi388.o bi388d.o fi378.o fi378d.o dy389.o dy389d.o \
+	ba384.o ba384d.o ch375.o ch375d.o ta363.o ta363d.o co385.o co385d.o \
+	bo379.o bo379d.o 
 
 all: Cobj12.o
 

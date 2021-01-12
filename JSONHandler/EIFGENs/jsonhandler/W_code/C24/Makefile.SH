@@ -55,12 +55,12 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C24_c.obj 
 
-OLDOBJECTS =  sp764.o sp764d.o sp765.o sp765d.o na767.o na767d.o ar772.o ar772d.o \
-	re768.o re768d.o to770.o to770d.o dy762.o dy762d.o ge766.o ge766d.o \
-	ar771.o ar771d.o bo769.o bo769d.o un763.o un763d.o ch760.o ch760d.o \
-	bi759.o bi759d.o dy761.o dy761d.o rt773.o rt773d.o rt774.o rt774d.o \
-	rt775.o rt775d.o rt776.o rt776d.o ar777.o ar777d.o ar778.o ar778d.o \
-	qu779.o qu779d.o 
+OLDOBJECTS =  sp774.o sp774d.o sp775.o sp775d.o li762.o li762d.o ar781.o ar781d.o \
+	re777.o re777d.o to779.o to779d.o dy773.o dy773d.o ge776.o ge776d.o \
+	cu764.o cu764d.o tr763.o tr763d.o se769.o se769d.o ar780.o ar780d.o \
+	bo778.o bo778d.o ta768.o ta768d.o un772.o un772d.o ac765.o ac765d.o \
+	co759.o co759d.o bi770.o bi770d.o fi760.o fi760d.o dy771.o dy771d.o \
+	ba766.o ba766d.o co767.o co767d.o bo761.o bo761d.o 
 
 all: Cobj24.o
 

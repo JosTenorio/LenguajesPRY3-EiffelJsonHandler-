@@ -1,5 +1,5 @@
 /*
- * Code for class INDEXABLE [INTEGER_32, INTEGER_32]
+ * Code for class INDEXABLE [CHARACTER_32, INTEGER_32]
  */
 
 #include "eif_eiffel.h"

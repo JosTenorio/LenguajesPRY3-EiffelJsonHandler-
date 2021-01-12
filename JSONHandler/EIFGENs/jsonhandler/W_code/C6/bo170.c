@@ -1,5 +1,5 @@
 /*
- * Code for class BOOLEAN
+ * Code for class reference BOOLEAN
  */
 
 #include "eif_eiffel.h"
@@ -10,13 +10,13 @@
 extern "C" {
 #endif
 
+extern EIF_TYPED_VALUE F170_4237(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F170_4238(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F170_4239(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F170_4240(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F170_4241(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F170_4240(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F170_4241(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F170_4242(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern EIF_TYPED_VALUE F170_4243(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F170_4244(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit170(void);
 
 #ifdef __cplusplus
@@ -39,7 +39,7 @@ extern "C" {
 #endif
 
 /* {BOOLEAN}.conjuncted */
-EIF_TYPED_VALUE F170_4238 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F170_4237 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "conjuncted";
@@ -65,18 +65,18 @@ EIF_TYPED_VALUE F170_4238 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_BOOL,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 169, Current, 0, 1, 10111);
+	RTEAA(l_feature_name, 169, Current, 0, 1, 10093);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(169, Current, 10111);
+	RTDBGEAA(169, Current, 10093);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	ur1 = RTLN(eif_new_type(169, 0x00).id);
+	ur1 = RTLN(eif_new_type(168, 0x00).id);
 	*(EIF_BOOLEAN *)ur1 = arg1;
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3163, 168))(Current, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3201, 167))(Current, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -92,7 +92,7 @@ EIF_TYPED_VALUE F170_4238 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {BOOLEAN}.conjuncted_semistrict */
-EIF_TYPED_VALUE F170_4239 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F170_4238 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "conjuncted_semistrict";
@@ -118,18 +118,18 @@ EIF_TYPED_VALUE F170_4239 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_BOOL,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 169, Current, 0, 1, 10112);
+	RTEAA(l_feature_name, 169, Current, 0, 1, 10094);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(169, Current, 10112);
+	RTDBGEAA(169, Current, 10094);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	ur1 = RTLN(eif_new_type(169, 0x00).id);
+	ur1 = RTLN(eif_new_type(168, 0x00).id);
 	*(EIF_BOOLEAN *)ur1 = arg1;
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3164, 168))(Current, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3202, 167))(Current, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -145,7 +145,7 @@ EIF_TYPED_VALUE F170_4239 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {BOOLEAN}.implication */
-EIF_TYPED_VALUE F170_4240 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F170_4239 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "implication";
@@ -171,18 +171,18 @@ EIF_TYPED_VALUE F170_4240 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_BOOL,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 169, Current, 0, 1, 10113);
+	RTEAA(l_feature_name, 169, Current, 0, 1, 10095);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(169, Current, 10113);
+	RTDBGEAA(169, Current, 10095);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	ur1 = RTLN(eif_new_type(169, 0x00).id);
+	ur1 = RTLN(eif_new_type(168, 0x00).id);
 	*(EIF_BOOLEAN *)ur1 = arg1;
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3165, 168))(Current, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3203, 167))(Current, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -198,7 +198,7 @@ EIF_TYPED_VALUE F170_4240 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {BOOLEAN}.negated */
-EIF_TYPED_VALUE F170_4241 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F170_4240 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "negated";
@@ -217,16 +217,16 @@ EIF_TYPED_VALUE F170_4241 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 169, Current, 0, 0, 10114);
+	RTEAA(l_feature_name, 169, Current, 0, 0, 10096);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(169, Current, 10114);
+	RTDBGEAA(169, Current, 10096);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(3166, 168))(Current)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(3204, 167))(Current)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -240,7 +240,7 @@ EIF_TYPED_VALUE F170_4241 (EIF_REFERENCE Current)
 }
 
 /* {BOOLEAN}.disjuncted */
-EIF_TYPED_VALUE F170_4242 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F170_4241 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "disjuncted";
@@ -266,18 +266,18 @@ EIF_TYPED_VALUE F170_4242 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_BOOL,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 169, Current, 0, 1, 10115);
+	RTEAA(l_feature_name, 169, Current, 0, 1, 10097);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(169, Current, 10115);
+	RTDBGEAA(169, Current, 10097);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	ur1 = RTLN(eif_new_type(169, 0x00).id);
+	ur1 = RTLN(eif_new_type(168, 0x00).id);
 	*(EIF_BOOLEAN *)ur1 = arg1;
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3167, 168))(Current, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3205, 167))(Current, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -293,7 +293,7 @@ EIF_TYPED_VALUE F170_4242 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {BOOLEAN}.disjuncted_semistrict */
-EIF_TYPED_VALUE F170_4243 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F170_4242 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "disjuncted_semistrict";
@@ -319,18 +319,18 @@ EIF_TYPED_VALUE F170_4243 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_BOOL,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 169, Current, 0, 1, 10116);
+	RTEAA(l_feature_name, 169, Current, 0, 1, 10098);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(169, Current, 10116);
+	RTDBGEAA(169, Current, 10098);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	ur1 = RTLN(eif_new_type(169, 0x00).id);
+	ur1 = RTLN(eif_new_type(168, 0x00).id);
 	*(EIF_BOOLEAN *)ur1 = arg1;
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3168, 168))(Current, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3206, 167))(Current, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -346,7 +346,7 @@ EIF_TYPED_VALUE F170_4243 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {BOOLEAN}.disjuncted_exclusive */
-EIF_TYPED_VALUE F170_4244 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F170_4243 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "disjuncted_exclusive";
@@ -372,18 +372,18 @@ EIF_TYPED_VALUE F170_4244 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_BOOL,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 169, Current, 0, 1, 10117);
+	RTEAA(l_feature_name, 169, Current, 0, 1, 10099);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(169, Current, 10117);
+	RTDBGEAA(169, Current, 10099);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	ur1 = RTLN(eif_new_type(169, 0x00).id);
+	ur1 = RTLN(eif_new_type(168, 0x00).id);
 	*(EIF_BOOLEAN *)ur1 = arg1;
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3169, 168))(Current, ur1x)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3207, 167))(Current, ur1x)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;

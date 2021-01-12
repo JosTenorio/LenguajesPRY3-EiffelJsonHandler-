@@ -10,13 +10,13 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F17_506(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F17_507(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F17_508(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F17_509(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F17_510(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F17_511(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F17_512(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F17_441(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F17_442(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F17_443(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F17_444(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F17_445(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F17_446(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F17_447(EIF_REFERENCE);
 extern void EIF_Minit17(void);
 
 #ifdef __cplusplus
@@ -41,8 +41,8 @@ extern "C" {
 #endif
 
 /* {OPERATING_ENVIRONMENT}.directory_separator */
-RTOID (F17_506)
-EIF_TYPED_VALUE F17_506 (EIF_REFERENCE Current)
+RTOID (F17_441)
+EIF_TYPED_VALUE F17_441 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "directory_separator";
@@ -54,7 +54,7 @@ EIF_TYPED_VALUE F17_506 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRB(EIF_CHARACTER_8)
-	RTOTDB(EIF_CHARACTER_8, F17_506);
+	RTOTDB(EIF_CHARACTER_8, F17_441);
 	dtype = Dtype(Current);
 
 	RTLI(1);
@@ -63,17 +63,17 @@ EIF_TYPED_VALUE F17_506 (EIF_REFERENCE Current)
 	RTLU (SK_CHAR8, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 16, Current, 0, 0, 581);
+	RTEAA(l_feature_name, 16, Current, 0, 0, 517);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(16, Current, 581);
+	RTDBGEAA(16, Current, 517);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
 	RTDBGAL(0, 0x08000000, 1,0); /* Result */
-	tc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(515, dtype))(Current)).it_c1);
+	tc1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(450, dtype))(Current)).it_c1);
 	Result = (EIF_CHARACTER_8) tc1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -89,8 +89,8 @@ EIF_TYPED_VALUE F17_506 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_ENVIRONMENT}.current_directory_name_representation */
-RTOID (F17_507)
-EIF_TYPED_VALUE F17_507 (EIF_REFERENCE Current)
+RTOID (F17_442)
+EIF_TYPED_VALUE F17_442 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "current_directory_name_representation";
@@ -104,7 +104,7 @@ EIF_TYPED_VALUE F17_507 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F17_507);
+	RTOTDR(F17_442);
 	dtype = Dtype(Current);
 
 	RTLI(2);
@@ -114,17 +114,17 @@ EIF_TYPED_VALUE F17_507 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 16, Current, 0, 0, 582);
+	RTEAA(l_feature_name, 16, Current, 0, 0, 518);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(16, Current, 582);
+	RTDBGEAA(16, Current, 518);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
-	RTDBGAL(0, 0xF80000B6, 0,0); /* Result */
-	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(516, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
+	RTDBGAL(0, 0xF80000B8, 0,0); /* Result */
+	tr1 = ((up1x = (FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(451, dtype))(Current)), (((up1x.type & SK_HEAD) == SK_REF)? (EIF_REFERENCE) 0: (up1x.it_r = RTBU(up1x))), (up1x.type = SK_POINTER), up1x.it_r);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	RTVI(Current, RTAL);
 	RTRS;
@@ -141,7 +141,7 @@ EIF_TYPED_VALUE F17_507 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_ENVIRONMENT}.home_directory_supported */
-EIF_TYPED_VALUE F17_508 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F17_443 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "home_directory_supported";
@@ -159,11 +159,11 @@ EIF_TYPED_VALUE F17_508 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 16, Current, 0, 0, 583);
+	RTEAA(l_feature_name, 16, Current, 0, 0, 519);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 1);
-	RTDBGEAA(16, Current, 583);
+	RTDBGEAA(16, Current, 519);
 	RTIV(Current, RTAL);Result = (EIF_BOOLEAN) EIF_TEST(eif_home_dir_supported());
 	
 	RTVI(Current, RTAL);
@@ -178,7 +178,7 @@ EIF_TYPED_VALUE F17_508 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_ENVIRONMENT}.root_directory_supported */
-EIF_TYPED_VALUE F17_509 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F17_444 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "root_directory_supported";
@@ -196,11 +196,11 @@ EIF_TYPED_VALUE F17_509 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 16, Current, 0, 0, 584);
+	RTEAA(l_feature_name, 16, Current, 0, 0, 520);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 1);
-	RTDBGEAA(16, Current, 584);
+	RTDBGEAA(16, Current, 520);
 	RTIV(Current, RTAL);Result = (EIF_BOOLEAN) EIF_TEST(eif_root_dir_supported());
 	
 	RTVI(Current, RTAL);
@@ -215,7 +215,7 @@ EIF_TYPED_VALUE F17_509 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_ENVIRONMENT}.case_sensitive_path_names */
-EIF_TYPED_VALUE F17_510 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F17_445 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "case_sensitive_path_names";
@@ -233,11 +233,11 @@ EIF_TYPED_VALUE F17_510 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 16, Current, 0, 0, 585);
+	RTEAA(l_feature_name, 16, Current, 0, 0, 521);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 1);
-	RTDBGEAA(16, Current, 585);
+	RTDBGEAA(16, Current, 521);
 	RTIV(Current, RTAL);Result = (EIF_BOOLEAN) EIF_TEST(eif_case_sensitive_path_names());
 	
 	RTVI(Current, RTAL);
@@ -252,7 +252,7 @@ EIF_TYPED_VALUE F17_510 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_ENVIRONMENT}.c_dir_separator */
-EIF_TYPED_VALUE F17_511 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F17_446 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "c_dir_separator";
@@ -270,11 +270,11 @@ EIF_TYPED_VALUE F17_511 (EIF_REFERENCE Current)
 	RTLU (SK_CHAR8, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 16, Current, 0, 0, 586);
+	RTEAA(l_feature_name, 16, Current, 0, 0, 522);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 1);
-	RTDBGEAA(16, Current, 586);
+	RTDBGEAA(16, Current, 522);
 	RTIV(Current, RTAL);Result = (EIF_CHARACTER_8) eif_dir_separator();
 	
 	RTVI(Current, RTAL);
@@ -289,7 +289,7 @@ EIF_TYPED_VALUE F17_511 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_ENVIRONMENT}.eif_current_dir_representation */
-EIF_TYPED_VALUE F17_512 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F17_447 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "eif_current_dir_representation";
@@ -308,11 +308,11 @@ EIF_TYPED_VALUE F17_512 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 16, Current, 0, 0, 587);
+	RTEAA(l_feature_name, 16, Current, 0, 0, 523);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 1);
-	RTDBGEAA(16, Current, 587);
+	RTDBGEAA(16, Current, 523);
 	RTIV(Current, RTAL);Result = (EIF_REFERENCE) eif_current_dir_representation();
 	
 	RTVI(Current, RTAL);
@@ -330,8 +330,8 @@ EIF_TYPED_VALUE F17_512 (EIF_REFERENCE Current)
 void EIF_Minit17 (void)
 {
 	GTCX
-	RTOTS (506,F17_506)
-	RTOTS (507,F17_507)
+	RTOTS (441,F17_441)
+	RTOTS (442,F17_442)
 }
 
 

@@ -1,5 +1,5 @@
 /*
- * Code for class BOX [CHARACTER_8]
+ * Code for class BOX [G#1]
  */
 
 #include "eif_eiffel.h"

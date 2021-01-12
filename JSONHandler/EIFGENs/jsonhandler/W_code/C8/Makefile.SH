@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C8_c.obj 
 
-OLDOBJECTS =  ty243.o ty243d.o ty244.o ty244d.o ty245.o ty245d.o ty246.o ty246d.o \
-	ty247.o ty247d.o ty248.o ty248d.o ty249.o ty249d.o ty250.o ty250d.o \
-	ty251.o ty251d.o ty252.o ty252d.o ty253.o ty253d.o re262.o re262d.o \
-	it232.o it232d.o it259.o it259d.o li256.o li256d.o in241.o in241d.o \
-	in231.o in231d.o in263.o in263d.o re233.o re233d.o cu257.o cu257d.o \
-	tr237.o tr237d.o se238.o se238d.o ta242.o ta242d.o ch240.o ch240d.o \
-	ty234.o ty234d.o se254.o se254d.o ac258.o ac258d.o co261.o co261d.o \
-	bi239.o bi239d.o fi235.o fi235d.o ba260.o ba260d.o co255.o co255d.o \
-	bo236.o bo236d.o 
+OLDOBJECTS =  sp231.o sp231d.o sp254.o sp254d.o ar235.o ar235d.o ty241.o ty241d.o \
+	ty242.o ty242d.o ty243.o ty243d.o ty244.o ty244d.o ty245.o ty245d.o \
+	ty246.o ty246d.o ty247.o ty247d.o ty248.o ty248d.o ty249.o ty249d.o \
+	ty250.o ty250d.o ty251.o ty251d.o ty252.o ty252d.o ty256.o ty256d.o \
+	sp233.o sp233d.o sp263.o sp263d.o na232.o na232d.o na255.o na255d.o \
+	re257.o re257d.o it261.o it261d.o it262.o it262d.o ar239.o ar239d.o \
+	re236.o re236d.o to238.o to238d.o to253.o to253d.o ge234.o ge234d.o \
+	re258.o re258d.o in260.o in260d.o ar240.o ar240d.o bo237.o bo237d.o \
+	ty259.o ty259d.o 
 
 all: Cobj8.o
 
