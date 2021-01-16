@@ -44,6 +44,7 @@ feature {NONE} -- Internal routines
 			l_JSON_VALUE_temp: JSON_VALUE
 			l_keys: ARRAY [JSON_STRING]
 			fd: FORMAT_DOUBLE
+			l_STRING_temp: STRING
 		do
 			l_result := "{"
 			l_keys := document.current_keys
@@ -56,8 +57,10 @@ feature {NONE} -- Internal routines
 				if attached document.item (key.item) as JSON_VALUE_temp then
 					l_JSON_VALUE_temp := JSON_VALUE_temp
 					if l_JSON_VALUE_temp.is_number then
-						create fd.make (10, 4)
-						l_result.append (fd.formatted (l_JSON_VALUE_temp.representation.to_real_64))
+						create fd.make (10, 2)
+						l_STRING_temp := fd.formatted (l_JSON_VALUE_temp.representation.to_real_64)
+						l_STRING_temp.adjust
+						l_result.append (l_STRING_temp)
 					else
 						l_result.append (l_JSON_VALUE_temp.representation)
 					end
@@ -71,13 +74,11 @@ feature {NONE} -- Internal routines
 		local
 			l_file: PLAIN_TEXT_FILE
 			l_path: PATH
-			l_bool: BOOLEAN
 		do
 			create l_path.make_from_string (path)
 			create l_file.make_with_path (l_path)
 			path.to_lower
-			l_bool := path.is_empty
-			Result := true
+			Result := l_file.is_creatable and path.tail(5).is_equal (".json")
 		end
 
 feature -- Routines
@@ -115,7 +116,7 @@ feature -- Routines
 			l_JSON_ARRAY_temp: JSON_ARRAY
 			l_i: INTEGER
 		do
-			if is_path_writable_json (savePath) = false then
+			if not is_path_writable_json (savePath) then
 				error := true
 				error_message := "The given path is invalid" + "%N"
 			else
@@ -128,10 +129,8 @@ feature -- Routines
 					l_file.put_string ("[")
 					l_file.put_new_line
 					if attached l_document_temp.array_item (l_key) then
-						print ("hola")
 						l_JSON_ARRAY_temp := l_document_temp.array_item (l_key)
 						if attached l_JSON_ARRAY_temp then
-							print (l_JSON_ARRAY_temp.representation)
 							From
 								l_i := 1
 							until
@@ -145,6 +144,7 @@ feature -- Routines
 									l_file.put_string (cast_document_to_string (l_document))
 									l_file.put_new_line
 								end
+								l_i := l_i + 1
 							end
 						end
 					end

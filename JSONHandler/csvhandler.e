@@ -107,10 +107,12 @@ feature -- Routines
 			l_file: PLAIN_TEXT_FILE
 			l_path: PATH
 			l_JSON_STRING_temp: JSON_STRING
+			l_types_temp: JSON_STRING
 			l_result: JSON_OBJECT
 			l_keys_str: LIST [STRING]
 			l_field_types_str: LIST [STRING]
 			l_JSON_ARRAY_temp: JSON_ARRAY
+			l_STRING_temp: STRING
 		do
 			create l_result.make_empty
 			if not is_path_readable_csv then
@@ -122,6 +124,7 @@ feature -- Routines
 				create l_JSON_ARRAY_temp.make_empty
 				l_file.open_read
 				l_file.read_line
+				l_STRING_temp := l_file.last_string
 				l_keys_str := l_file.last_string.split (';')
 				l_file.read_line
 				l_field_types_str := l_file.last_string.split (';')
@@ -136,6 +139,9 @@ feature -- Routines
 				l_file.close
 				create l_JSON_STRING_temp.make_from_string ("Data")
 				l_result.put (l_JSON_ARRAY_temp, l_JSON_STRING_temp)
+				create l_JSON_STRING_temp.make_from_string ("Types")
+				create l_types_temp.make_from_string (l_STRING_temp)
+				l_result.put (l_types_temp,l_JSON_STRING_temp)
 			end
 			Result := l_result
 		end
