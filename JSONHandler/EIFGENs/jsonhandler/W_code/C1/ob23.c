@@ -65,9 +65,9 @@ EIF_TYPED_VALUE F23_634 (EIF_REFERENCE Current)
 	RTDBGEAA(22, Current, 710);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAL(0, 0xF80002E2, 0,0); /* Result */
+	RTDBGAL(0, 0xF80002E1, 0,0); /* Result */
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,738,0xFF05,0,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,737,0xFF05,0,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -76,7 +76,7 @@ EIF_TYPED_VALUE F23_634 (EIF_REFERENCE Current)
 	}
 	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(635, dtype))(Current)).it_i4);
 	ui4_1 = ti4_1;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(2215, Dtype(tr1)))(tr1, ui4_1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(2214, Dtype(tr1)))(tr1, ui4_1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) RTCCL(tr1);
 	if (RTAL & CK_ENSURE) {

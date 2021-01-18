@@ -24,20 +24,6 @@ feature {NONE} -- Attributes
 
 feature {NONE} -- Internal routines
 
-	select_document (key: STRING): JSON_OBJECT
-		local
-			l_result: JSON_OBJECT
-		do
-			create l_result.make_empty
-			if not data.has (key) then
-				error := true
-				error_message := "No document has been uploaded with the name " + key + " %N"
-			else
-				l_result := data.definite_item (key)
-			end
-			Result := l_result
-		end
-
 	cast_document_to_string (document: JSON_OBJECT): STRING
 		local
 			l_result: STRING
@@ -82,6 +68,19 @@ feature {NONE} -- Internal routines
 		end
 
 feature -- Routines
+	select_document (key: STRING): JSON_OBJECT
+		local
+			l_result: JSON_OBJECT
+		do
+			create l_result.make_empty
+			if not data.has (key) then
+				error := true
+				error_message := "No document has been uploaded with the name " + key + " %N"
+			else
+				l_result := data.definite_item (key)
+			end
+			Result := l_result
+		end
 
 	has_error: BOOLEAN
 		do

@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C20_c.obj 
 
-OLDOBJECTS =  ty629.o ty629d.o ty630.o ty630d.o ty633.o ty633d.o ty634.o ty634d.o \
-	ty637.o ty637d.o ty638.o ty638d.o ty641.o ty641d.o ty642.o ty642d.o \
-	ty645.o ty645d.o ty646.o ty646d.o ty627.o ty627d.o ty631.o ty631d.o \
-	ty635.o ty635d.o ty639.o ty639d.o ty643.o ty643d.o ty647.o ty647d.o \
-	rt649.o rt649d.o rt650.o rt650d.o rt651.o rt651d.o rt652.o rt652d.o \
-	rt653.o rt653d.o rt654.o rt654d.o rt655.o rt655d.o rt656.o rt656d.o \
-	rt657.o rt657d.o rt659.o rt659d.o rt628.o rt628d.o rt632.o rt632d.o \
-	rt636.o rt636d.o rt640.o rt640d.o rt644.o rt644d.o rt658.o rt658d.o \
-	di648.o di648d.o 
+OLDOBJECTS =  ty628.o ty628d.o ty629.o ty629d.o ty646.o ty646d.o ty647.o ty647d.o \
+	ty630.o ty630d.o ty648.o ty648d.o co638.o co638d.o li641.o li641d.o \
+	co639.o co639d.o li643.o li643d.o li644.o li644d.o li642.o li642d.o \
+	rt627.o rt627d.o rt650.o rt650d.o rt651.o rt651d.o rt652.o rt652d.o \
+	rt653.o rt653d.o rt631.o rt631d.o rt632.o rt632d.o rt633.o rt633d.o \
+	rt634.o rt634d.o rt635.o rt635d.o rt636.o rt636d.o rt637.o rt637d.o \
+	rt654.o rt654d.o rt655.o rt655d.o rt656.o rt656d.o rt657.o rt657d.o \
+	rt658.o rt658d.o rt659.o rt659d.o rt645.o rt645d.o rt649.o rt649d.o \
+	in640.o in640d.o 
 
 all: Cobj20.o
 

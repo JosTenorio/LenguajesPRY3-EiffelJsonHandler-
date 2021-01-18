@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
+extern EIF_TYPED_VALUE F78_1149(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F78_1150(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F78_1151(EIF_REFERENCE);
 extern void EIF_Minit78(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {BAD_INSPECT_VALUE}.code */
-EIF_TYPED_VALUE F78_1150 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F78_1149 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -53,16 +53,16 @@ EIF_TYPED_VALUE F78_1150 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 77, Current, 0, 0, 1228);
+	RTEAA(l_feature_name, 77, Current, 0, 0, 1227);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(77, Current, 1228);
+	RTDBGEAA(77, Current, 1227);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(751, 33))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(750, 33))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -76,8 +76,8 @@ EIF_TYPED_VALUE F78_1150 (EIF_REFERENCE Current)
 }
 
 /* {BAD_INSPECT_VALUE}.tag */
-RTOID (F78_1151)
-EIF_TYPED_VALUE F78_1151 (EIF_REFERENCE Current)
+RTOID (F78_1150)
+EIF_TYPED_VALUE F78_1150 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -92,7 +92,7 @@ EIF_TYPED_VALUE F78_1151 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F78_1151);
+	RTOTDR(F78_1150);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -104,12 +104,12 @@ EIF_TYPED_VALUE F78_1151 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 77, Current, 0, 0, 1229);
+	RTEAA(l_feature_name, 77, Current, 0, 0, 1228);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(77, Current, 1229);
+	RTDBGEAA(77, Current, 1228);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -117,7 +117,7 @@ EIF_TYPED_VALUE F78_1151 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(180, 0x01).id);
 	tr2 = RTMS_EX_H("Unmatched inspect value.",24,777481518);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3483, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3480, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -137,7 +137,7 @@ EIF_TYPED_VALUE F78_1151 (EIF_REFERENCE Current)
 void EIF_Minit78 (void)
 {
 	GTCX
-	RTOTS (1151,F78_1151)
+	RTOTS (1150,F78_1150)
 }
 
 

@@ -36,7 +36,7 @@ feature {NONE} -- Internal routines (command options)
 			temp: JSON_OBJECT
 		do
 			handler.set_path (command_list.i_th (3))
-			temp := handler.create_json_from_csv
+			temp := handler.to_json
 			if handler.has_error then
 				handler.handle_error
 			else
@@ -61,8 +61,21 @@ feature {NONE} -- Internal routines (command options)
 		end
 
 	savecsv (command_list: LIST[STRING])
+		local
+			l_document: JSON_OBJECT
 		do
-			print ("Document identified by '" + command_list.i_th (2) + "' saved as a csv file at " + command_list.i_th (2) + " %N")
+			l_document := database.select_document (command_list.i_th (2))
+			if database.has_error then
+				database.handle_error
+			else
+				handler.set_path (command_list.i_th (3))
+				handler.make_from_json (l_document)
+				if handler.has_error then
+					handler.handle_error
+				else
+					print ("Document identified by '" + command_list.i_th (2) + "' saved as a csv file at " + command_list.i_th (2) + " %N")
+				end
+			end
 		end
 
 	select_command (command_list: LIST[STRING])

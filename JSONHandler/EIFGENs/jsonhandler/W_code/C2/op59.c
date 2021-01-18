@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
+extern EIF_TYPED_VALUE F59_1113(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F59_1114(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F59_1115(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F59_1116(EIF_REFERENCE);
-extern void F59_1117(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F59_1116(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit59(void);
 
 #ifdef __cplusplus
@@ -36,7 +36,7 @@ extern "C" {
 #endif
 
 /* {OPERATING_SYSTEM_SIGNAL_FAILURE}.code */
-EIF_TYPED_VALUE F59_1114 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F59_1113 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -55,16 +55,16 @@ EIF_TYPED_VALUE F59_1114 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 58, Current, 0, 0, 1194);
+	RTEAA(l_feature_name, 58, Current, 0, 0, 1192);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(58, Current, 1194);
+	RTDBGEAA(58, Current, 1192);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(754, 33))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(753, 33))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -78,18 +78,18 @@ EIF_TYPED_VALUE F59_1114 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_SYSTEM_SIGNAL_FAILURE}.signal_code */
-EIF_TYPED_VALUE F59_1115 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F59_1114 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1060,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1059,Dtype(Current)));
 	return r;
 }
 
 
 /* {OPERATING_SYSTEM_SIGNAL_FAILURE}.tag */
-RTOID (F59_1116)
-EIF_TYPED_VALUE F59_1116 (EIF_REFERENCE Current)
+RTOID (F59_1115)
+EIF_TYPED_VALUE F59_1115 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -104,7 +104,7 @@ EIF_TYPED_VALUE F59_1116 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F59_1116);
+	RTOTDR(F59_1115);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -116,12 +116,12 @@ EIF_TYPED_VALUE F59_1116 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 58, Current, 0, 0, 1192);
+	RTEAA(l_feature_name, 58, Current, 0, 0, 1194);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(58, Current, 1192);
+	RTDBGEAA(58, Current, 1194);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -129,7 +129,7 @@ EIF_TYPED_VALUE F59_1116 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(180, 0x01).id);
 	tr2 = RTMS_EX_H("Operating system signal.",24,1715740462);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3483, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3480, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -147,7 +147,7 @@ EIF_TYPED_VALUE F59_1116 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_SYSTEM_SIGNAL_FAILURE}.set_signal_code */
-void F59_1117 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F59_1116 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "set_signal_code";
@@ -167,16 +167,16 @@ void F59_1117 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 58, Current, 0, 1, 1193);
+	RTEAA(l_feature_name, 58, Current, 0, 1, 1191);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(58, Current, 1193);
+	RTDBGEAA(58, Current, 1191);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 1060, 0x10000000, 1); /* signal_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(1060, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 1059, 0x10000000, 1); /* signal_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(1059, dtype)) = (EIF_INTEGER_32) arg1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -191,7 +191,7 @@ void F59_1117 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 void EIF_Minit59 (void)
 {
 	GTCX
-	RTOTS (1116,F59_1116)
+	RTOTS (1115,F59_1115)
 }
 
 

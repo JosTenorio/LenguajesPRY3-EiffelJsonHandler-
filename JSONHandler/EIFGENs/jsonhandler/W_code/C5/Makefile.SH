@@ -55,13 +55,13 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C5_c.obj 
 
-OLDOBJECTS =  tu134.o tu134d.o re160.o re160d.o re161.o re161d.o re157.o re157d.o \
-	re158.o re158d.o na154.o na154d.o na155.o na155d.o na151.o na151d.o \
-	na152.o na152d.o na148.o na148d.o na149.o na149d.o in145.o in145d.o \
-	in146.o in146d.o in142.o in142d.o in143.o in143d.o in139.o in139d.o \
-	in140.o in140d.o in136.o in136d.o in137.o in137d.o ch163.o ch163d.o \
-	ch164.o ch164d.o ha132.o ha132d.o ch162.o ch162d.o re159.o re159d.o \
-	re156.o re156d.o na153.o na153d.o na150.o na150d.o na147.o na147d.o \
+OLDOBJECTS =  tu134.o tu134d.o re163.o re163d.o re164.o re164d.o re160.o re160d.o \
+	re161.o re161d.o na157.o na157d.o na158.o na158d.o na154.o na154d.o \
+	na155.o na155d.o na151.o na151d.o na152.o na152d.o na148.o na148d.o \
+	na149.o na149d.o in145.o in145d.o in146.o in146d.o in142.o in142d.o \
+	in143.o in143d.o in139.o in139d.o in140.o in140d.o in136.o in136d.o \
+	in137.o in137d.o ha132.o ha132d.o re162.o re162d.o re159.o re159d.o \
+	na156.o na156d.o na153.o na153d.o na150.o na150d.o na147.o na147d.o \
 	in144.o in144d.o in141.o in141d.o in138.o in138d.o in135.o in135d.o \
 	pa133.o pa133d.o 
 

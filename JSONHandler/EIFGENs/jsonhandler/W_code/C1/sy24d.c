@@ -17,10 +17,10 @@ static const EIF_TYPE_INDEX egt_4_24 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_5_24 [] = {0xFF01,23,0xFFFF};
 static const EIF_TYPE_INDEX egt_6_24 [] = {0xFF01,23,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_24 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_24 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_24 [] = {0xFF01,16,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_24 [] = {0xFF01,184,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_24 [] = {0xFF01,184,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_24 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_24 [] = {0xFF01,17,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_24 [] = {0xFF01,23,0xFFFF};
 static const EIF_TYPE_INDEX egt_13_24 [] = {0xFF01,184,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_24 [] = {0xFF01,184,0xFFFF};
@@ -31,14 +31,14 @@ static const struct desc_info desc_24[] = {
 	{EIF_GENERIC(NULL), 0xFFFFFFFF, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_0_24), 0, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_1_24), 1, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 2, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 3, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 4, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 5, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 6, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 7, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 8, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 9, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 2, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 3, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 4, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 5, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 6, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 7, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 8, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 9, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_2_24), 10, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 11, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 12, 0xFFFFFFFF},
@@ -68,7 +68,7 @@ void Init24(void)
 {
 	IDSC(desc_24, 0, 23);
 	IDSC(desc_24 + 1, 2, 23);
-	IDSC(desc_24 + 32, 215, 23);
+	IDSC(desc_24 + 32, 217, 23);
 }
 
 

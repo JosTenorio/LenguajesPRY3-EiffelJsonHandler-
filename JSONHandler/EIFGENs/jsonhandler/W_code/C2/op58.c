@@ -10,10 +10,10 @@
 extern "C" {
 #endif
 
+extern EIF_TYPED_VALUE F58_1109(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F58_1110(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F58_1111(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F58_1112(EIF_REFERENCE);
-extern void F58_1113(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F58_1112(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit58(void);
 
 #ifdef __cplusplus
@@ -36,7 +36,7 @@ extern "C" {
 #endif
 
 /* {OPERATING_SYSTEM_FAILURE}.code */
-EIF_TYPED_VALUE F58_1110 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F58_1109 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -55,16 +55,16 @@ EIF_TYPED_VALUE F58_1110 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 57, Current, 0, 0, 1188);
+	RTEAA(l_feature_name, 57, Current, 0, 0, 1187);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(57, Current, 1188);
+	RTDBGEAA(57, Current, 1187);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(764, 33))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(763, 33))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -78,18 +78,18 @@ EIF_TYPED_VALUE F58_1110 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_SYSTEM_FAILURE}.error_code */
-EIF_TYPED_VALUE F58_1111 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F58_1110 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1058,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1057,Dtype(Current)));
 	return r;
 }
 
 
 /* {OPERATING_SYSTEM_FAILURE}.tag */
-RTOID (F58_1112)
-EIF_TYPED_VALUE F58_1112 (EIF_REFERENCE Current)
+RTOID (F58_1111)
+EIF_TYPED_VALUE F58_1111 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -104,7 +104,7 @@ EIF_TYPED_VALUE F58_1112 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F58_1112);
+	RTOTDR(F58_1111);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -116,12 +116,12 @@ EIF_TYPED_VALUE F58_1112 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 57, Current, 0, 0, 1190);
+	RTEAA(l_feature_name, 57, Current, 0, 0, 1189);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(57, Current, 1190);
+	RTDBGEAA(57, Current, 1189);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -129,7 +129,7 @@ EIF_TYPED_VALUE F58_1112 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(180, 0x01).id);
 	tr2 = RTMS_EX_H("Operating system error.",23,407134510);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3483, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3480, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -147,7 +147,7 @@ EIF_TYPED_VALUE F58_1112 (EIF_REFERENCE Current)
 }
 
 /* {OPERATING_SYSTEM_FAILURE}.set_error_code */
-void F58_1113 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F58_1112 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "set_error_code";
@@ -167,16 +167,16 @@ void F58_1113 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 57, Current, 0, 1, 1191);
+	RTEAA(l_feature_name, 57, Current, 0, 1, 1190);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(57, Current, 1191);
+	RTDBGEAA(57, Current, 1190);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 1058, 0x10000000, 1); /* error_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(1058, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 1057, 0x10000000, 1); /* error_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(1057, dtype)) = (EIF_INTEGER_32) arg1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -191,7 +191,7 @@ void F58_1113 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 void EIF_Minit58 (void)
 {
 	GTCX
-	RTOTS (1112,F58_1112)
+	RTOTS (1111,F58_1111)
 }
 
 
