@@ -64,7 +64,7 @@ feature {NONE} -- Internal routines (command options)
 		local
 			l_document: JSON_OBJECT
 		do
-			l_document := database.select_document (command_list.i_th (2))
+			l_document := database.retrieve_document (command_list.i_th (2))
 			if database.has_error then
 				database.handle_error
 			else
@@ -78,9 +78,23 @@ feature {NONE} -- Internal routines (command options)
 			end
 		end
 
-	select_command (command_list: LIST[STRING])
+	select_command (command_partition: LIST[STRING])
+		local
+			command_list: LIST[STRING]
+			value: STRING
+			field: STRING
 		do
-			print ("Select result saved in document identified by '" + command_list.i_th (3) + "'%N")
+			command_list := command_partition.i_th (1).split (' ')
+			field := command_list.i_th (4)
+			field.adjust
+			value := command_partition.i_th (2)
+			value.adjust
+			database.select_document (command_list.i_th (2), command_list.i_th (3),field,value)
+			if database.has_error then
+				database.handle_error
+			else
+				print ("Select result saved in document identified by '" + command_list.i_th (3) + "'%N")
+			end
 		end
 
 	project (command_list: LIST[STRING])
@@ -98,14 +112,22 @@ feature -- Iterative execution cycle
 		do
 			from
 				print ("Welcome to the JSON Handler" + "%N")
-				print ("Please input a command: " + "%N")
 			until
 				exit
 			loop
+				print("%N")
+				print ("The available commands are: " + "%N")
+				print ("load <DocumentName> <CsvFilePath>" + "%N")
+				print ("save <DocumentName> <JsonFileSavePath>" + "%N")
+				print ("savecsv <DocumentName> <CsvFileSavePath>" + "%N")
+				print ("select <DocumentName> <NewDocumentName> <Field> = <Value>" + "%N")
+				print ("project <DocumentName> <NewDocumentName> <Field1> <Field2> ... <Field5>" + "%N")
+				print("%N")
+				print ("Please input a command: " + "%N")
 				print (">>")
 				Io.readline
 				l_input_line := Io.last_string
-			    l_command_list := l_input_line.split (' ')
+				l_command_list := l_input_line.split (' ')
 	            if l_command_list.i_th (1).is_equal ("load") then
 	                load (l_command_list)
 	            elseif l_command_list.i_th (1).is_equal ("save") then
@@ -113,6 +135,7 @@ feature -- Iterative execution cycle
 	            elseif l_command_list.i_th (1).is_equal ("savecsv") then
 	                savecsv (l_command_list)
 	            elseif l_command_list.i_th (1).is_equal ("select") then
+	            	l_command_list := l_input_line.split ('=')
 	                select_command (l_command_list)
 	            elseif l_command_list.i_th (1).is_equal ("project") then
 	                project (l_command_list)

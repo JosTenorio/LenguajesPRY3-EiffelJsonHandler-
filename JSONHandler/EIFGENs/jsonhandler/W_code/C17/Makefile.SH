@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C17_c.obj 
 
-OLDOBJECTS =  sp539.o sp539d.o ar530.o ar530d.o ar543.o ar543d.o sp528.o sp528d.o \
-	sp541.o sp541d.o na540.o na540d.o ar550.o ar550d.o ar531.o ar531d.o \
-	ar544.o ar544d.o re532.o re532d.o re545.o re545d.o in548.o in548d.o \
-	to534.o to534d.o to547.o to547d.o dy558.o dy558d.o ha536.o ha536d.o \
-	ge529.o ge529d.o ge542.o ge542d.o ar535.o ar535d.o ar559.o ar559d.o \
-	se554.o se554d.o dy551.o dy551d.o bo533.o bo533d.o bo546.o bo546d.o \
-	ta549.o ta549d.o li552.o li552d.o ha537.o ha537d.o un557.o un557d.o \
-	ta560.o ta560d.o bi555.o bi555d.o dy556.o dy556d.o ch553.o ch553d.o \
-	ta538.o ta538d.o 
+OLDOBJECTS =  sp531.o sp531d.o sp557.o sp557d.o ar535.o ar535d.o sp533.o sp533d.o \
+	na532.o na532d.o na558.o na558d.o re559.o re559d.o ar548.o ar548d.o \
+	ar536.o ar536d.o re544.o re544d.o in540.o in540d.o to546.o to546d.o \
+	dy552.o dy552d.o ha551.o ha551d.o ge534.o ge534d.o re560.o re560d.o \
+	se541.o se541d.o ar547.o ar547d.o dy537.o dy537d.o bo545.o bo545d.o \
+	ta553.o ta553d.o st550.o st550d.o li538.o li538d.o ha529.o ha529d.o \
+	ha554.o ha554d.o un528.o un528d.o ta549.o ta549d.o ta556.o ta556d.o \
+	bi542.o bi542d.o dy543.o dy543d.o ch539.o ch539d.o ta530.o ta530d.o \
+	ta555.o ta555d.o 
 
 all: Cobj17.o
 

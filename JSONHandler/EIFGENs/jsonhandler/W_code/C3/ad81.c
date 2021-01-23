@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F81_1157(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F81_1158(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F81_1160(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F81_1161(EIF_REFERENCE);
 extern void EIF_Minit81(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {ADDRESS_APPLIED_TO_MELTED_FEATURE}.code */
-EIF_TYPED_VALUE F81_1157 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F81_1160 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -53,16 +53,16 @@ EIF_TYPED_VALUE F81_1157 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 80, Current, 0, 0, 1235);
+	RTEAA(l_feature_name, 80, Current, 0, 0, 1238);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(80, Current, 1235);
+	RTDBGEAA(80, Current, 1238);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(767, 33))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(770, 33))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -76,8 +76,8 @@ EIF_TYPED_VALUE F81_1157 (EIF_REFERENCE Current)
 }
 
 /* {ADDRESS_APPLIED_TO_MELTED_FEATURE}.tag */
-RTOID (F81_1158)
-EIF_TYPED_VALUE F81_1158 (EIF_REFERENCE Current)
+RTOID (F81_1161)
+EIF_TYPED_VALUE F81_1161 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -92,7 +92,7 @@ EIF_TYPED_VALUE F81_1158 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F81_1158);
+	RTOTDR(F81_1161);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -104,12 +104,12 @@ EIF_TYPED_VALUE F81_1158 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 80, Current, 0, 0, 1236);
+	RTEAA(l_feature_name, 80, Current, 0, 0, 1239);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(80, Current, 1236);
+	RTDBGEAA(80, Current, 1239);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -117,7 +117,7 @@ EIF_TYPED_VALUE F81_1158 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(180, 0x01).id);
 	tr2 = RTMS_EX_H("CECIL cannot call melted code.",30,1897917230);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3480, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3485, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -137,7 +137,7 @@ EIF_TYPED_VALUE F81_1158 (EIF_REFERENCE Current)
 void EIF_Minit81 (void)
 {
 	GTCX
-	RTOTS (1158,F81_1158)
+	RTOTS (1161,F81_1161)
 }
 
 

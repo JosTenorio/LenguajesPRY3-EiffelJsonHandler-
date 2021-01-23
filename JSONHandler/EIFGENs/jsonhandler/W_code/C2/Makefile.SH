@@ -56,12 +56,12 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 OBJECTS = big_file_C2_c.obj 
 
 OLDOBJECTS =  rt38.o rt38d.o is33.o is33d.o ex51.o ex51d.o ex50.o ex50d.o pl35.o \
-	pl35d.o rt37.o rt37d.o op59.o op59d.o re63.o re63d.o re62.o re62d.o \
-	ex61.o ex61d.o op58.o op58d.o de52.o de52d.o co57.o co57d.o ol65.o \
-	ol65d.o ex34.o ex34d.o fl55.o fl55d.o ex49.o ex49d.o st42.o st42d.o \
-	st41.o st41d.o nu43.o nu43d.o he48.o he48d.o st47.o st47d.o st40.o \
-	st40d.o st46.o st46d.o rt39.o rt39d.o rt36.o rt36d.o op56.o op56d.o \
-	sy64.o sy64d.o ob60.o ob60d.o ha54.o ha54d.o st45.o st45d.o in44.o \
+	pl35d.o rt37.o rt37d.o fl55.o fl55d.o op59.o op59d.o re63.o re63d.o \
+	re62.o re62d.o ex61.o ex61d.o op58.o op58d.o de52.o de52d.o co57.o \
+	co57d.o ol65.o ol65d.o ex34.o ex34d.o ex49.o ex49d.o st42.o st42d.o \
+	st41.o st41d.o nu43.o nu43d.o he48.o he48d.o st40.o st40d.o st47.o \
+	st47d.o st46.o st46d.o rt39.o rt39d.o rt36.o rt36d.o ha54.o ha54d.o \
+	op56.o op56d.o sy64.o sy64d.o ob60.o ob60d.o st45.o st45d.o in44.o \
 	in44d.o ma53.o ma53d.o 
 
 all: Cobj2.o

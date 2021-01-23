@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F82_1159(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F82_1160(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F82_1162(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F82_1163(EIF_REFERENCE);
 extern void EIF_Minit82(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {CREATE_ON_DEFERRED}.code */
-EIF_TYPED_VALUE F82_1159 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F82_1162 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -53,16 +53,16 @@ EIF_TYPED_VALUE F82_1159 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 81, Current, 0, 0, 1237);
+	RTEAA(l_feature_name, 81, Current, 0, 0, 1240);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(81, Current, 1237);
+	RTDBGEAA(81, Current, 1240);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(758, 33))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(761, 33))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -76,8 +76,8 @@ EIF_TYPED_VALUE F82_1159 (EIF_REFERENCE Current)
 }
 
 /* {CREATE_ON_DEFERRED}.tag */
-RTOID (F82_1160)
-EIF_TYPED_VALUE F82_1160 (EIF_REFERENCE Current)
+RTOID (F82_1163)
+EIF_TYPED_VALUE F82_1163 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -92,7 +92,7 @@ EIF_TYPED_VALUE F82_1160 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F82_1160);
+	RTOTDR(F82_1163);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -104,12 +104,12 @@ EIF_TYPED_VALUE F82_1160 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 81, Current, 0, 0, 1238);
+	RTEAA(l_feature_name, 81, Current, 0, 0, 1241);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(81, Current, 1238);
+	RTDBGEAA(81, Current, 1241);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -117,7 +117,7 @@ EIF_TYPED_VALUE F82_1160 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(180, 0x01).id);
 	tr2 = RTMS_EX_H("Create on deferred.",19,872737070);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3480, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3485, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -137,7 +137,7 @@ EIF_TYPED_VALUE F82_1160 (EIF_REFERENCE Current)
 void EIF_Minit82 (void)
 {
 	GTCX
-	RTOTS (1160,F82_1160)
+	RTOTS (1163,F82_1163)
 }
 
 

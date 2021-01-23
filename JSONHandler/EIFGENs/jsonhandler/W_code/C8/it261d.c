@@ -10,19 +10,19 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_261 [] = {0xFF01,184,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_261 [] = {0xFF01,196,260,165,0xFFFF};
-static const EIF_TYPE_INDEX egt_2_261 [] = {0xFF01,260,165,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_261 [] = {0xFF01,196,260,162,0xFFFF};
+static const EIF_TYPE_INDEX egt_2_261 [] = {0xFF01,260,162,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_261 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_261 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_5_261 [] = {0xFF01,260,165,0xFFFF};
-static const EIF_TYPE_INDEX egt_6_261 [] = {0xFF01,260,165,0xFFFF};
+static const EIF_TYPE_INDEX egt_5_261 [] = {0xFF01,260,162,0xFFFF};
+static const EIF_TYPE_INDEX egt_6_261 [] = {0xFF01,260,162,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_261 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_261 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_261 [] = {0xFF01,17,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_261 [] = {0xFF01,184,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_261 [] = {0xFF01,184,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_261 [] = {0xFF01,17,0xFFFF};
-static const EIF_TYPE_INDEX egt_12_261 [] = {260,165,0xFFFF};
-static const EIF_TYPE_INDEX egt_13_261 [] = {0xFF01,260,165,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_261 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_12_261 [] = {260,162,0xFFFF};
+static const EIF_TYPE_INDEX egt_13_261 [] = {0xFF01,260,162,0xFFFF};
 static const EIF_TYPE_INDEX egt_14_261 [] = {0xFF01,261,0xFFF8,1,0xFFFF};
 static const EIF_TYPE_INDEX egt_15_261 [] = {0xFFF8,1,0xFFFF};
 
@@ -31,14 +31,14 @@ static const struct desc_info desc_261[] = {
 	{EIF_GENERIC(NULL), 0xFFFFFFFF, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_0_261), 0, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_1_261), 1, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 2, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 3, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 4, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 5, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 6, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 7, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 8, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0157 /*171*/), 9, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 2, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 3, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 4, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 5, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 6, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 7, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 8, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0151 /*168*/), 9, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_2_261), 10, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 11, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 12, 0xFFFFFFFF},

@@ -68,7 +68,7 @@ feature {NONE} -- Internal routines
 		end
 
 feature -- Routines
-	select_document (key: STRING): JSON_OBJECT
+	retrieve_document (key: STRING): JSON_OBJECT
 		local
 			l_result: JSON_OBJECT
 		do
@@ -119,7 +119,7 @@ feature -- Routines
 				error := true
 				error_message := "The given path is invalid" + "%N"
 			else
-				l_document_temp := select_document (key)
+				l_document_temp := retrieve_document (key)
 				if not error then
 					create l_path.make_from_string (savePath)
 					create l_file.make_with_path (l_path)
@@ -152,5 +152,92 @@ feature -- Routines
 				end
 			end
 		end
+
+	evaluate_document (document:JSON_OBJECT; field: STRING; given_value: STRING): BOOLEAN
+		local
+			fd: FORMAT_DOUBLE
+			l_key: JSON_STRING
+			l_value: JSON_VALUE
+			string_value: STRING
+		do
+			create l_key.make_from_string (field)
+			if document.has_key (l_key) then
+				if attached document.item (l_key) as value then
+					l_value := value
+					string_value := l_value.representation.substring (2,l_value.representation.count - 1)
+					if l_value.is_number then
+						create fd.make (10, 2)
+						string_value := fd.formatted (string_value.to_real_64)
+						string_value.adjust
+					end
+					if string_value.is_equal (given_value) then
+						Result := true
+					else
+						Result := false
+					end
+				else
+					Result := false
+				end
+			else
+				Result := false
+			end
+
+		end
+
+	select_document (key: STRING; new_key: STRING; field: STRING; given_value: STRING)
+		local
+			l_new_document_array: JSON_ARRAY
+			l_new_document: JSON_OBJECT
+			l_document: JSON_OBJECT
+			l_document_temp: JSON_VALUE
+			l_key_temp: JSON_STRING
+			l_key_conversion: JSON_STRING
+			l_document_conversion: JSON_OBJECT
+			l_i: INTEGER
+			l_fields: JSON_STRING
+			l_keys: JSON_STRING
+		do
+			l_document := retrieve_document (key)
+			if not error then
+				create l_new_document_array.make_empty
+				create l_key_temp.make_from_string ("Data")
+				if attached l_document.array_item (l_key_temp) as documents then
+					From
+						l_i := 1
+					until
+						l_i > documents.count
+					loop
+						create l_document_conversion.make_empty
+						create l_key_conversion.make_from_string ("Conversion")
+						l_document_conversion.put (documents.i_th (l_i), l_key_conversion)
+						if attached l_document_conversion.object_item (l_key_conversion) as document then
+							l_document := document
+							if evaluate_document(l_document,field,given_value) then
+								l_new_document_array.extend (l_document)
+							end
+						end
+						l_i := l_i + 1
+					end
+				end
+				if l_new_document_array.is_empty then
+					error := true
+					error_message := "No JSON document with the specified condition was found"
+				else
+					create l_new_document.make_empty
+					l_new_document.put (l_new_document_array,l_key_temp)
+					create l_key_temp.make_from_string ("Keys")
+					if attached l_document.string_item (l_key_temp) as keys then
+						l_new_document.put (keys,l_key_temp)
+					end
+					create l_key_temp.make_from_string ("Types")
+					if attached l_document.string_item (l_key_temp) as types then
+						l_new_document.put (types,l_key_temp)
+					end
+					insert_document (new_key, l_new_document)
+				end
+
+			end
+		end
+
 
 end -- class DATABASE

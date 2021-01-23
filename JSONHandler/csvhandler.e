@@ -23,7 +23,7 @@ feature {NONE} -- Attributes
 
 	error_message: STRING
 
-feature {} -- Internal routines
+feature {NONE} -- Internal routines
 	is_path_readable_csv: BOOLEAN
 		local
 			l_file: PLAIN_TEXT_FILE

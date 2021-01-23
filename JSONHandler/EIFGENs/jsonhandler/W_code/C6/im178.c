@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F178_4511(EIF_REFERENCE);
-extern void F178_5173(EIF_REFERENCE, int);
+extern EIF_TYPED_VALUE F178_4516(EIF_REFERENCE);
+extern void F178_5178(EIF_REFERENCE, int);
 extern void EIF_Minit178(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {IMMUTABLE_STRING_GENERAL}.is_immutable */
-EIF_TYPED_VALUE F178_4511 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F178_4516 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_BOOL;
@@ -43,7 +43,7 @@ EIF_TYPED_VALUE F178_4511 (EIF_REFERENCE Current)
 }
 
 /* {IMMUTABLE_STRING_GENERAL}._invariant */
-void F178_5173 (EIF_REFERENCE Current, int where)
+void F178_5178 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -58,7 +58,7 @@ void F178_5173 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 177, Current, 0, 5172);
+	RTEAINV(l_feature_name, 177, Current, 0, 5177);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTLO(2);

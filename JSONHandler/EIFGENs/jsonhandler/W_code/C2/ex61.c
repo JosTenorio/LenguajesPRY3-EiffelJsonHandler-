@@ -10,8 +10,8 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F61_1117(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F61_1118(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F61_1120(EIF_REFERENCE);
+extern EIF_TYPED_VALUE F61_1121(EIF_REFERENCE);
 extern void EIF_Minit61(void);
 
 #ifdef __cplusplus
@@ -34,7 +34,7 @@ extern "C" {
 #endif
 
 /* {EXCEPTION_IN_SIGNAL_HANDLER_FAILURE}.code */
-EIF_TYPED_VALUE F61_1117 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F61_1120 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -53,16 +53,16 @@ EIF_TYPED_VALUE F61_1117 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 60, Current, 0, 0, 1195);
+	RTEAA(l_feature_name, 60, Current, 0, 0, 1198);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(60, Current, 1195);
+	RTDBGEAA(60, Current, 1198);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(761, 33))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(764, 33))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -76,8 +76,8 @@ EIF_TYPED_VALUE F61_1117 (EIF_REFERENCE Current)
 }
 
 /* {EXCEPTION_IN_SIGNAL_HANDLER_FAILURE}.tag */
-RTOID (F61_1118)
-EIF_TYPED_VALUE F61_1118 (EIF_REFERENCE Current)
+RTOID (F61_1121)
+EIF_TYPED_VALUE F61_1121 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -92,7 +92,7 @@ EIF_TYPED_VALUE F61_1118 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F61_1118);
+	RTOTDR(F61_1121);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -104,12 +104,12 @@ EIF_TYPED_VALUE F61_1118 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 60, Current, 0, 0, 1196);
+	RTEAA(l_feature_name, 60, Current, 0, 0, 1199);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(60, Current, 1196);
+	RTDBGEAA(60, Current, 1199);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -117,7 +117,7 @@ EIF_TYPED_VALUE F61_1118 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(180, 0x01).id);
 	tr2 = RTMS_EX_H("Exception in signal handler.",28,160980270);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3480, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3485, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -137,7 +137,7 @@ EIF_TYPED_VALUE F61_1118 (EIF_REFERENCE Current)
 void EIF_Minit61 (void)
 {
 	GTCX
-	RTOTS (1118,F61_1118)
+	RTOTS (1121,F61_1121)
 }
 
 
