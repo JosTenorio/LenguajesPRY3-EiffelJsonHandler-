@@ -2,13 +2,13 @@ INCLUDE_PATH =
 SHELL = \bin\sh
 CC = cl
 CPP = cl
-CFLAGS = -Od -MT -w -nologo -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_CRT_SECURE_NO_DEPRECATE -D_UNICODE -DUNICODE -DWIN32_LEAN_AND_MEAN  -DEIF_THREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 20.11 Standard\studio\spec\win64\include" -I. $(INCLUDE_PATH)
-CPPFLAGS = -Od -MT -w -nologo -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_CRT_SECURE_NO_DEPRECATE -D_UNICODE -DUNICODE -DWIN32_LEAN_AND_MEAN  -DEIF_THREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 20.11 Standard\studio\spec\win64\include" -I. $(INCLUDE_PATH)
+CFLAGS = -Od -MT -w -nologo -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_CRT_SECURE_NO_DEPRECATE -D_UNICODE -DUNICODE -DWIN32_LEAN_AND_MEAN  -DEIF_THREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 20.05 Standard\studio\spec\win64\include" -I. $(INCLUDE_PATH)
+CPPFLAGS = -Od -MT -w -nologo -D_WIN32_WINNT=0x0500 -DWINVER=0x0500 -D_CRT_SECURE_NO_DEPRECATE -D_UNICODE -DUNICODE -DWIN32_LEAN_AND_MEAN  -DEIF_THREADS  -DEIF_IEEE_BEHAVIOR -DWORKBENCH -I"C:\Program Files\Eiffel Software\EiffelStudio 20.05 Standard\studio\spec\win64\include" -I. $(INCLUDE_PATH)
 LDFLAGS = -STACK:5000000 -NODEFAULTLIB:libc
 CCLDFLAGS = -STACK:5000000 -NODEFAULTLIB:libc  -SUBSYSTEM:CONSOLE
 LDSHAREDFLAGS =  -dll -incremental:no -NODEFAULTLIB:libc
-EIFLIB = "C:\Program Files\Eiffel Software\EiffelStudio 20.11 Standard\studio\spec\win64\lib\msc_vc140\mtwkbench.lib"
-EIFTEMPLATES = C:\Program Files\Eiffel Software\EiffelStudio 20.11 Standard\studio\config\win64\templates
+EIFLIB = "C:\Program Files\Eiffel Software\EiffelStudio 20.05 Standard\studio\spec\win64\lib\msc_vc140\mtwkbench.lib"
+EIFTEMPLATES = C:\Program Files\Eiffel Software\EiffelStudio 20.05 Standard\studio\config\win64\templates
 LIBS = 
 MAKE = nmake -s -nologo
 AR = 
@@ -20,7 +20,7 @@ RANLIB = echo
 RM = del
 FILE_EXIST = if exist
 RMDIR = rd
-X2C = "C:\Program Files\Eiffel Software\EiffelStudio 20.11 Standard\studio\spec\win64\bin\x2c.exe"
+X2C = "C:\Program Files\Eiffel Software\EiffelStudio 20.05 Standard\studio\spec\win64\bin\x2c.exe"
 SHAREDLINK = link
 SHAREDLIBS = USER32.lib WS2_32.lib ADVAPI32.lib GDI32.lib SHELL32.lib MSIMG32.lib \
 	COMDLG32.lib UUID.lib OLE32.lib OLEAUT32.lib COMCTL32.lib MPR.LIB SHLWAPI.LIB WINSPOOL.LIB 
@@ -41,15 +41,15 @@ SYSTEM_IN_DYNAMIC_LIB = jsonhandler.dll
 
 OBJECTS = big_file_C7_c.obj 
 
-OLDOBJECTS =  ro207.obj ro207d.obj pr203.obj pr203d.obj fu220.obj fu220d.obj ty204.obj ty204d.obj \
-	ty205.obj ty205d.obj ty201.obj ty201d.obj ty206.obj ty206d.obj re210.obj re210d.obj \
-	it199.obj it199d.obj it200.obj it200d.obj li218.obj li218d.obj ar202.obj ar202d.obj \
-	in214.obj in214d.obj dy230.obj dy230d.obj re209.obj re209d.obj in198.obj in198d.obj \
-	cu221.obj cu221d.obj tr219.obj tr219d.obj se226.obj se226d.obj dy208.obj dy208d.obj \
-	ta225.obj ta225d.obj li212.obj li212d.obj un229.obj un229d.obj ty211.obj ty211d.obj \
-	ac222.obj ac222d.obj co215.obj co215d.obj bi227.obj bi227d.obj fi216.obj fi216d.obj \
-	dy228.obj dy228d.obj ba223.obj ba223d.obj ch213.obj ch213d.obj co224.obj co224d.obj \
-	bo217.obj bo217d.obj 
+OLDOBJECTS =  sp215.obj sp215d.obj ar200.obj ar200d.obj ro205.obj ro205d.obj pr201.obj pr201d.obj \
+	fu216.obj fu216d.obj ty202.obj ty202d.obj ty203.obj ty203d.obj ty198.obj ty198d.obj \
+	ty199.obj ty199d.obj ty204.obj ty204d.obj sp217.obj sp217d.obj na206.obj na206d.obj \
+	re213.obj re213d.obj it211.obj it211d.obj it212.obj it212d.obj li219.obj li219d.obj \
+	ar207.obj ar207d.obj re218.obj re218d.obj in230.obj in230d.obj to229.obj to229d.obj \
+	ge208.obj ge208d.obj re214.obj re214d.obj in210.obj in210d.obj cu224.obj cu224d.obj \
+	tr220.obj tr220d.obj bo228.obj bo228d.obj ty209.obj ty209d.obj ac225.obj ac225d.obj \
+	co221.obj co221d.obj fi222.obj fi222d.obj ba226.obj ba226d.obj co227.obj co227d.obj \
+	bo223.obj bo223d.obj 
 
 all::  Cobj7.lib
 

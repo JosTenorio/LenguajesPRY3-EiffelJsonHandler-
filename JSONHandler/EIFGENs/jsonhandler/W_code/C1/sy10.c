@@ -10,11 +10,11 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F10_111(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern void F10_112(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern void F10_113(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F10_113(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void F10_114(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F10_115(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern void F10_115(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern void F10_116(EIF_REFERENCE, EIF_TYPED_VALUE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F10_117(EIF_REFERENCE, EIF_TYPED_VALUE);
 extern void EIF_Minit10(void);
 
 #ifdef __cplusplus
@@ -37,7 +37,7 @@ extern "C" {
 #endif
 
 /* {SYSTEM_STRING_FACTORY}.from_string_to_system_string */
-EIF_TYPED_VALUE F10_111 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F10_113 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "from_string_to_system_string";
@@ -63,18 +63,18 @@ EIF_TYPED_VALUE F10_111 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 9, Current, 0, 1, 103);
+	RTEAA(l_feature_name, 9, Current, 0, 1, 105);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(9, Current, 103);
+	RTDBGEAA(9, Current, 105);
 	RTCC(arg1, 9, l_feature_name, 1, eif_new_type(176, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_dotnet", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(787, 34))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(788, 34))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -114,163 +114,10 @@ body:;
 }
 
 /* {SYSTEM_STRING_FACTORY}.read_system_string_into */
-void F10_112 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
-{
-	GTCX
-	char *l_feature_name = "read_system_string_into";
-	RTEX;
-#define arg1 arg1x.it_r
-#define arg2 arg2x.it_r
-	EIF_INTEGER_32 ti4_1;
-	EIF_INTEGER_32 ti4_2;
-	EIF_BOOLEAN tb1;
-	RTCDT;
-	RTSN;
-	RTDA;
-	RTLD;
-	
-	
-	RTLI(3);
-	RTLR(0,arg1);
-	RTLR(1,arg2);
-	RTLR(2,Current);
-	RTLIU(3);
-	RTLU (SK_VOID, NULL);
-	RTLU(SK_REF,&arg1);
-	RTLU(SK_REF,&arg2);
-	RTLU (SK_REF, &Current);
-	
-	RTEAA(l_feature_name, 9, Current, 0, 2, 104);
-	RTSA(dtype);
-	RTSC;
-	RTME(dtype, 0);
-	RTGC;
-	RTDBGEAA(9, Current, 104);
-	RTCC(arg1, 9, l_feature_name, 1, eif_new_type(11, 0x01), 0x01);
-	RTCC(arg2, 9, l_feature_name, 2, eif_new_type(178, 0x01), 0x01);
-	RTIV(Current, RTAL);
-	if ((RTAL & CK_REQUIRE) || RTAC) {
-		RTHOOK(1);
-		RTCT("is_dotnet", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(787, 34))(Current)).it_b);
-		RTTE(tb1, label_1);
-		RTCK;
-		RTHOOK(2);
-		RTCT("a_str_not_void", EX_PRE);
-		RTTE((EIF_BOOLEAN)(arg1 != NULL), label_1);
-		RTCK;
-		RTHOOK(3);
-		RTCT("a_result_not_void", EX_PRE);
-		RTTE((EIF_BOOLEAN)(arg2 != NULL), label_1);
-		RTCK;
-		RTHOOK(4);
-		RTCT("a_result_valid", EX_PRE);
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(3365, "count", arg2))(arg2)).it_i4);
-		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(254, "length", arg1))(arg1)).it_i4);
-		RTTE((EIF_BOOLEAN)(ti4_1 == ti4_2), label_1);
-		RTCK;
-		RTJB;
-label_1:
-		RTCF;
-	}
-body:;
-	RTVI(Current, RTAL);
-	RTRS;
-	RTHOOK(5);
-	RTDBGLE;
-	RTMD(0);
-	RTLE;
-	RTLO(4);
-	RTEE;
-#undef arg2
-#undef arg1
-}
-
-/* {SYSTEM_STRING_FACTORY}.read_system_string_into_area_8 */
-void F10_113 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
-{
-	GTCX
-	char *l_feature_name = "read_system_string_into_area_8";
-	RTEX;
-#define arg1 arg1x.it_r
-#define arg2 arg2x.it_r
-	EIF_INTEGER_32 ti4_1;
-	EIF_INTEGER_32 ti4_2;
-	EIF_BOOLEAN tb1;
-	RTCDT;
-	RTSN;
-	RTDA;
-	RTLD;
-	
-	
-	RTLI(3);
-	RTLR(0,arg1);
-	RTLR(1,arg2);
-	RTLR(2,Current);
-	RTLIU(3);
-	RTLU (SK_VOID, NULL);
-	RTLU(SK_REF,&arg1);
-	RTLU(SK_REF,&arg2);
-	RTLU (SK_REF, &Current);
-	
-	RTEAA(l_feature_name, 9, Current, 0, 2, 105);
-	RTSA(dtype);
-	RTSC;
-	RTME(dtype, 0);
-	RTGC;
-	RTDBGEAA(9, Current, 105);
-	RTCC(arg1, 9, l_feature_name, 1, eif_new_type(11, 0x01), 0x01);
-	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,290,165,0xFFFF};
-		EIF_TYPE typres0;
-		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
-		
-		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
-		RTCC(arg2, 9, l_feature_name, 2, typres0, 0x01);
-	}
-	RTIV(Current, RTAL);
-	if ((RTAL & CK_REQUIRE) || RTAC) {
-		RTHOOK(1);
-		RTCT("is_dotnet", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(787, 34))(Current)).it_b);
-		RTTE(tb1, label_1);
-		RTCK;
-		RTHOOK(2);
-		RTCT("a_str_not_void", EX_PRE);
-		RTTE((EIF_BOOLEAN)(arg1 != NULL), label_1);
-		RTCK;
-		RTHOOK(3);
-		RTCT("a_area_not_void", EX_PRE);
-		RTTE((EIF_BOOLEAN)(arg2 != NULL), label_1);
-		RTCK;
-		RTHOOK(4);
-		RTCT("a_area_valid", EX_PRE);
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(2401, "count", arg2))(arg2)).it_i4);
-		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(254, "length", arg1))(arg1)).it_i4);
-		RTTE((EIF_BOOLEAN) (ti4_1 >= ti4_2), label_1);
-		RTCK;
-		RTJB;
-label_1:
-		RTCF;
-	}
-body:;
-	RTVI(Current, RTAL);
-	RTRS;
-	RTHOOK(5);
-	RTDBGLE;
-	RTMD(0);
-	RTLE;
-	RTLO(4);
-	RTEE;
-#undef arg2
-#undef arg1
-}
-
-/* {SYSTEM_STRING_FACTORY}.read_system_string_into_area_32 */
 void F10_114 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
 {
 	GTCX
-	char *l_feature_name = "read_system_string_into_area_32";
+	char *l_feature_name = "read_system_string_into";
 	RTEX;
 #define arg1 arg1x.it_r
 #define arg2 arg2x.it_r
@@ -300,8 +147,81 @@ void F10_114 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2
 	RTGC;
 	RTDBGEAA(9, Current, 106);
 	RTCC(arg1, 9, l_feature_name, 1, eif_new_type(11, 0x01), 0x01);
+	RTCC(arg2, 9, l_feature_name, 2, eif_new_type(178, 0x01), 0x01);
+	RTIV(Current, RTAL);
+	if ((RTAL & CK_REQUIRE) || RTAC) {
+		RTHOOK(1);
+		RTCT("is_dotnet", EX_PRE);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(788, 34))(Current)).it_b);
+		RTTE(tb1, label_1);
+		RTCK;
+		RTHOOK(2);
+		RTCT("a_str_not_void", EX_PRE);
+		RTTE((EIF_BOOLEAN)(arg1 != NULL), label_1);
+		RTCK;
+		RTHOOK(3);
+		RTCT("a_result_not_void", EX_PRE);
+		RTTE((EIF_BOOLEAN)(arg2 != NULL), label_1);
+		RTCK;
+		RTHOOK(4);
+		RTCT("a_result_valid", EX_PRE);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(3364, "count", arg2))(arg2)).it_i4);
+		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(256, "length", arg1))(arg1)).it_i4);
+		RTTE((EIF_BOOLEAN)(ti4_1 == ti4_2), label_1);
+		RTCK;
+		RTJB;
+label_1:
+		RTCF;
+	}
+body:;
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(5);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(4);
+	RTEE;
+#undef arg2
+#undef arg1
+}
+
+/* {SYSTEM_STRING_FACTORY}.read_system_string_into_area_8 */
+void F10_115 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
+{
+	GTCX
+	char *l_feature_name = "read_system_string_into_area_8";
+	RTEX;
+#define arg1 arg1x.it_r
+#define arg2 arg2x.it_r
+	EIF_INTEGER_32 ti4_1;
+	EIF_INTEGER_32 ti4_2;
+	EIF_BOOLEAN tb1;
+	RTCDT;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	
+	RTLI(3);
+	RTLR(0,arg1);
+	RTLR(1,arg2);
+	RTLR(2,Current);
+	RTLIU(3);
+	RTLU (SK_VOID, NULL);
+	RTLU(SK_REF,&arg1);
+	RTLU(SK_REF,&arg2);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 9, Current, 0, 2, 107);
+	RTSA(dtype);
+	RTSC;
+	RTME(dtype, 0);
+	RTGC;
+	RTDBGEAA(9, Current, 107);
+	RTCC(arg1, 9, l_feature_name, 1, eif_new_type(11, 0x01), 0x01);
 	{
-		static EIF_TYPE_INDEX typarr0[] = {0xFF01,253,162,0xFFFF};
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,290,168,0xFFFF};
 		EIF_TYPE typres0;
 		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
 		
@@ -312,7 +232,7 @@ void F10_114 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_dotnet", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(787, 34))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(788, 34))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTHOOK(2);
@@ -325,8 +245,88 @@ void F10_114 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2
 		RTCK;
 		RTHOOK(4);
 		RTCT("a_area_valid", EX_PRE);
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(2401, "count", arg2))(arg2)).it_i4);
-		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(254, "length", arg1))(arg1)).it_i4);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(2402, "count", arg2))(arg2)).it_i4);
+		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(256, "length", arg1))(arg1)).it_i4);
+		RTTE((EIF_BOOLEAN) (ti4_1 >= ti4_2), label_1);
+		RTCK;
+		RTJB;
+label_1:
+		RTCF;
+	}
+body:;
+	RTVI(Current, RTAL);
+	RTRS;
+	RTHOOK(5);
+	RTDBGLE;
+	RTMD(0);
+	RTLE;
+	RTLO(4);
+	RTEE;
+#undef arg2
+#undef arg1
+}
+
+/* {SYSTEM_STRING_FACTORY}.read_system_string_into_area_32 */
+void F10_116 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x, EIF_TYPED_VALUE arg2x)
+{
+	GTCX
+	char *l_feature_name = "read_system_string_into_area_32";
+	RTEX;
+#define arg1 arg1x.it_r
+#define arg2 arg2x.it_r
+	EIF_INTEGER_32 ti4_1;
+	EIF_INTEGER_32 ti4_2;
+	EIF_BOOLEAN tb1;
+	RTCDT;
+	RTSN;
+	RTDA;
+	RTLD;
+	
+	
+	RTLI(3);
+	RTLR(0,arg1);
+	RTLR(1,arg2);
+	RTLR(2,Current);
+	RTLIU(3);
+	RTLU (SK_VOID, NULL);
+	RTLU(SK_REF,&arg1);
+	RTLU(SK_REF,&arg2);
+	RTLU (SK_REF, &Current);
+	
+	RTEAA(l_feature_name, 9, Current, 0, 2, 108);
+	RTSA(dtype);
+	RTSC;
+	RTME(dtype, 0);
+	RTGC;
+	RTDBGEAA(9, Current, 108);
+	RTCC(arg1, 9, l_feature_name, 1, eif_new_type(11, 0x01), 0x01);
+	{
+		static EIF_TYPE_INDEX typarr0[] = {0xFF01,253,165,0xFFFF};
+		EIF_TYPE typres0;
+		static EIF_TYPE typcache0 = {INVALID_DTYPE, 0};
+		
+		typres0 = (typcache0.id != INVALID_DTYPE ? typcache0 : (typcache0 = eif_compound_id(Dftype(Current), typarr0)));
+		RTCC(arg2, 9, l_feature_name, 2, typres0, 0x01);
+	}
+	RTIV(Current, RTAL);
+	if ((RTAL & CK_REQUIRE) || RTAC) {
+		RTHOOK(1);
+		RTCT("is_dotnet", EX_PRE);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(788, 34))(Current)).it_b);
+		RTTE(tb1, label_1);
+		RTCK;
+		RTHOOK(2);
+		RTCT("a_str_not_void", EX_PRE);
+		RTTE((EIF_BOOLEAN)(arg1 != NULL), label_1);
+		RTCK;
+		RTHOOK(3);
+		RTCT("a_area_not_void", EX_PRE);
+		RTTE((EIF_BOOLEAN)(arg2 != NULL), label_1);
+		RTCK;
+		RTHOOK(4);
+		RTCT("a_area_valid", EX_PRE);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(2402, "count", arg2))(arg2)).it_i4);
+		ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTVF(256, "length", arg1))(arg1)).it_i4);
 		RTTE((EIF_BOOLEAN) (ti4_1 >= ti4_2), label_1);
 		RTCK;
 		RTJB;
@@ -347,7 +347,7 @@ body:;
 }
 
 /* {SYSTEM_STRING_FACTORY}.escape_count */
-EIF_TYPED_VALUE F10_115 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F10_117 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "escape_count";
@@ -370,18 +370,18 @@ EIF_TYPED_VALUE F10_115 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_REF,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 9, Current, 0, 1, 107);
+	RTEAA(l_feature_name, 9, Current, 0, 1, 109);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(9, Current, 107);
+	RTDBGEAA(9, Current, 109);
 	RTCC(arg1, 9, l_feature_name, 1, eif_new_type(11, 0x01), 0x01);
 	RTIV(Current, RTAL);
 	if ((RTAL & CK_REQUIRE) || RTAC) {
 		RTHOOK(1);
 		RTCT("is_dotnet", EX_PRE);
-		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(787, 34))(Current)).it_b);
+		tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(788, 34))(Current)).it_b);
 		RTTE(tb1, label_1);
 		RTCK;
 		RTJB;

@@ -55,15 +55,15 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 
 OBJECTS = big_file_C21_c.obj 
 
-OLDOBJECTS =  sp676.o sp676d.o ar686.o ar686d.o pr664.o pr664d.o ty661.o ty661d.o \
-	ty662.o ty662d.o ty666.o ty666d.o ty667.o ty667d.o ty663.o ty663d.o \
-	ty668.o ty668d.o sp684.o sp684d.o na677.o na677d.o re678.o re678d.o \
-	it682.o it682d.o it683.o it683d.o ar687.o ar687d.o in691.o in691d.o \
-	ge685.o ge685d.o re679.o re679d.o in681.o in681d.o dy688.o dy688d.o \
-	li689.o li689d.o ty680.o ty680d.o co692.o co692d.o ch690.o ch690d.o \
-	rt669.o rt669d.o rt670.o rt670d.o rt671.o rt671d.o rt672.o rt672d.o \
-	rt673.o rt673d.o rt674.o rt674d.o rt675.o rt675d.o rt660.o rt660d.o \
-	rt665.o rt665d.o 
+OLDOBJECTS =  sp673.o sp673d.o ar663.o ar663d.o sp674.o sp674d.o na664.o na664d.o \
+	re671.o re671d.o it669.o it669d.o it670.o it670d.o li676.o li676d.o \
+	ar689.o ar689d.o ar665.o ar665d.o re675.o re675d.o in687.o in687d.o \
+	to686.o to686d.o ge666.o ge666d.o re672.o re672d.o in668.o in668d.o \
+	cu681.o cu681d.o tr677.o tr677d.o dy690.o dy690d.o bo685.o bo685d.o \
+	ta688.o ta688d.o li691.o li691d.o ty667.o ty667d.o ac682.o ac682d.o \
+	co678.o co678d.o fi679.o fi679d.o ba683.o ba683d.o ch692.o ch692d.o \
+	rt660.o rt660d.o rt661.o rt661d.o rt662.o rt662d.o co684.o co684d.o \
+	bo680.o bo680d.o 
 
 all: Cobj21.o
 

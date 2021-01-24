@@ -189,13 +189,10 @@ feature -- Routines
 			l_new_document_array: JSON_ARRAY
 			l_new_document: JSON_OBJECT
 			l_document: JSON_OBJECT
-			l_document_temp: JSON_VALUE
 			l_key_temp: JSON_STRING
 			l_key_conversion: JSON_STRING
 			l_document_conversion: JSON_OBJECT
 			l_i: INTEGER
-			l_fields: JSON_STRING
-			l_keys: JSON_STRING
 		do
 			l_document := retrieve_document (key)
 			if not error then
@@ -221,7 +218,7 @@ feature -- Routines
 				end
 				if l_new_document_array.is_empty then
 					error := true
-					error_message := "No JSON document with the specified condition was found"
+					error_message := "No JSON document with the specified condition was found" + "%N"
 				else
 					create l_new_document.make_empty
 					l_new_document.put (l_new_document_array,l_key_temp)
@@ -235,9 +232,85 @@ feature -- Routines
 					end
 					insert_document (new_key, l_new_document)
 				end
-
 			end
 		end
+
+	fields_valid (fields: LIST[STRING]; document: JSON_OBJECT)
+		local
+			l_key_temp: JSON_STRING
+			l_key_string: JSON_STRING
+			l_keys_list: LIST[STRING]
+		do
+			create l_key_temp.make_from_string ("Keys")
+			if attached document.string_item (l_key_temp) as keys then
+				l_key_string := keys
+				l_keys_list := l_key_string.representation.substring (2,l_key_string.representation.count - 1).split (';')
+				across fields as field loop
+					if not l_keys_list.has (field.item) then
+						error := true
+						error_message := "The given JSON document doesn't have a field named: " + field.item + "%N"
+					end
+				end
+			end
+		end
+
+
+	project_document (key: STRING; new_key: STRING; fields: LIST[STRING])
+		local
+			l_new_document_array: JSON_ARRAY
+			l_new_document: JSON_OBJECT
+			l_document: JSON_OBJECT
+			l_key_temp: JSON_STRING
+			l_key_conversion: JSON_STRING
+			l_document_conversion: JSON_OBJECT
+			l_i: INTEGER
+		do
+			l_document := retrieve_document (key)
+			if not error then
+				fields_valid (fields, l_document)
+				if not error then
+					create l_new_document_array.make_empty
+					create l_key_temp.make_from_string ("Data")
+					if attached l_document.array_item (l_key_temp) as documents then
+						From
+							l_i := 1
+						until
+							l_i > documents.count
+						loop
+							create l_document_conversion.make_empty
+							create l_key_conversion.make_from_string ("Conversion")
+							l_document_conversion.put (documents.i_th (l_i), l_key_conversion)
+							if attached l_document_conversion.object_item (l_key_conversion) as document then
+								l_document := document
+								if evaluate_document(l_document,field,given_value) then
+									l_new_document_array.extend (l_document)
+								end
+							end
+							l_i := l_i + 1
+						end
+					end
+					if l_new_document_array.is_empty then
+						error := true
+						error_message := "No JSON document with the specified condition was found"
+					else
+						create l_new_document.make_empty
+						l_new_document.put (l_new_document_array,l_key_temp)
+						create l_key_temp.make_from_string ("Keys")
+						if attached l_document.string_item (l_key_temp) as keys then
+							l_new_document.put (keys,l_key_temp)
+						end
+						create l_key_temp.make_from_string ("Types")
+						if attached l_document.string_item (l_key_temp) as types then
+							l_new_document.put (types,l_key_temp)
+						end
+						insert_document (new_key, l_new_document)
+					end
+				end
+			end
+		end
+
+
+
 
 
 end -- class DATABASE

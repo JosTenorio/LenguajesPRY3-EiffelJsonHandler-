@@ -56,10 +56,10 @@ $spitshell >>Makefile <<'!NO!SUBS!'
 OBJECTS = big_file_C6_c.obj 
 
 OLDOBJECTS =  po175.o po175d.o po176.o po176d.o ty197.o ty197d.o st185.o st185d.o \
-	st182.o st182d.o im184.o im184d.o im181.o im181d.o na172.o na172d.o \
-	na173.o na173d.o ch166.o ch166d.o ch167.o ch167d.o bo169.o bo169d.o \
-	bo170.o bo170d.o re183.o re183d.o re180.o re180d.o po174.o po174d.o \
-	na171.o na171d.o bo168.o bo168d.o ch165.o ch165d.o st179.o st179d.o \
+	st182.o st182d.o im184.o im184d.o im181.o im181d.o ch169.o ch169d.o \
+	ch170.o ch170d.o ch166.o ch166d.o ch167.o ch167d.o bo172.o bo172d.o \
+	bo173.o bo173d.o re183.o re183d.o re180.o re180d.o po174.o po174d.o \
+	bo171.o bo171d.o ch168.o ch168d.o ch165.o ch165d.o st179.o st179d.o \
 	re177.o re177d.o im178.o im178d.o co193.o co193d.o en194.o en194d.o \
 	un196.o un196d.o en195.o en195d.o js192.o js192d.o js191.o js191d.o \
 	js186.o js186d.o js190.o js190d.o js189.o js189d.o js188.o js188d.o \

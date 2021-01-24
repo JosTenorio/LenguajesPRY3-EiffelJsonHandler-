@@ -10,11 +10,11 @@
 extern "C" {
 #endif
 
+extern EIF_TYPED_VALUE F176_4362(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F176_4363(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F176_4364(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F176_4365(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F176_4364(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F176_4365(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F176_4366(EIF_REFERENCE);
-extern EIF_TYPED_VALUE F176_4367(EIF_REFERENCE);
 extern void EIF_Minit176(void);
 
 #ifdef __cplusplus
@@ -37,7 +37,7 @@ extern "C" {
 #endif
 
 /* {POINTER}.hash_code */
-EIF_TYPED_VALUE F176_4363 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F176_4362 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "hash_code";
@@ -56,16 +56,16 @@ EIF_TYPED_VALUE F176_4363 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 175, Current, 0, 0, 10251);
+	RTEAA(l_feature_name, 175, Current, 0, 0, 10250);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(175, Current, 10251);
+	RTDBGEAA(175, Current, 10250);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2492, 173))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(2493, 173))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -79,7 +79,7 @@ EIF_TYPED_VALUE F176_4363 (EIF_REFERENCE Current)
 }
 
 /* {POINTER}.is_default_pointer */
-EIF_TYPED_VALUE F176_4364 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F176_4363 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "is_default_pointer";
@@ -98,16 +98,16 @@ EIF_TYPED_VALUE F176_4364 (EIF_REFERENCE Current)
 	RTLU (SK_BOOL, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 175, Current, 0, 0, 10252);
+	RTEAA(l_feature_name, 175, Current, 0, 0, 10251);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(175, Current, 10252);
+	RTDBGEAA(175, Current, 10251);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x04000000, 1,0); /* Result */
-	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(3261, 173))(Current)).it_b);
+	tb1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(3260, 173))(Current)).it_b);
 	Result = (EIF_BOOLEAN) tb1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -121,7 +121,7 @@ EIF_TYPED_VALUE F176_4364 (EIF_REFERENCE Current)
 }
 
 /* {POINTER}.plus */
-EIF_TYPED_VALUE F176_4365 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+EIF_TYPED_VALUE F176_4364 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "plus";
@@ -146,17 +146,17 @@ EIF_TYPED_VALUE F176_4365 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 175, Current, 0, 1, 10253);
+	RTEAA(l_feature_name, 175, Current, 0, 1, 10252);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(175, Current, 10253);
+	RTDBGEAA(175, Current, 10252);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x40000000, 1,0); /* Result */
 	ui4_1 = arg1;
-	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3262, 173))(Current, ui4_1x)).it_p);
+	tp1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWF(3261, 173))(Current, ui4_1x)).it_p);
 	Result = (EIF_POINTER) tp1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -172,7 +172,7 @@ EIF_TYPED_VALUE F176_4365 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {POINTER}.to_integer_32 */
-EIF_TYPED_VALUE F176_4366 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F176_4365 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "to_integer_32";
@@ -191,16 +191,16 @@ EIF_TYPED_VALUE F176_4366 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 175, Current, 0, 0, 10254);
+	RTEAA(l_feature_name, 175, Current, 0, 0, 10253);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(175, Current, 10254);
+	RTDBGEAA(175, Current, 10253);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0x10000000, 1,0); /* Result */
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(3265, 173))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(3264, 173))(Current)).it_i4);
 	Result = (EIF_INTEGER_32) ti4_1;
 	RTVI(Current, RTAL);
 	RTRS;
@@ -214,7 +214,7 @@ EIF_TYPED_VALUE F176_4366 (EIF_REFERENCE Current)
 }
 
 /* {POINTER}.out */
-EIF_TYPED_VALUE F176_4367 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F176_4366 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "out";
@@ -237,12 +237,12 @@ EIF_TYPED_VALUE F176_4367 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 175, Current, 0, 0, 10255);
+	RTEAA(l_feature_name, 175, Current, 0, 0, 10254);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(175, Current, 10255);
+	RTDBGEAA(175, Current, 10254);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
 	RTDBGAL(0, 0xF80000B8, 0,0); /* Result */

@@ -10,7 +10,7 @@
 extern "C" {
 #endif
 
-extern void F260_5144(EIF_REFERENCE, int);
+extern void F260_5143(EIF_REFERENCE, int);
 extern void EIF_Minit260(void);
 
 #ifdef __cplusplus
@@ -33,7 +33,7 @@ extern "C" {
 #endif
 
 /* {INDEXABLE_ITERATION_CURSOR}._invariant */
-void F260_5144 (EIF_REFERENCE Current, int where)
+void F260_5143 (EIF_REFERENCE Current, int where)
 {
 	GTCX
 	char *l_feature_name = "_invariant";
@@ -48,11 +48,11 @@ void F260_5144 (EIF_REFERENCE Current, int where)
 	RTLIU(1);
 	RTLU (SK_VOID, NULL);
 	RTLU (SK_REF, &Current);
-	RTEAINV(l_feature_name, 259, Current, 0, 5143);
+	RTEAINV(l_feature_name, 259, Current, 0, 5142);
 	RTSA(dtype);
 	RTME(dtype, 0);
 	RTIT("step_positive", Current);
-	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1780, dtype))(Current)).it_i4);
+	ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(1781, dtype))(Current)).it_i4);
 	if ((EIF_BOOLEAN) (ti4_1 > ((EIF_INTEGER_32) 0L))) {
 		RTCK;
 	} else {

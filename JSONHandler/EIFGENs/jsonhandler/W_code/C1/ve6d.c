@@ -10,17 +10,17 @@ extern "C" {
 #endif
 
 static const EIF_TYPE_INDEX egt_0_6 [] = {0xFF01,184,0xFFFF};
-static const EIF_TYPE_INDEX egt_1_6 [] = {0xFF01,196,5,0xFFFF};
+static const EIF_TYPE_INDEX egt_1_6 [] = {0xFF01,197,5,0xFFFF};
 static const EIF_TYPE_INDEX egt_2_6 [] = {0xFF01,5,0xFFFF};
 static const EIF_TYPE_INDEX egt_3_6 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_4_6 [] = {0,0xFFFF};
 static const EIF_TYPE_INDEX egt_5_6 [] = {0xFF01,5,0xFFFF};
 static const EIF_TYPE_INDEX egt_6_6 [] = {0xFF01,5,0xFFFF};
 static const EIF_TYPE_INDEX egt_7_6 [] = {0,0xFFFF};
-static const EIF_TYPE_INDEX egt_8_6 [] = {0xFF01,17,0xFFFF};
+static const EIF_TYPE_INDEX egt_8_6 [] = {0xFF01,16,0xFFFF};
 static const EIF_TYPE_INDEX egt_9_6 [] = {0xFF01,184,0xFFFF};
 static const EIF_TYPE_INDEX egt_10_6 [] = {0xFF01,184,0xFFFF};
-static const EIF_TYPE_INDEX egt_11_6 [] = {0xFF01,16,0xFFFF};
+static const EIF_TYPE_INDEX egt_11_6 [] = {0xFF01,17,0xFFFF};
 static const EIF_TYPE_INDEX egt_12_6 [] = {0xFF01,5,0xFFFF};
 
 
@@ -28,14 +28,14 @@ static const struct desc_info desc_6[] = {
 	{EIF_GENERIC(NULL), 0xFFFFFFFF, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_0_6), 0, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_1_6), 1, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 2, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 3, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 4, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 5, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 6, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 7, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 8, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0151 /*168*/), 9, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 2, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 3, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 4, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 5, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 6, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 7, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 8, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x0157 /*171*/), 9, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_2_6), 10, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 11, 0xFFFFFFFF},
 	{EIF_GENERIC(NULL), 12, 0xFFFFFFFF},
@@ -57,15 +57,15 @@ static const struct desc_info desc_6[] = {
 	{EIF_NON_GENERIC(0x0B /*5*/), 28, 0xFFFFFFFF},
 	{EIF_NON_GENERIC(0x015D /*174*/), 29, 0xFFFFFFFF},
 	{EIF_GENERIC(egt_12_6), 30, 0xFFFFFFFF},
-	{EIF_NON_GENERIC(0x0127 /*147*/), 69, 0},
-	{EIF_GENERIC(NULL), 70, 0xFFFFFFFF},
-	{EIF_GENERIC(NULL), 71, 0xFFFFFFFF},
+	{EIF_NON_GENERIC(0x012D /*150*/), 71, 0},
+	{EIF_GENERIC(NULL), 72, 0xFFFFFFFF},
+	{EIF_GENERIC(NULL), 73, 0xFFFFFFFF},
 };
 void Init6(void)
 {
 	IDSC(desc_6, 0, 5);
 	IDSC(desc_6 + 1, 2, 5);
-	IDSC(desc_6 + 32, 189, 5);
+	IDSC(desc_6 + 32, 188, 5);
 }
 
 

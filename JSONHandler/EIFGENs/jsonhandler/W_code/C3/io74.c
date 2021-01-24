@@ -10,12 +10,12 @@
 extern "C" {
 #endif
 
-extern EIF_TYPED_VALUE F74_1142(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F74_1143(EIF_REFERENCE);
 extern EIF_TYPED_VALUE F74_1144(EIF_REFERENCE);
-extern void F74_1145(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F74_1145(EIF_REFERENCE);
 extern void F74_1146(EIF_REFERENCE, EIF_TYPED_VALUE);
-extern EIF_TYPED_VALUE F74_1147(EIF_REFERENCE);
+extern void F74_1147(EIF_REFERENCE, EIF_TYPED_VALUE);
+extern EIF_TYPED_VALUE F74_1148(EIF_REFERENCE);
 extern void EIF_Minit74(void);
 
 #ifdef __cplusplus
@@ -38,7 +38,7 @@ extern "C" {
 #endif
 
 /* {IO_FAILURE}.code */
-EIF_TYPED_VALUE F74_1142 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F74_1143 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "code";
@@ -58,25 +58,25 @@ EIF_TYPED_VALUE F74_1142 (EIF_REFERENCE Current)
 	RTLU (SK_INT32, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 73, Current, 0, 0, 1221);
+	RTEAA(l_feature_name, 73, Current, 0, 0, 1223);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(73, Current, 1221);
+	RTDBGEAA(73, Current, 1223);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(1071, dtype));
-	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(765, 33))(Current)).it_i4);
+	ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(1072, dtype));
+	ti4_2 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(766, 33))(Current)).it_i4);
 	if ((EIF_BOOLEAN)(ti4_1 == ti4_2)) {
 		RTHOOK(2);
 		RTDBGAL(0, 0x10000000, 1,0); /* Result */
-		ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(1071, dtype));
+		ti4_1 = *(EIF_INTEGER_32 *)(Current + RTWA(1072, dtype));
 		Result = (EIF_INTEGER_32) ti4_1;
 	} else {
 		RTHOOK(3);
 		RTDBGAL(0, 0x10000000, 1,0); /* Result */
-		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(771, 33))(Current)).it_i4);
+		ti4_1 = (((FUNCTION_CAST(EIF_TYPED_VALUE, (EIF_REFERENCE)) RTWF(772, 33))(Current)).it_i4);
 		Result = (EIF_INTEGER_32) ti4_1;
 	}
 	RTVI(Current, RTAL);
@@ -91,18 +91,18 @@ EIF_TYPED_VALUE F74_1142 (EIF_REFERENCE Current)
 }
 
 /* {IO_FAILURE}.error_code */
-EIF_TYPED_VALUE F74_1143 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F74_1144 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1068,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1069,Dtype(Current)));
 	return r;
 }
 
 
 /* {IO_FAILURE}.tag */
-RTOID (F74_1144)
-EIF_TYPED_VALUE F74_1144 (EIF_REFERENCE Current)
+RTOID (F74_1145)
+EIF_TYPED_VALUE F74_1145 (EIF_REFERENCE Current)
 {
 	GTCX
 	char *l_feature_name = "tag";
@@ -117,7 +117,7 @@ EIF_TYPED_VALUE F74_1144 (EIF_REFERENCE Current)
 	RTLD;
 	
 #define Result RTOTRR
-	RTOTDR(F74_1144);
+	RTOTDR(F74_1145);
 	dtype = Dtype(Current);
 
 	RTLI(4);
@@ -129,12 +129,12 @@ EIF_TYPED_VALUE F74_1144 (EIF_REFERENCE Current)
 	RTLU (SK_REF, &Result);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 73, Current, 0, 0, 1223);
+	RTEAA(l_feature_name, 73, Current, 0, 0, 1225);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(73, Current, 1223);
+	RTDBGEAA(73, Current, 1225);
 	RTIV(Current, RTAL);
 	RTOTP;
 	RTHOOK(1);
@@ -142,7 +142,7 @@ EIF_TYPED_VALUE F74_1144 (EIF_REFERENCE Current)
 	tr1 = RTLN(eif_new_type(180, 0x01).id);
 	tr2 = RTMS_EX_H("I/O error.",10,147009326);
 	ur1 = tr2;
-	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3485, Dtype(tr1)))(tr1, ur1x);
+	(FUNCTION_CAST(void, (EIF_REFERENCE, EIF_TYPED_VALUE)) RTWC(3484, Dtype(tr1)))(tr1, ur1x);
 	RTNHOOK(1,1);
 	Result = (EIF_REFERENCE) tr1;
 	RTVI(Current, RTAL);
@@ -160,7 +160,7 @@ EIF_TYPED_VALUE F74_1144 (EIF_REFERENCE Current)
 }
 
 /* {IO_FAILURE}.set_error_code */
-void F74_1145 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F74_1146 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "set_error_code";
@@ -180,16 +180,16 @@ void F74_1145 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 73, Current, 0, 1, 1224);
+	RTEAA(l_feature_name, 73, Current, 0, 1, 1226);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(73, Current, 1224);
+	RTDBGEAA(73, Current, 1226);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 1068, 0x10000000, 1); /* error_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(1068, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 1069, 0x10000000, 1); /* error_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(1069, dtype)) = (EIF_INTEGER_32) arg1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -202,7 +202,7 @@ void F74_1145 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {IO_FAILURE}.set_code */
-void F74_1146 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
+void F74_1147 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 {
 	GTCX
 	char *l_feature_name = "set_code";
@@ -222,16 +222,16 @@ void F74_1146 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 	RTLU(SK_INT32,&arg1);
 	RTLU (SK_REF, &Current);
 	
-	RTEAA(l_feature_name, 73, Current, 0, 1, 1225);
+	RTEAA(l_feature_name, 73, Current, 0, 1, 1221);
 	RTSA(dtype);
 	RTSC;
 	RTME(dtype, 0);
 	RTGC;
-	RTDBGEAA(73, Current, 1225);
+	RTDBGEAA(73, Current, 1221);
 	RTIV(Current, RTAL);
 	RTHOOK(1);
-	RTDBGAA(Current, dtype, 1071, 0x10000000, 1); /* internal_code */
-	*(EIF_INTEGER_32 *)(Current + RTWA(1071, dtype)) = (EIF_INTEGER_32) arg1;
+	RTDBGAA(Current, dtype, 1072, 0x10000000, 1); /* internal_code */
+	*(EIF_INTEGER_32 *)(Current + RTWA(1072, dtype)) = (EIF_INTEGER_32) arg1;
 	RTVI(Current, RTAL);
 	RTRS;
 	RTHOOK(2);
@@ -244,11 +244,11 @@ void F74_1146 (EIF_REFERENCE Current, EIF_TYPED_VALUE arg1x)
 }
 
 /* {IO_FAILURE}.internal_code */
-EIF_TYPED_VALUE F74_1147 (EIF_REFERENCE Current)
+EIF_TYPED_VALUE F74_1148 (EIF_REFERENCE Current)
 {
 	EIF_TYPED_VALUE r;
 	r.type = SK_INT32;
-	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1071,Dtype(Current)));
+	r.it_i4 = *(EIF_INTEGER_32 *)(Current + RTWA(1072,Dtype(Current)));
 	return r;
 }
 
@@ -256,7 +256,7 @@ EIF_TYPED_VALUE F74_1147 (EIF_REFERENCE Current)
 void EIF_Minit74 (void)
 {
 	GTCX
-	RTOTS (1144,F74_1144)
+	RTOTS (1145,F74_1145)
 }
 
 
