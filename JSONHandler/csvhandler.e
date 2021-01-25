@@ -108,7 +108,7 @@ feature {NONE} -- Internal routines
 					elseif field_types.i_th (i).is_equal ("N") then
 						l_result.put_real(l_field_values.i_th (i).to_real_64, l_key_temp)
 					else
-						if l_field_values.i_th (i).is_equal ("S") or l_field_values.i_th (i).is_equal ("T") then
+						if l_field_values.i_th (i).is_equal ("S") or l_field_values.i_th (i).is_equal ("T") or l_field_values.i_th (i).is_equal ("SI") then
 							l_result.put_boolean (true, l_key_temp)
 						else
 							l_result.put_boolean (false, l_key_temp)

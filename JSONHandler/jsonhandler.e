@@ -73,7 +73,7 @@ feature {NONE} -- Internal routines (command options)
 				if handler.has_error then
 					handler.handle_error
 				else
-					print ("Document identified by '" + command_list.i_th (2) + "' saved as a csv file at " + command_list.i_th (2) + " %N")
+					print ("Document identified by '" + command_list.i_th (2) + "' saved as a csv file at " + command_list.i_th (3) + " %N")
 				end
 			end
 		end
@@ -98,8 +98,29 @@ feature {NONE} -- Internal routines (command options)
 		end
 
 	project (command_list: LIST[STRING])
+		local
+			l_fields: ARRAYED_LIST[STRING]
+			l_i: INTEGER
 		do
-			print ("Projection result saved in document identified by '" + command_list.i_th (3) + "'%N")
+			if command_list.count < 4 then
+				print ("At least one field to include in the projection must be specified" + "%N")
+			else
+				create l_fields.make (2)
+				from
+					l_i := 4
+				until
+					l_i > command_list.count
+				loop
+					l_fields.extend (command_list.i_th (l_i))
+					l_i := l_i + 1
+				end
+				database.project_document (command_list.i_th (2), command_list.i_th (3), l_fields)
+				if database.has_error then
+					database.handle_error
+				else
+					print ("Projection result saved in document identified by '" + command_list.i_th (3) + "'%N")
+				end
+			end
 		end
 
 
@@ -117,11 +138,12 @@ feature -- Iterative execution cycle
 			loop
 				print("%N")
 				print ("The available commands are: " + "%N")
-				print ("load <DocumentName> <CsvFilePath>" + "%N")
-				print ("save <DocumentName> <JsonFileSavePath>" + "%N")
-				print ("savecsv <DocumentName> <CsvFileSavePath>" + "%N")
-				print ("select <DocumentName> <NewDocumentName> <Field> = <Value>" + "%N")
-				print ("project <DocumentName> <NewDocumentName> <Field1> <Field2> ... <Field5>" + "%N")
+				print (">>load <DocumentName> <CsvFilePath>" + "%N")
+				print (">>save <DocumentName> <JsonFileSavePath>" + "%N")
+				print (">>savecsv <DocumentName> <CsvFileSavePath>" + "%N")
+				print (">>select <DocumentName> <NewDocumentName> <Field> = <Value>" + "%N")
+				print (">>project <DocumentName> <NewDocumentName> <Field1> <Field2> ... <Field5>" + "%N")
+				print (">>exit" + "%N")
 				print("%N")
 				print ("Please input a command: " + "%N")
 				print (">>")
